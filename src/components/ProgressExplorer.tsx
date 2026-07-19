@@ -158,7 +158,8 @@ export function ProgressExplorer({ cities, progress, setProgress, onExit }: Expl
         <label><input type="checkbox" checked={progress.settings.showCountryBoundaries} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, showCountryBoundaries: event.target.checked } }))} /> Boundaries</label>
         <label><input type="checkbox" checked={progress.settings.showAnchors} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, showAnchors: event.target.checked } }))} /> Anchors</label>
         <label><input type="checkbox" checked={progress.settings.showWeakHeat} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, showWeakHeat: event.target.checked } }))} /> Weak-city heat</label>
-        <label className="session-setting">Session <input type="range" min="5" max="30" step="5" value={progress.settings.sessionLength} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, sessionLength: Number(event.target.value) } }))} /> {progress.settings.sessionLength}</label>
+        <label className="session-setting">Review questions <input type="range" min="5" max="30" step="5" value={progress.settings.sessionLength} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, sessionLength: Number(event.target.value) } }))} /> {progress.settings.sessionLength}</label>
+        <label>New cities <input type="range" min="1" max="10" step="1" value={progress.settings.newCitiesPerSession} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, newCitiesPerSession: Number(event.target.value) } }))} /> {progress.settings.newCitiesPerSession}</label>
       </section>
       <WorldMap cities={filtered} progress={progress} explore />
       <section className="explorer-layout">

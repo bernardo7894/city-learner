@@ -31,7 +31,7 @@ The production build is written to `dist/`. There is no backend, map tile server
 - Location → name questions with deaccented aliases, punctuation normalization, guarded typo tolerance, hints, and reveal
 - Name → location questions with Haversine distance and 100/300/700 km grading bands
 - Separate scheduling state for both question directions
-- Due-review, weak-city, placement, and maximum-three-new-city queues
+- Due-review, weak-city, placement, and configurable new-city queues
 - Explicit confusion edges when another curriculum city is entered or clicked
 - Contrast drills that gradually weaken—not instantly delete—confusion edges
 - Fog-of-war city markers, mastered landmarks, a Europe-dense global reference-anchor layer, weak-city heat, country/anchor/label toggles, pan, and zoom
@@ -73,7 +73,7 @@ R = exp(-elapsedDays / stabilityDays)
 
 Initial intervals are 10 minutes (Again), 12 hours (Hard), 1 day (Good), and 3 days (Easy). For reviewed memories, stability is multiplied by 0.25, 1.3, 2.2, or 3.5 respectively. A lapse always gets a near-term 10-minute due time even when the reduced stability remains longer; this deliberately separates the relearning step from the longer-term strength estimate.
 
-Queue priority combines overdue time, current forgetting risk, lapses, confusion strength, and a small importance term. Due and weak memories outrank secure knowledge. New introductions are capped at three and shrink to one when reviews exist; a large backlog introduces none. The queue interleaves cities and question directions when alternatives exist.
+Queue priority combines overdue time, current forgetting risk, lapses, confusion strength, and a small importance term. Due and weak memories outrank secure knowledge. Dedicated Learn sessions introduce a configurable one to ten cities (five by default), with a complete teaching and two-direction practice cycle for each. Review sessions reduce new material to one when reviews exist and introduce none during a large backlog. The queue interleaves cities and question directions when alternatives exist.
 
 Mastery requires both directional memories to have at least 30 days of stability, three consecutive correct answers, and three recent non-failing ratings. A failed maintenance review immediately removes mastered status.
 

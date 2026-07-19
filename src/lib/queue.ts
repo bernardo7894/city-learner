@@ -64,7 +64,8 @@ export function selectSessionQueue(
   now = new Date(),
 ): SessionItem[] {
   const limit = progress.settings.sessionLength
-  if (mode === 'learn') return interleave(newCityItems(cities, progress, QUEUE_CONFIG.maxNewPerSession)).slice(0, limit)
+  const newCityLimit = Math.min(QUEUE_CONFIG.maxNewPerSession, Math.max(1, progress.settings.newCitiesPerSession))
+  if (mode === 'learn') return interleave(newCityItems(cities, progress, newCityLimit))
 
   if (mode === 'confusion') {
     return progress.confusions
@@ -116,7 +117,7 @@ export function selectSessionQueue(
   }))
 
   if (mode === 'review' && due.length < QUEUE_CONFIG.backlogBeforeNewIsReduced) {
-    const newLimit = due.length === 0 ? QUEUE_CONFIG.maxNewPerSession : 1
+    const newLimit = due.length === 0 ? newCityLimit : 1
     reviewItems.push(...newCityItems(cities, progress, newLimit))
   }
   return interleave(reviewItems).slice(0, limit)

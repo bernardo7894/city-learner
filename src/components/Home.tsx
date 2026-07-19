@@ -62,7 +62,7 @@ export function Home({ cities, progress, onStart, onNavigate }: HomeProps) {
         <div>
           <div className="section-heading"><div><p className="eyebrow">Choose your route</p><h2>Play modes</h2></div></div>
           <div className="mode-grid">
-            <ModeCard accent="gold" icon="✦" title="Learn" body="Meet up to three new cities through map-first teaching." onClick={() => onStart('learn')} />
+            <ModeCard accent="gold" icon="✦" title="Learn" body={`Meet up to ${progress.settings.newCitiesPerSession} new cities through map-first teaching.`} onClick={() => onStart('learn')} />
             <ModeCard accent="mint" icon="↻" title="Review" body="Clear due memories and protect knowledge that is fading." onClick={() => onStart('review')} badge={due ? `${due} due` : undefined} />
             <ModeCard accent="coral" icon="⌁" title="Weak cities" body="Focus on lapses, slow names, and wide map misses." onClick={() => onStart('weak')} />
             <ModeCard accent="violet" icon="⇄" title="Confusion drill" body="Separate city pairs your memory keeps crossing." onClick={() => onStart('confusion')} badge={progress.confusions.filter((edge) => edge.strength >= 2).length ? 'Ready' : undefined} />

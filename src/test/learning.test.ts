@@ -100,10 +100,16 @@ describe('adaptive queue and confusions', () => {
     expect(selectSessionQueue('review', [weakCity, secureCity], queued, now)[0].cityId).toBe('weak')
   })
 
-  it('introduces no more than three new cities per session', () => {
-    const cities = Array.from({ length: 10 }, (_, index) => makeCity(`city-${index}`, 4 - index % 4))
-    const queue = selectSessionQueue('learn', cities, createEmptyProgress(cities, now), now)
-    expect(new Set(queue.filter((item) => item.kind === 'teach').map((item) => item.cityId)).size).toBe(3)
+  it('uses the configured new-city count and keeps each complete learning cycle', () => {
+    const cities = Array.from({ length: 12 }, (_, index) => makeCity(`city-${index}`, 4 - index % 4))
+    const progress = createEmptyProgress(cities, now)
+    progress.settings.newCitiesPerSession = 7
+    const queue = selectSessionQueue('learn', cities, progress, now)
+    expect(new Set(queue.filter((item) => item.kind === 'teach').map((item) => item.cityId)).size).toBe(7)
+    expect(queue).toHaveLength(21)
+    for (const cityId of new Set(queue.map((item) => item.cityId))) {
+      expect(queue.filter((item) => item.cityId === cityId)).toHaveLength(3)
+    }
   })
 
   it('creates and gradually decays confusion edges', () => {

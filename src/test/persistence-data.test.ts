@@ -15,6 +15,13 @@ describe('persistence and curriculum integrity', () => {
     expect(importProgress(exportProgress(progress), cities)).toEqual(progress)
   })
 
+  it('adds the new-city preference when importing older version-one progress', () => {
+    const legacy = JSON.parse(exportProgress(createEmptyProgress(cities)))
+    delete legacy.settings.newCitiesPerSession
+
+    expect(importProgress(JSON.stringify(legacy), cities).settings.newCitiesPerSession).toBe(5)
+  })
+
   it('round-trips progress as a Base64 transfer code', () => {
     const progress = createEmptyProgress(cities, new Date('2026-01-01T00:00:00Z'))
     progress.anchors = ['são-paulo-br']

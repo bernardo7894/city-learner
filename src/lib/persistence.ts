@@ -12,6 +12,7 @@ export function createEmptyProgress(cities: City[], now = new Date()): ProgressD
     suspendedCityIds: [],
     settings: {
       sessionLength: 15,
+      newCitiesPerSession: 5,
       showMasteredLabels: true,
       showCountryNames: false,
       showCountryBoundaries: true,
@@ -33,7 +34,11 @@ export function migrateProgress(value: unknown, cities: City[]): ProgressData {
     confusions: candidate.confusions ?? [],
     anchors: candidate.anchors ?? base.anchors,
     suspendedCityIds: candidate.suspendedCityIds ?? [],
-    settings: { ...base.settings, ...(candidate.settings ?? {}) },
+    settings: {
+      ...base.settings,
+      ...(candidate.settings ?? {}),
+      newCitiesPerSession: Math.max(1, Math.min(10, Number(candidate.settings?.newCitiesPerSession) || base.settings.newCitiesPerSession)),
+    },
   }
 }
 

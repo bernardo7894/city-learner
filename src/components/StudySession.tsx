@@ -55,6 +55,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
   const [startedAt, setStartedAt] = useState(Date.now())
   const [stats, setStats] = useState<SessionStats>(emptyStats)
   const inputRef = useRef<HTMLInputElement>(null)
+  const teachButtonRef = useRef<HTMLButtonElement>(null)
   const cityById = useMemo(() => new Map(cities.map((city) => [city.id, city])), [cities])
   const item = items[index]
   const city = item ? cityById.get(item.cityId) : undefined
@@ -64,16 +65,23 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
     setAnswer('')
     setHintUsed(false)
     setFeedback(undefined)
-    requestAnimationFrame(() => inputRef.current?.focus())
+    requestAnimationFrame(() => {
+      inputRef.current?.focus()
+      teachButtonRef.current?.focus()
+    })
   }, [index])
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setPaused((value) => !value)
+      if (event.key === 'Enter' && item?.kind === 'teach' && !paused && !event.repeat) {
+        event.preventDefault()
+        teachButtonRef.current?.click()
+      }
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [])
+  }, [item?.id, paused])
 
   const appendContrastIfReady = (sourceCityId?: string, otherCityId?: string) => {
     if (!sourceCityId || !otherCityId) return
@@ -216,13 +224,15 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
   if (item.kind === 'teach') {
     const personalAnchors = progress.anchors.map((id) => cityById.get(id)).filter((value): value is City => Boolean(value))
     const nearby = nearestCities(city, [...referenceAnchors, ...personalAnchors], 3)
+    const longestNamePart = Math.max(...city.displayName.split(/[\s-]+/).map((part) => part.length))
+    const nameSizeClass = longestNamePart >= 13 ? 'name-extra-long' : longestNamePart >= 10 ? 'name-long' : longestNamePart >= 8 ? 'name-medium' : ''
     return (
       <main className="study-page">
         <StudyHeader index={index} total={items.length} mode={mode} onPause={() => setPaused(true)} />
         <div className="teach-layout">
           <section className="teach-copy">
             <p className="eyebrow">Meet a new place</p>
-            <h1>{city.displayName}</h1>
+            <h1 className={nameSizeClass}>{city.displayName}</h1>
             <p className="country-line">{city.countryName}{city.admin1 ? ` · ${city.admin1}` : ''}</p>
             <div className="coordinate-clue">{city.latitude >= 0 ? 'Northern' : 'Southern'} Hemisphere · {city.longitude >= 0 ? 'East of Greenwich' : 'West of Greenwich'}</div>
             <h3>Place it relative to</h3>
@@ -230,10 +240,13 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
               {nearby.map(({ city: anchor, distanceKm }) => <li key={anchor.id}><span>{anchor.displayName}</span><strong>{Math.round(distanceKm).toLocaleString()} km</strong></li>)}
             </ul>
             <p className="muted small">Importance tier {5 - city.importance} · GeoNames #{city.geonamesId}</p>
-            <button className="primary-button" onClick={() => {
+            <form onSubmit={(event) => {
+              event.preventDefault()
               setStats((current) => ({ ...current, introducedCityIds: [...new Set([...current.introducedCityIds, city.id])] }))
               next()
-            }}>I’ve placed it →</button>
+            }}>
+              <button ref={teachButtonRef} type="submit" className="primary-button" aria-keyshortcuts="Enter">I’ve placed it <span className="key-hint">Enter</span> →</button>
+            </form>
           </section>
           <WorldMap cities={cities} progress={progress} targetCity={city} questionDirection="location-to-name" feedback autoFocusTarget />
         </div>
@@ -293,7 +306,7 @@ function StudyHeader({ index, total, mode, onPause }: { index: number; total: nu
     <header className="study-header">
       <div><span className="logo-mark">AR</span><span>{mode[0].toUpperCase() + mode.slice(1)}</span></div>
       <div className="session-progress"><span style={{ width: `${index / total * 100}%` }} /></div>
-      <button className="icon-button" onClick={onPause} aria-label="Pause session">Ⅱ</button>
+      <button className="icon-button" onClick={onPause} aria-label="Pause session" aria-keyshortcuts="Escape">Ⅱ</button>
     </header>
   )
 }
@@ -304,7 +317,7 @@ function PauseOverlay({ onResume, onExit }: { onResume: () => void; onExit: () =
       <section className="modal-card">
         <p className="eyebrow">Session paused</p>
         <h2>Your progress is already saved.</h2>
-        <button className="primary-button" onClick={onResume}>Resume</button>
+        <button className="primary-button" onClick={onResume} autoFocus>Resume</button>
         <button className="quiet-button" onClick={onExit}>Stop session</button>
       </section>
     </div>

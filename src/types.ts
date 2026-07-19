@@ -48,6 +48,7 @@ export interface ConfusionEdge {
 
 export interface Settings {
   sessionLength: number
+  newCitiesPerSession: number
   showMasteredLabels: boolean
   showCountryNames: boolean
   showCountryBoundaries: boolean

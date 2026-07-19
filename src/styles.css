@@ -128,7 +128,11 @@ em { color: var(--gold); font-weight: 400; }
 .feedback-card { max-width: 920px; margin: 1rem auto; padding: 1rem 1.2rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; background: rgba(14,42,49,.96); border: 1px solid var(--line); border-left: 4px solid var(--mint); border-radius: 10px; }
 .feedback-card.incorrect { border-left-color: var(--coral); }.feedback-card h2 { margin-bottom: .4rem; font-size: 1.45rem; }.feedback-card p { margin-bottom: .3rem; }
 .teach-layout { min-height: calc(100vh - 110px); display: grid; grid-template-columns: 380px 1fr; gap: 2rem; align-items: center; }
-.teach-copy h1 { font-size: clamp(3rem, 6vw, 5.8rem); overflow-wrap: anywhere; }
+.teach-copy h1 { font-size: clamp(3rem, 6vw, 5.8rem); overflow-wrap: normal; word-break: normal; hyphens: none; text-wrap: balance; }
+.teach-copy h1.name-medium { font-size: clamp(2.8rem, 5vw, 4.6rem); }
+.teach-copy h1.name-long { font-size: clamp(2.6rem, 4.3vw, 4rem); }
+.teach-copy h1.name-extra-long { font-size: clamp(2.4rem, 3.8vw, 3.5rem); }
+.key-hint{display:inline-block;margin-left:.5rem;padding:.12rem .38rem;color:#4f461f;background:rgba(255,255,255,.28);border:1px solid rgba(16,33,40,.22);border-radius:4px;font-size:.65rem;line-height:1.2;text-transform:uppercase;letter-spacing:.04em}
 .country-line { color: #b7c9c5; font-size: 1.1rem; }
 .coordinate-clue { margin: 1.5rem 0; padding: .8rem 1rem; color: var(--gold); background: rgba(244,201,107,.06); border-left: 2px solid var(--gold); }
 .anchor-list { list-style: none; padding: 0; margin: 0 0 1.5rem; }
