@@ -1,4 +1,5 @@
 import { fireEvent, render } from '@testing-library/react'
+import { geoNaturalEarth1 } from 'd3-geo'
 import { describe, expect, it } from 'vitest'
 import type { City } from '../types'
 import { WorldMap } from '../components/WorldMap'
@@ -71,6 +72,23 @@ describe('WorldMap question safety and interaction', () => {
     expect(content).toHaveAttribute('transform', 'translate(0 0) scale(1)')
     fireEvent.wheel(map, { deltaY: -300, clientX: 480, clientY: 250 })
     expect(content?.getAttribute('transform')).not.toContain('scale(1)')
+  })
+
+  it('automatically centers a location-to-name question on its target', () => {
+    const progress = createEmptyProgress([chengdu])
+    const { getByRole } = render(
+      <WorldMap cities={[chengdu]} progress={progress} targetCity={chengdu} questionDirection="location-to-name" />,
+    )
+    const transform = getByRole('img').querySelector('g')?.getAttribute('transform') ?? ''
+    const match = transform.match(/translate\(([-\d.]+) ([-\d.]+)\) scale\(([-\d.]+)\)/)
+    const target = geoNaturalEarth1().fitSize([960, 500], { type: 'Sphere' })([chengdu.longitude, chengdu.latitude])
+
+    expect(match).not.toBeNull()
+    expect(target).not.toBeNull()
+    const [, x, y, scale] = match!.map(Number)
+    expect(scale).toBe(2.2)
+    expect(x + target![0] * scale).toBeCloseTo(480)
+    expect(y + target![1] * scale).toBeCloseTo(250)
   })
 
   it('keeps rendering when a captured drag leaves or is cancelled', () => {

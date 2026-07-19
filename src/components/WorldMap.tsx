@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { geoCentroid, geoNaturalEarth1, geoPath } from 'd3-geo'
 import { feature } from 'topojson-client'
 import countriesTopology from 'world-atlas/countries-110m.json'
@@ -9,6 +9,17 @@ import { referenceAnchors } from '../data/anchors'
 
 const WIDTH = 960
 const HEIGHT = 500
+const QUESTION_FOCUS_SCALE = 2.2
+
+const constrainView = (scale: number, x: number, y: number) => {
+  const xMargin = Math.min(WIDTH / 2, WIDTH * (scale - 1) / 2)
+  const yMargin = Math.min(HEIGHT / 2, HEIGHT * (scale - 1) / 2)
+  return {
+    scale,
+    x: Math.max(WIDTH * (1 - scale) - xMargin, Math.min(xMargin, x)),
+    y: Math.max(HEIGHT * (1 - scale) - yMargin, Math.min(yMargin, y)),
+  }
+}
 
 interface Point {
   latitude: number
@@ -118,11 +129,16 @@ export function WorldMap({
     return inverted ? { longitude: inverted[0], latitude: inverted[1] } : undefined
   }
 
-  const constrainView = (scale: number, x: number, y: number) => ({
-    scale,
-    x: Math.max(WIDTH * (1 - scale), Math.min(0, x)),
-    y: Math.max(HEIGHT * (1 - scale), Math.min(0, y)),
-  })
+  useEffect(() => {
+    if (!targetCity || questionDirection !== 'location-to-name' || feedback) return
+    const point = projection([targetCity.longitude, targetCity.latitude])
+    if (!point) return
+    setView(constrainView(
+      QUESTION_FOCUS_SCALE,
+      WIDTH / 2 - point[0] * QUESTION_FOCUS_SCALE,
+      HEIGHT / 2 - point[1] * QUESTION_FOCUS_SCALE,
+    ))
+  }, [feedback, projection, questionDirection, targetCity?.id, targetCity?.latitude, targetCity?.longitude])
 
   const zoomAt = (factor: number, anchorX = WIDTH / 2, anchorY = HEIGHT / 2) => setView((current) => {
     const scale = Math.max(1, Math.min(4, current.scale * factor))
