@@ -216,15 +216,26 @@ export function WorldMap({
               && !isContrast
               && (isReference || exploreLabelAllowed || progress.anchors.includes(city.id) || (status === 'mastered' && progress.settings.showMasteredLabels))
             return (
-              <g key={city.id} data-city-id={city.id} className={`city-marker ${status} ${isTarget ? 'target' : ''} ${isContrast ? 'contrast' : ''}`}>
-                {progress.settings.showWeakHeat && (status === 'failed' || status === 'learning') && <circle cx={point[0]} cy={point[1]} r="10" className="heat-ring" />}
-                {(isTarget || isContrast || status === 'recalled') && <circle cx={point[0]} cy={point[1]} r={isTarget || isContrast ? 8.5 : 6.2} className="marker-halo" vectorEffect="non-scaling-stroke" />}
-                <circle cx={point[0]} cy={point[1]} r={isTarget || isContrast ? 5.5 : 3.2} className="marker-dot" vectorEffect="non-scaling-stroke" />
-                {labelAllowed && <text x={point[0] + 6} y={point[1] - 6}>{city.displayName.replace(/, .+$/, '')}</text>}
+              <g
+                key={city.id}
+                data-city-id={city.id}
+                className={`city-marker ${status} ${isTarget ? 'target' : ''} ${isContrast ? 'contrast' : ''}`}
+                transform={`translate(${point[0]} ${point[1]})`}
+              >
+                <g className="marker-glyph" transform={`scale(${1 / view.scale})`}>
+                  {progress.settings.showWeakHeat && (status === 'failed' || status === 'learning') && <circle cx="0" cy="0" r="10" className="heat-ring" />}
+                  {(isTarget || isContrast || status === 'recalled') && <circle cx="0" cy="0" r={isTarget || isContrast ? 8.5 : 6.2} className="marker-halo" vectorEffect="non-scaling-stroke" />}
+                  <circle cx="0" cy="0" r={isTarget || isContrast ? 5.5 : 3.2} className="marker-dot" vectorEffect="non-scaling-stroke" />
+                </g>
+                {labelAllowed && <text x="6" y="-6">{city.displayName.replace(/, .+$/, '')}</text>}
               </g>
             )
           })}
-          {feedback && selectedProjected && <circle cx={selectedProjected[0]} cy={selectedProjected[1]} r="5" className="selected-point" vectorEffect="non-scaling-stroke" />}
+          {feedback && selectedProjected && (
+            <g transform={`translate(${selectedProjected[0]} ${selectedProjected[1]}) scale(${1 / view.scale})`}>
+              <circle cx="0" cy="0" r="5" className="selected-point" vectorEffect="non-scaling-stroke" />
+            </g>
+          )}
           {feedback && selectedProjected && targetPoint && <line x1={selectedProjected[0]} y1={selectedProjected[1]} x2={targetPoint[0]} y2={targetPoint[1]} className="error-line" vectorEffect="non-scaling-stroke" />}
         </g>
       </svg>

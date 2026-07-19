@@ -93,13 +93,17 @@ describe('WorldMap question safety and interaction', () => {
 
   it('automatically centers an explicitly focused teaching target', () => {
     const progress = createEmptyProgress([chengdu])
-    const { getByRole } = render(
+    const { container, getByRole } = render(
       <WorldMap cities={[chengdu]} progress={progress} targetCity={chengdu} questionDirection="location-to-name" feedback autoFocusTarget />,
     )
 
     expect(getByRole('img').querySelector('g')).toHaveAttribute(
       'transform',
       expect.stringContaining('scale(2.2)'),
+    )
+    expect(container.querySelector(`[data-city-id="${chengdu.id}"] .marker-glyph`)).toHaveAttribute(
+      'transform',
+      expect.stringContaining(`scale(${1 / 2.2})`),
     )
   })
 
