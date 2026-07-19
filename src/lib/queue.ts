@@ -45,11 +45,49 @@ function interleave(items: SessionItem[]): SessionItem[] {
   return result
 }
 
-function newCityItems(cities: City[], progress: ProgressData, limit: number): SessionItem[] {
-  const chosen = cities
+function shuffled<T>(items: T[], random: () => number): T[] {
+  const result = [...items]
+  for (let index = result.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(random() * (index + 1))
+    ;[result[index], result[swapIndex]] = [result[swapIndex], result[index]]
+  }
+  return result
+}
+
+function namePrefix(city: City): string {
+  const letters = city.displayName.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z]/g, '')
+  return (letters || city.displayName.toLowerCase()).slice(0, 2)
+}
+
+function chooseDiverseCities(cities: City[], limit: number, random: () => number): City[] {
+  const remaining = shuffled(cities, random)
+  const chosen: City[] = []
+  const usedPrefixes = new Set<string>()
+  const usedCountries = new Set<string>()
+
+  while (remaining.length && chosen.length < limit) {
+    const preferences = [
+      (city: City) => !usedPrefixes.has(namePrefix(city)) && !usedCountries.has(city.countryCode),
+      (city: City) => !usedPrefixes.has(namePrefix(city)),
+      (city: City) => !usedCountries.has(city.countryCode),
+      () => true,
+    ]
+    const preference = preferences.find((candidate) => remaining.some(candidate)) ?? preferences.at(-1)!
+    const bestImportance = Math.max(...remaining.filter(preference).map((city) => city.importance))
+    const index = remaining.findIndex((city) => preference(city) && city.importance === bestImportance)
+    const [city] = remaining.splice(index, 1)
+    chosen.push(city)
+    usedPrefixes.add(namePrefix(city))
+    usedCountries.add(city.countryCode)
+  }
+
+  return chosen
+}
+
+function newCityItems(cities: City[], progress: ProgressData, limit: number, random: () => number): SessionItem[] {
+  const eligible = cities
     .filter((city) => isCityNew(city.id, progress) && !progress.suspendedCityIds.includes(city.id) && !progress.anchors.includes(city.id))
-    .sort((a, b) => b.importance - a.importance || a.displayName.localeCompare(b.displayName))
-    .slice(0, limit)
+  const chosen = chooseDiverseCities(eligible, limit, random)
   return [
     ...chosen.map((city) => ({ id: `teach-${city.id}`, kind: 'teach' as const, cityId: city.id })),
     ...chosen.map((city) => ({ id: `locate-${city.id}`, kind: 'question' as const, cityId: city.id, direction: 'name-to-location' as const })),
@@ -62,10 +100,11 @@ export function selectSessionQueue(
   cities: City[],
   progress: ProgressData,
   now = new Date(),
+  random = Math.random,
 ): SessionItem[] {
   const limit = progress.settings.sessionLength
   const newCityLimit = Math.min(QUEUE_CONFIG.maxNewPerSession, Math.max(1, progress.settings.newCitiesPerSession))
-  if (mode === 'learn') return interleave(newCityItems(cities, progress, newCityLimit))
+  if (mode === 'learn') return interleave(newCityItems(cities, progress, newCityLimit, random))
 
   if (mode === 'confusion') {
     return progress.confusions
@@ -118,7 +157,7 @@ export function selectSessionQueue(
 
   if (mode === 'review' && due.length < QUEUE_CONFIG.backlogBeforeNewIsReduced) {
     const newLimit = due.length === 0 ? newCityLimit : 1
-    reviewItems.push(...newCityItems(cities, progress, newLimit))
+    reviewItems.push(...newCityItems(cities, progress, newLimit, random))
   }
   return interleave(reviewItems).slice(0, limit)
 }

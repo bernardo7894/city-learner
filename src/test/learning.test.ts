@@ -112,6 +112,20 @@ describe('adaptive queue and confusions', () => {
     }
   })
 
+  it('randomizes equal-priority cities and avoids repeated name prefixes when alternatives exist', () => {
+    const cities = ['chongqing', 'chattogram', 'chennai', 'delhi', 'tokyo'].map((id) => makeCity(id, 3))
+    const progress = createEmptyProgress(cities, now)
+    progress.settings.newCitiesPerSession = 3
+    const firstQueue = selectSessionQueue('learn', cities, progress, now, () => 0.999)
+    const secondQueue = selectSessionQueue('learn', cities, progress, now, () => 0)
+    const introduced = firstQueue.filter((item) => item.kind === 'teach').map((item) => item.cityId)
+    const secondIntroduced = secondQueue.filter((item) => item.kind === 'teach').map((item) => item.cityId)
+
+    expect(introduced).toHaveLength(3)
+    expect(new Set(introduced.map((id) => id.slice(0, 2))).size).toBe(3)
+    expect(secondIntroduced).not.toEqual(introduced)
+  })
+
   it('creates and gradually decays confusion edges', () => {
     const once = recordConfusion([], 'chengdu', 'chongqing', now)
     const twice = recordConfusion(once, 'chongqing', 'chengdu', now)
