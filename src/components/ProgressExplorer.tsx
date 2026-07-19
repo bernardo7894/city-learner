@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from 'react'
 import type { City, Direction, MemoryState, ProgressData } from '../types'
-import { createEmptyProgress, exportProgress, importProgress } from '../lib/persistence'
+import { createEmptyProgress, exportProgress, exportProgressCode, importProgress, importProgressCode } from '../lib/persistence'
 import { createMemory, memoryKey } from '../lib/scheduler'
 import { strongestConfusions } from '../lib/confusions'
 import { WorldMap } from './WorldMap'
@@ -32,7 +32,11 @@ export function ProgressExplorer({ cities, progress, setProgress, onExit }: Expl
   const [search, setSearch] = useState('')
   const [selectedId, setSelectedId] = useState(cities[0]?.id)
   const [notice, setNotice] = useState('')
+  const [transferOpen, setTransferOpen] = useState(false)
+  const [transferCode, setTransferCode] = useState('')
+  const [transferNotice, setTransferNotice] = useState('')
   const importRef = useRef<HTMLInputElement>(null)
+  const transferRef = useRef<HTMLTextAreaElement>(null)
   const cityById = useMemo(() => new Map(cities.map((city) => [city.id, city])), [cities])
   const filtered = useMemo(() => cities.filter((city) => {
     const matchesText = `${city.displayName} ${city.countryName} ${city.admin1 ?? ''}`.toLowerCase().includes(search.toLowerCase())
@@ -104,14 +108,46 @@ export function ProgressExplorer({ cities, progress, setProgress, onExit }: Expl
     }
   }
 
+  const openTransfer = () => {
+    setTransferCode(exportProgressCode(progress))
+    setTransferNotice('')
+    setTransferOpen(true)
+  }
+
+  const copyTransfer = async () => {
+    const code = exportProgressCode(progress)
+    setTransferCode(code)
+    try {
+      await navigator.clipboard.writeText(code)
+      setTransferNotice('Current progress copied to the clipboard.')
+    } catch {
+      transferRef.current?.focus()
+      transferRef.current?.select()
+      setTransferNotice('Clipboard access was unavailable. The code is selected so you can copy it manually.')
+    }
+  }
+
+  const restoreTransfer = () => {
+    try {
+      const restored = importProgressCode(transferCode, cities)
+      if (!window.confirm('Replace all current progress with this transfer code?')) return
+      setProgress(restored)
+      setTransferOpen(false)
+      setNotice('Progress restored successfully from a Base64 transfer code.')
+    } catch (error) {
+      setTransferNotice(error instanceof Error ? error.message : 'Could not import this transfer code.')
+    }
+  }
+
   return (
     <main className="progress-page">
       <header className="page-header">
         <button className="back-button" onClick={onExit}>← Overview</button>
         <div><p className="eyebrow">Explore progress</p><h1>Your mental atlas</h1></div>
         <div className="data-actions">
-          <button className="quiet-button" onClick={download}>Export</button>
-          <button className="quiet-button" onClick={() => importRef.current?.click()}>Import</button>
+          <button className="quiet-button" onClick={download}>Export file</button>
+          <button className="quiet-button" onClick={() => importRef.current?.click()}>Import file</button>
+          <button className="quiet-button" onClick={openTransfer}>Transfer code</button>
           <input ref={importRef} hidden type="file" accept="application/json" onChange={(event) => upload(event.target.files?.[0])} />
         </div>
       </header>
@@ -151,6 +187,33 @@ export function ProgressExplorer({ cities, progress, setProgress, onExit }: Expl
         <div><h3>Reset all local progress</h3><p className="muted">This cannot be undone unless you export first.</p></div>
         <button onClick={() => { if (window.confirm('Reset every memory, confusion, and setting?')) setProgress(createEmptyProgress(cities)) }}>Reset everything</button>
       </section>
+      {transferOpen && (
+        <div className="modal-backdrop" onMouseDown={(event) => { if (event.target === event.currentTarget) setTransferOpen(false) }}>
+          <section className="modal-card transfer-modal" role="dialog" aria-modal="true" aria-labelledby="transfer-title">
+            <div className="transfer-heading">
+              <div><p className="eyebrow">Portable backup</p><h2 id="transfer-title">Transfer progress</h2></div>
+              <button className="icon-button" aria-label="Close transfer dialog" onClick={() => setTransferOpen(false)}>×</button>
+            </div>
+            <p className="muted">Copy this Base64 code to move your progress between browsers or devices. To restore another backup, replace it with the pasted code and import.</p>
+            <textarea
+              ref={transferRef}
+              className="transfer-code"
+              aria-label="Base64 progress transfer code"
+              value={transferCode}
+              onChange={(event) => { setTransferCode(event.target.value); setTransferNotice('') }}
+              spellCheck={false}
+              autoCapitalize="none"
+              wrap="off"
+            />
+            {transferNotice && <p className="transfer-notice" aria-live="polite">{transferNotice}</p>}
+            <div className="transfer-actions">
+              <button className="primary-button" onClick={copyTransfer}>Copy current progress</button>
+              <button className="secondary-button" onClick={restoreTransfer}>Import pasted code</button>
+            </div>
+            <p className="muted small">Importing replaces every current memory, confusion pair, anchor, and setting after confirmation.</p>
+          </section>
+        </div>
+      )}
     </main>
   )
 }

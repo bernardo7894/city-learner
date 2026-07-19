@@ -54,10 +54,45 @@ export function exportProgress(progress: ProgressData): string {
   return JSON.stringify(progress, null, 2)
 }
 
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value)
+}
+
 export function importProgress(serialized: string, cities: City[]): ProgressData {
   const parsed = JSON.parse(serialized)
-  if (!parsed || typeof parsed !== 'object' || parsed.schemaVersion !== SCHEMA_VERSION || typeof parsed.memories !== 'object') {
+  if (
+    !isRecord(parsed)
+    || parsed.schemaVersion !== SCHEMA_VERSION
+    || !isRecord(parsed.memories)
+    || !Array.isArray(parsed.confusions)
+    || !Array.isArray(parsed.anchors)
+    || !Array.isArray(parsed.suspendedCityIds)
+    || !isRecord(parsed.settings)
+  ) {
     throw new Error('This is not a compatible Atlas Recall progress file.')
   }
   return migrateProgress(parsed, cities)
+}
+
+export function exportProgressCode(progress: ProgressData): string {
+  const bytes = new TextEncoder().encode(JSON.stringify(progress))
+  let binary = ''
+  const chunkSize = 0x8000
+  for (let offset = 0; offset < bytes.length; offset += chunkSize) {
+    binary += String.fromCharCode(...bytes.subarray(offset, offset + chunkSize))
+  }
+  return btoa(binary)
+}
+
+export function importProgressCode(encoded: string, cities: City[]): ProgressData {
+  try {
+    const compact = encoded.replace(/\s/g, '')
+    if (!compact) throw new Error('Empty transfer code')
+    const binary = atob(compact)
+    const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0))
+    return importProgress(new TextDecoder().decode(bytes), cities)
+  } catch (error) {
+    if (error instanceof Error && error.message === 'This is not a compatible Atlas Recall progress file.') throw error
+    throw new Error('This is not a valid Atlas Recall Base64 transfer code.')
+  }
 }

@@ -38,7 +38,7 @@ The production build is written to `dist/`. There is no backend, map tile server
 - Free-recall exam where omitted cities are classified by the player after the exam
 - Full progress explorer with source identity, aliases, directional state, response metrics, and review dates
 - Pin as anchor, suspend, mark already known, reset city, reset direction, and confirmed full reset
-- Versioned JSON export/import
+- Versioned JSON file and Base64 transfer-code export/import
 - 324 resolved curriculum entries with 324 unique IDs, including the two Hyderabads and two San Joses
 
 All core controls are live. This MVP uses a compact contrast drill (choose between two unlabeled markers) and a resumable short placement session rather than a large one-time exam.
