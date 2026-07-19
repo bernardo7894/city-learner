@@ -34,6 +34,7 @@ interface WorldMapProps {
   selectedPoint?: Point
   feedback?: boolean
   explore?: boolean
+  autoFocusTarget?: boolean
   contrastCityIds?: string[]
   recalledCityIds?: string[]
   onMapClick?: (point: Point) => void
@@ -49,6 +50,7 @@ export function WorldMap({
   selectedPoint,
   feedback = false,
   explore = false,
+  autoFocusTarget = false,
   contrastCityIds = [],
   recalledCityIds,
   onMapClick,
@@ -130,7 +132,8 @@ export function WorldMap({
   }
 
   useEffect(() => {
-    if (!targetCity || questionDirection !== 'location-to-name' || feedback) return
+    const shouldFocus = autoFocusTarget || (questionDirection === 'location-to-name' && !feedback)
+    if (!targetCity || !shouldFocus) return
     const point = projection([targetCity.longitude, targetCity.latitude])
     if (!point) return
     setView(constrainView(
@@ -138,7 +141,7 @@ export function WorldMap({
       WIDTH / 2 - point[0] * QUESTION_FOCUS_SCALE,
       HEIGHT / 2 - point[1] * QUESTION_FOCUS_SCALE,
     ))
-  }, [feedback, projection, questionDirection, targetCity?.id, targetCity?.latitude, targetCity?.longitude])
+  }, [autoFocusTarget, feedback, projection, questionDirection, targetCity?.id, targetCity?.latitude, targetCity?.longitude])
 
   const zoomAt = (factor: number, anchorX = WIDTH / 2, anchorY = HEIGHT / 2) => setView((current) => {
     const scale = Math.max(1, Math.min(4, current.scale * factor))

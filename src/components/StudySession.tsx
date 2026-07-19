@@ -235,7 +235,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
               next()
             }}>I’ve placed it →</button>
           </section>
-          <WorldMap cities={cities} progress={progress} targetCity={city} questionDirection="location-to-name" feedback />
+          <WorldMap cities={cities} progress={progress} targetCity={city} questionDirection="location-to-name" feedback autoFocusTarget />
         </div>
         {paused && <PauseOverlay onResume={() => setPaused(false)} onExit={onExit} />}
       </main>

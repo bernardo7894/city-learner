@@ -91,6 +91,18 @@ describe('WorldMap question safety and interaction', () => {
     expect(y + target![1] * scale).toBeCloseTo(250)
   })
 
+  it('automatically centers an explicitly focused teaching target', () => {
+    const progress = createEmptyProgress([chengdu])
+    const { getByRole } = render(
+      <WorldMap cities={[chengdu]} progress={progress} targetCity={chengdu} questionDirection="location-to-name" feedback autoFocusTarget />,
+    )
+
+    expect(getByRole('img').querySelector('g')).toHaveAttribute(
+      'transform',
+      expect.stringContaining('scale(2.2)'),
+    )
+  })
+
   it('keeps rendering when a captured drag leaves or is cancelled', () => {
     const progress = createEmptyProgress([chengdu])
     const { getByRole } = render(<WorldMap cities={[chengdu]} progress={progress} />)
