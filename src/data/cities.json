@@ -1,0 +1,6953 @@
+[
+  {
+    "id": "karachi-pk-1174872",
+    "seedName": "karachi",
+    "displayName": "Karachi",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Sindh",
+    "latitude": 24.8608,
+    "longitude": 67.0104,
+    "population": 11624219,
+    "geonamesId": 1174872,
+    "acceptedAnswers": [
+      "karachi",
+      "Karachi"
+    ],
+    "alternateNames": [
+      "Karachi"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "wuhan-cn-1791247",
+    "seedName": "wuhan",
+    "displayName": "Wuhan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hubei",
+    "latitude": 30.58333,
+    "longitude": 114.26667,
+    "population": 10392693,
+    "geonamesId": 1791247,
+    "acceptedAnswers": [
+      "wuhan",
+      "Wuhan"
+    ],
+    "alternateNames": [
+      "Wuhan"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "guangzhou-cn-1809858",
+    "seedName": "guangzhou",
+    "displayName": "Guangzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 23.11667,
+    "longitude": 113.25,
+    "population": 16096724,
+    "geonamesId": 1809858,
+    "acceptedAnswers": [
+      "guangzhou",
+      "Guangzhou",
+      "Canton"
+    ],
+    "alternateNames": [
+      "Guangzhou",
+      "Canton"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "chengdu-cn-1815286",
+    "seedName": "chengdu",
+    "displayName": "Chengdu",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Sichuan",
+    "latitude": 30.66667,
+    "longitude": 104.06667,
+    "population": 13568357,
+    "geonamesId": 1815286,
+    "acceptedAnswers": [
+      "chengdu",
+      "Chengdu"
+    ],
+    "alternateNames": [
+      "Chengdu"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ho-chi-minh-city-vn-1566083",
+    "seedName": "ho chi minh city",
+    "displayName": "Ho Chi Minh City",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "admin1": "Ho Chi Minh City (HCMC)",
+    "latitude": 10.82302,
+    "longitude": 106.62965,
+    "population": 14002598,
+    "geonamesId": 1566083,
+    "acceptedAnswers": [
+      "ho chi minh city",
+      "Ho Chi Minh City",
+      "Saigon",
+      "Ho Chi Minh"
+    ],
+    "alternateNames": [
+      "Ho Chi Minh City",
+      "Saigon",
+      "Ho Chi Minh"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "bengaluru-in-1277333",
+    "seedName": "bengaluru",
+    "displayName": "Bengaluru",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Karnataka",
+    "latitude": 12.97194,
+    "longitude": 77.59369,
+    "population": 8495492,
+    "geonamesId": 1277333,
+    "acceptedAnswers": [
+      "bengaluru",
+      "Bengaluru",
+      "Bangalore"
+    ],
+    "alternateNames": [
+      "Bengaluru",
+      "Bangalore"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "tianjin-cn-1792947",
+    "seedName": "tianjin",
+    "displayName": "Tianjin",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Tianjin",
+    "latitude": 39.14222,
+    "longitude": 117.17667,
+    "population": 11090314,
+    "geonamesId": 1792947,
+    "acceptedAnswers": [
+      "tianjin",
+      "Tianjin"
+    ],
+    "alternateNames": [
+      "Tianjin"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hanoi-vn-1581130",
+    "seedName": "hanoi",
+    "displayName": "Hanoi",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "admin1": "Hanoi",
+    "latitude": 21.0245,
+    "longitude": 105.84117,
+    "population": 8053663,
+    "geonamesId": 1581130,
+    "acceptedAnswers": [
+      "hanoi",
+      "Hanoi"
+    ],
+    "alternateNames": [
+      "Hanoi"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "xian-cn-1790630",
+    "seedName": "xi'an",
+    "displayName": "Xi’an",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shaanxi",
+    "latitude": 34.25833,
+    "longitude": 108.92861,
+    "population": 9600000,
+    "geonamesId": 1790630,
+    "acceptedAnswers": [
+      "xi'an",
+      "Xi’an",
+      "Xi'an",
+      "Xian"
+    ],
+    "alternateNames": [
+      "Xi’an",
+      "Xi'an",
+      "Xian"
+    ],
+    "importance": 4,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "bogota-co-3688689",
+    "seedName": "bogota",
+    "displayName": "Bogotá",
+    "countryCode": "CO",
+    "countryName": "Colombia",
+    "admin1": "Bogota D.C.",
+    "latitude": 4.60971,
+    "longitude": -74.08175,
+    "population": 7674366,
+    "geonamesId": 3688689,
+    "acceptedAnswers": [
+      "bogota",
+      "Bogotá",
+      "Bogota"
+    ],
+    "alternateNames": [
+      "Bogotá",
+      "Bogota"
+    ],
+    "importance": 3,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "nanjing-cn-1799962",
+    "seedName": "nanjing",
+    "displayName": "Nanjing",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 32.06167,
+    "longitude": 118.77778,
+    "population": 9314685,
+    "geonamesId": 1799962,
+    "acceptedAnswers": [
+      "nanjing",
+      "Nanjing"
+    ],
+    "alternateNames": [
+      "Nanjing"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "chongqing-cn-1814906",
+    "seedName": "chongqing",
+    "displayName": "Chongqing",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Chongqing",
+    "latitude": 29.56026,
+    "longitude": 106.55771,
+    "population": 7457599,
+    "geonamesId": 1814906,
+    "acceptedAnswers": [
+      "chongqing",
+      "Chongqing"
+    ],
+    "alternateNames": [
+      "Chongqing"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jinan-cn-1805753",
+    "seedName": "jinan",
+    "displayName": "Jinan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 36.66833,
+    "longitude": 116.99722,
+    "population": 4335989,
+    "geonamesId": 1805753,
+    "acceptedAnswers": [
+      "jinan",
+      "Jinan"
+    ],
+    "alternateNames": [
+      "Jinan"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hong-kong-hk-1819729",
+    "seedName": "hong kong",
+    "displayName": "Hong Kong",
+    "countryCode": "HK",
+    "countryName": "Hong Kong",
+    "latitude": 22.27832,
+    "longitude": 114.17469,
+    "population": 7396076,
+    "geonamesId": 1819729,
+    "acceptedAnswers": [
+      "hong kong",
+      "Hong Kong"
+    ],
+    "alternateNames": [
+      "Hong Kong"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hyderabad-in-1269843",
+    "seedName": "hyderabad",
+    "displayName": "Hyderabad, India",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Telangana",
+    "latitude": 17.38405,
+    "longitude": 78.45636,
+    "population": 6993262,
+    "geonamesId": 1269843,
+    "acceptedAnswers": [
+      "hyderabad",
+      "Hyderabad, India",
+      "Hyderabad"
+    ],
+    "alternateNames": [
+      "Hyderabad"
+    ],
+    "importance": 3,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "lahore-pk-1172451",
+    "seedName": "lahore",
+    "displayName": "Lahore",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Punjab",
+    "latitude": 31.558,
+    "longitude": 74.35071,
+    "population": 13004135,
+    "geonamesId": 1172451,
+    "acceptedAnswers": [
+      "lahore",
+      "Lahore"
+    ],
+    "alternateNames": [
+      "Lahore"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hangzhou-cn-1808926",
+    "seedName": "hangzhou",
+    "displayName": "Hangzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Zhejiang",
+    "latitude": 30.29365,
+    "longitude": 120.16142,
+    "population": 9236032,
+    "geonamesId": 1808926,
+    "acceptedAnswers": [
+      "hangzhou",
+      "Hangzhou"
+    ],
+    "alternateNames": [
+      "Hangzhou"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ahmedabad-in-1279233",
+    "seedName": "ahmedabad",
+    "displayName": "Ahmedabad",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Gujarat",
+    "latitude": 23.02579,
+    "longitude": 72.58727,
+    "population": 6357693,
+    "geonamesId": 1279233,
+    "acceptedAnswers": [
+      "ahmedabad",
+      "Ahmedabad"
+    ],
+    "alternateNames": [
+      "Ahmedabad"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "shenyang-cn-2034937",
+    "seedName": "shenyang",
+    "displayName": "Shenyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Liaoning",
+    "latitude": 41.79222,
+    "longitude": 123.43278,
+    "population": 7050000,
+    "geonamesId": 2034937,
+    "acceptedAnswers": [
+      "shenyang",
+      "Shenyang"
+    ],
+    "alternateNames": [
+      "Shenyang"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "harbin-cn-2037013",
+    "seedName": "harbin",
+    "displayName": "Harbin",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Heilongjiang",
+    "latitude": 45.75,
+    "longitude": 126.65,
+    "population": 5242897,
+    "geonamesId": 2037013,
+    "acceptedAnswers": [
+      "harbin",
+      "Harbin",
+      "Haerbin"
+    ],
+    "alternateNames": [
+      "Harbin",
+      "Haerbin"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "alexandria-eg-361058",
+    "seedName": "alexandria",
+    "displayName": "Alexandria",
+    "countryCode": "EG",
+    "countryName": "Egypt",
+    "admin1": "Alexandria",
+    "latitude": 31.20176,
+    "longitude": 29.91582,
+    "population": 5263542,
+    "geonamesId": 361058,
+    "acceptedAnswers": [
+      "alexandria",
+      "Alexandria"
+    ],
+    "alternateNames": [
+      "Alexandria"
+    ],
+    "importance": 3,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "qingdao-cn-1797929",
+    "seedName": "qingdao",
+    "displayName": "Qingdao",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 36.06488,
+    "longitude": 120.38042,
+    "population": 7172451,
+    "geonamesId": 1797929,
+    "acceptedAnswers": [
+      "qingdao",
+      "Qingdao"
+    ],
+    "alternateNames": [
+      "Qingdao"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "dalian-cn-1814087",
+    "seedName": "dalian",
+    "displayName": "Dalian",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Liaoning",
+    "latitude": 38.91222,
+    "longitude": 121.60222,
+    "population": 4913879,
+    "geonamesId": 1814087,
+    "acceptedAnswers": [
+      "dalian",
+      "Dalian"
+    ],
+    "alternateNames": [
+      "Dalian"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "chennai-in-1264527",
+    "seedName": "chennai",
+    "displayName": "Chennai",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Tamil Nadu",
+    "latitude": 13.08784,
+    "longitude": 80.27847,
+    "population": 4681087,
+    "geonamesId": 1264527,
+    "acceptedAnswers": [
+      "chennai",
+      "Chennai",
+      "Madras"
+    ],
+    "alternateNames": [
+      "Chennai",
+      "Madras"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kunming-cn-1804651",
+    "seedName": "kunming",
+    "displayName": "Kunming",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Yunnan",
+    "latitude": 25.03889,
+    "longitude": 102.71833,
+    "population": 3855346,
+    "geonamesId": 1804651,
+    "acceptedAnswers": [
+      "kunming",
+      "Kunming"
+    ],
+    "alternateNames": [
+      "Kunming"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "melbourne-au-2158177",
+    "seedName": "melbourne",
+    "displayName": "Melbourne",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "admin1": "Victoria",
+    "latitude": -37.814,
+    "longitude": 144.96332,
+    "population": 5435590,
+    "geonamesId": 2158177,
+    "acceptedAnswers": [
+      "melbourne",
+      "Melbourne"
+    ],
+    "alternateNames": [
+      "Melbourne"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "surat-in-1255364",
+    "seedName": "surat",
+    "displayName": "Surat",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Gujarat",
+    "latitude": 21.19594,
+    "longitude": 72.83023,
+    "population": 4591246,
+    "geonamesId": 1255364,
+    "acceptedAnswers": [
+      "surat",
+      "Surat"
+    ],
+    "alternateNames": [
+      "Surat"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kolkata-in-1275004",
+    "seedName": "kolkata",
+    "displayName": "Kolkata",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "West Bengal",
+    "latitude": 22.56263,
+    "longitude": 88.36304,
+    "population": 4631392,
+    "geonamesId": 1275004,
+    "acceptedAnswers": [
+      "kolkata",
+      "Kolkata",
+      "Calcutta"
+    ],
+    "alternateNames": [
+      "Kolkata",
+      "Calcutta"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "yangon-mm-1298824",
+    "seedName": "yangon",
+    "displayName": "Yangon",
+    "countryCode": "MM",
+    "countryName": "Myanmar",
+    "admin1": "Yangon",
+    "latitude": 16.80528,
+    "longitude": 96.15611,
+    "population": 4477638,
+    "geonamesId": 1298824,
+    "acceptedAnswers": [
+      "yangon",
+      "Yangon",
+      "Rangoon"
+    ],
+    "alternateNames": [
+      "Yangon",
+      "Rangoon"
+    ],
+    "importance": 3,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "abidjan-ci-2293538",
+    "seedName": "abidjan",
+    "displayName": "Abidjan",
+    "countryCode": "CI",
+    "countryName": "Ivory Coast",
+    "admin1": "Abidjan Autonomous District",
+    "latitude": 5.35444,
+    "longitude": -4.00167,
+    "population": 6321017,
+    "geonamesId": 2293538,
+    "acceptedAnswers": [
+      "abidjan",
+      "Abidjan"
+    ],
+    "alternateNames": [
+      "Abidjan"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "dar-es-salaam-tz-160263",
+    "seedName": "dar es salaam",
+    "displayName": "Dar es Salaam",
+    "countryCode": "TZ",
+    "countryName": "Tanzania",
+    "admin1": "Dar es Salaam Region",
+    "latitude": -6.82349,
+    "longitude": 39.26951,
+    "population": 5383728,
+    "geonamesId": 160263,
+    "acceptedAnswers": [
+      "dar es salaam",
+      "Dar es Salaam"
+    ],
+    "alternateNames": [
+      "Dar es Salaam"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "giza-eg-360995",
+    "seedName": "giza",
+    "displayName": "Giza",
+    "countryCode": "EG",
+    "countryName": "Egypt",
+    "admin1": "Giza",
+    "latitude": 30.00944,
+    "longitude": 31.20861,
+    "population": 4367343,
+    "geonamesId": 360995,
+    "acceptedAnswers": [
+      "giza",
+      "Giza"
+    ],
+    "alternateNames": [
+      "Giza"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "new-taipei-tw-12908892",
+    "seedName": "new taipei",
+    "displayName": "New Taipei City",
+    "countryCode": "TW",
+    "countryName": "Taiwan",
+    "admin1": "Taipei",
+    "latitude": 25.06199,
+    "longitude": 121.45703,
+    "population": 4004367,
+    "geonamesId": 12908892,
+    "acceptedAnswers": [
+      "new taipei",
+      "New Taipei City"
+    ],
+    "alternateNames": [
+      "New Taipei City"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kano-ng-2335204",
+    "seedName": "kano",
+    "displayName": "Kano",
+    "countryCode": "NG",
+    "countryName": "Nigeria",
+    "admin1": "Kano State",
+    "latitude": 12.00012,
+    "longitude": 8.51672,
+    "population": 4910000,
+    "geonamesId": 2335204,
+    "acceptedAnswers": [
+      "kano",
+      "Kano"
+    ],
+    "alternateNames": [
+      "Kano"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "chittagong-bd-1205733",
+    "seedName": "chittagong",
+    "displayName": "Chattogram",
+    "countryCode": "BD",
+    "countryName": "Bangladesh",
+    "admin1": "Chittagong",
+    "latitude": 22.3384,
+    "longitude": 91.83168,
+    "population": 3920222,
+    "geonamesId": 1205733,
+    "acceptedAnswers": [
+      "chittagong",
+      "Chattogram",
+      "Chittagong"
+    ],
+    "alternateNames": [
+      "Chattogram",
+      "Chittagong"
+    ],
+    "importance": 3,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "zhengzhou-cn-1784658",
+    "seedName": "zhengzhou",
+    "displayName": "Zhengzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 34.75778,
+    "longitude": 113.64861,
+    "population": 4253913,
+    "geonamesId": 1784658,
+    "acceptedAnswers": [
+      "zhengzhou",
+      "Zhengzhou"
+    ],
+    "alternateNames": [
+      "Zhengzhou"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "changchun-cn-2038180",
+    "seedName": "changchun",
+    "displayName": "Changchun",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jilin",
+    "latitude": 43.88,
+    "longitude": 125.32278,
+    "population": 4714996,
+    "geonamesId": 2038180,
+    "acceptedAnswers": [
+      "changchun",
+      "Changchun"
+    ],
+    "alternateNames": [
+      "Changchun"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "yokohama-jp-1848354",
+    "seedName": "yokohama",
+    "displayName": "Yokohama",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Kanagawa",
+    "latitude": 35.43333,
+    "longitude": 139.65,
+    "population": 3777491,
+    "geonamesId": 1848354,
+    "acceptedAnswers": [
+      "yokohama",
+      "Yokohama"
+    ],
+    "alternateNames": [
+      "Yokohama"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "linyi-cn-1803318",
+    "seedName": "linyi",
+    "displayName": "Linyi",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 35.06306,
+    "longitude": 118.34278,
+    "population": 2743843,
+    "geonamesId": 1803318,
+    "acceptedAnswers": [
+      "linyi",
+      "Linyi"
+    ],
+    "alternateNames": [
+      "Linyi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "changsha-cn-1815577",
+    "seedName": "changsha",
+    "displayName": "Changsha",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hunan",
+    "latitude": 28.19874,
+    "longitude": 112.97087,
+    "population": 3093980,
+    "geonamesId": 1815577,
+    "acceptedAnswers": [
+      "changsha",
+      "Changsha"
+    ],
+    "alternateNames": [
+      "Changsha"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ankara-tr-323786",
+    "seedName": "ankara",
+    "displayName": "Ankara",
+    "countryCode": "TR",
+    "countryName": "Turkey",
+    "admin1": "Ankara",
+    "latitude": 39.91987,
+    "longitude": 32.85427,
+    "population": 3517182,
+    "geonamesId": 323786,
+    "acceptedAnswers": [
+      "ankara",
+      "Ankara"
+    ],
+    "alternateNames": [
+      "Ankara"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "wenzhou-cn-1791388",
+    "seedName": "wenzhou",
+    "displayName": "Wenzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Zhejiang",
+    "latitude": 27.99942,
+    "longitude": 120.66682,
+    "population": 2650000,
+    "geonamesId": 1791388,
+    "acceptedAnswers": [
+      "wenzhou",
+      "Wenzhou"
+    ],
+    "alternateNames": [
+      "Wenzhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ningbo-cn-1799397",
+    "seedName": "ningbo",
+    "displayName": "Ningbo",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Zhejiang",
+    "latitude": 29.87819,
+    "longitude": 121.54945,
+    "population": 3731203,
+    "geonamesId": 1799397,
+    "acceptedAnswers": [
+      "ningbo",
+      "Ningbo"
+    ],
+    "alternateNames": [
+      "Ningbo"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "busan-kr-1838524",
+    "seedName": "busan",
+    "displayName": "Busan",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Busan",
+    "latitude": 35.10168,
+    "longitude": 129.03004,
+    "population": 3285147,
+    "geonamesId": 1838524,
+    "acceptedAnswers": [
+      "busan",
+      "Busan"
+    ],
+    "alternateNames": [
+      "Busan"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "foshan-cn-1811103",
+    "seedName": "foshan",
+    "displayName": "Foshan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 23.02677,
+    "longitude": 113.13148,
+    "population": 9042509,
+    "geonamesId": 1811103,
+    "acceptedAnswers": [
+      "foshan",
+      "Foshan"
+    ],
+    "alternateNames": [
+      "Foshan"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "casablanca-ma-2553604",
+    "seedName": "casablanca",
+    "displayName": "Casablanca",
+    "countryCode": "MA",
+    "countryName": "Morocco",
+    "admin1": "Casablanca-Settat",
+    "latitude": 33.58831,
+    "longitude": -7.61138,
+    "population": 3665954,
+    "geonamesId": 2553604,
+    "acceptedAnswers": [
+      "casablanca",
+      "Casablanca"
+    ],
+    "alternateNames": [
+      "Casablanca"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "suzhou-cn-1886760",
+    "seedName": "suzhou",
+    "displayName": "Suzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 31.30408,
+    "longitude": 120.59538,
+    "population": 6715559,
+    "geonamesId": 1886760,
+    "acceptedAnswers": [
+      "suzhou",
+      "Suzhou"
+    ],
+    "alternateNames": [
+      "Suzhou"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "addis-ababa-et-344979",
+    "seedName": "addis ababa",
+    "displayName": "Addis Ababa",
+    "countryCode": "ET",
+    "countryName": "Ethiopia",
+    "admin1": "Addis Ababa",
+    "latitude": 9.02497,
+    "longitude": 38.74689,
+    "population": 3860000,
+    "geonamesId": 344979,
+    "acceptedAnswers": [
+      "addis ababa",
+      "Addis Ababa"
+    ],
+    "alternateNames": [
+      "Addis Ababa"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hefei-cn-1808722",
+    "seedName": "hefei",
+    "displayName": "Hefei",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Anhui",
+    "latitude": 31.86389,
+    "longitude": 117.28083,
+    "population": 5050000,
+    "geonamesId": 1808722,
+    "acceptedAnswers": [
+      "hefei",
+      "Hefei"
+    ],
+    "alternateNames": [
+      "Hefei"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "pune-in-1259229",
+    "seedName": "pune",
+    "displayName": "Pune",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 18.51957,
+    "longitude": 73.85535,
+    "population": 3124458,
+    "geonamesId": 1259229,
+    "acceptedAnswers": [
+      "pune",
+      "Pune"
+    ],
+    "alternateNames": [
+      "Pune"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "taiyuan-cn-1793511",
+    "seedName": "taiyuan",
+    "displayName": "Taiyuan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shanxi",
+    "latitude": 37.86944,
+    "longitude": 112.56028,
+    "population": 4303673,
+    "geonamesId": 1793511,
+    "acceptedAnswers": [
+      "taiyuan",
+      "Taiyuan"
+    ],
+    "alternateNames": [
+      "Taiyuan"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jaipur-in-1269515",
+    "seedName": "jaipur",
+    "displayName": "Jaipur",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Rajasthan",
+    "latitude": 26.91962,
+    "longitude": 75.78781,
+    "population": 3046163,
+    "geonamesId": 1269515,
+    "acceptedAnswers": [
+      "jaipur",
+      "Jaipur"
+    ],
+    "alternateNames": [
+      "Jaipur"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ibadan-ng-2339354",
+    "seedName": "ibadan",
+    "displayName": "Ibadan",
+    "countryCode": "NG",
+    "countryName": "Nigeria",
+    "admin1": "Oyo State",
+    "latitude": 7.37756,
+    "longitude": 3.90591,
+    "population": 3649000,
+    "geonamesId": 2339354,
+    "acceptedAnswers": [
+      "ibadan",
+      "Ibadan"
+    ],
+    "alternateNames": [
+      "Ibadan"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "wuxi-cn-1790923",
+    "seedName": "wuxi",
+    "displayName": "Wuxi",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 31.56887,
+    "longitude": 120.28857,
+    "population": 4396835,
+    "geonamesId": 1790923,
+    "acceptedAnswers": [
+      "wuxi",
+      "Wuxi"
+    ],
+    "alternateNames": [
+      "Wuxi"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "dubai-ae-292223",
+    "seedName": "dubai",
+    "displayName": "Dubai",
+    "countryCode": "AE",
+    "countryName": "United Arab Emirates",
+    "admin1": "Dubai",
+    "latitude": 25.07725,
+    "longitude": 55.30927,
+    "population": 3790000,
+    "geonamesId": 292223,
+    "acceptedAnswers": [
+      "dubai",
+      "Dubai"
+    ],
+    "alternateNames": [
+      "Dubai"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kyiv-ua-703448",
+    "seedName": "kyiv",
+    "displayName": "Kyiv",
+    "countryCode": "UA",
+    "countryName": "Ukraine",
+    "admin1": "Kyiv City",
+    "latitude": 50.45466,
+    "longitude": 30.5238,
+    "population": 2952301,
+    "geonamesId": 703448,
+    "acceptedAnswers": [
+      "kyiv",
+      "Kyiv",
+      "Kiev"
+    ],
+    "alternateNames": [
+      "Kyiv",
+      "Kiev"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "incheon-kr-1843564",
+    "seedName": "incheon",
+    "displayName": "Incheon",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Incheon",
+    "latitude": 37.45646,
+    "longitude": 126.70515,
+    "population": 3015482,
+    "geonamesId": 1843564,
+    "acceptedAnswers": [
+      "incheon",
+      "Incheon"
+    ],
+    "alternateNames": [
+      "Incheon"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "salvador-br-3450554",
+    "seedName": "salvador",
+    "displayName": "Salvador",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Bahia",
+    "latitude": -12.97563,
+    "longitude": -38.49096,
+    "population": 2711840,
+    "geonamesId": 3450554,
+    "acceptedAnswers": [
+      "salvador",
+      "Salvador"
+    ],
+    "alternateNames": [
+      "Salvador"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jeddah-sa-105343",
+    "seedName": "jeddah",
+    "displayName": "Jeddah",
+    "countryCode": "SA",
+    "countryName": "Saudi Arabia",
+    "admin1": "Mecca Region",
+    "latitude": 21.49012,
+    "longitude": 39.18624,
+    "population": 4697000,
+    "geonamesId": 105343,
+    "acceptedAnswers": [
+      "jeddah",
+      "Jeddah"
+    ],
+    "alternateNames": [
+      "Jeddah"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "urumqi-cn-1529102",
+    "seedName": "urumqi",
+    "displayName": "Ürümqi",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Xinjiang",
+    "latitude": 43.80096,
+    "longitude": 87.60046,
+    "population": 3029372,
+    "geonamesId": 1529102,
+    "acceptedAnswers": [
+      "urumqi",
+      "Ürümqi",
+      "UEruemqi"
+    ],
+    "alternateNames": [
+      "Ürümqi",
+      "UEruemqi"
+    ],
+    "importance": 3,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "lucknow-in-1264733",
+    "seedName": "lucknow",
+    "displayName": "Lucknow",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Uttar Pradesh",
+    "latitude": 26.83928,
+    "longitude": 80.92313,
+    "population": 2472011,
+    "geonamesId": 1264733,
+    "acceptedAnswers": [
+      "lucknow",
+      "Lucknow"
+    ],
+    "alternateNames": [
+      "Lucknow"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "weifang-cn-1791681",
+    "seedName": "weifang",
+    "displayName": "Weifang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 36.71,
+    "longitude": 119.10194,
+    "population": 2044028,
+    "geonamesId": 1791681,
+    "acceptedAnswers": [
+      "weifang",
+      "Weifang"
+    ],
+    "alternateNames": [
+      "Weifang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "durban-za-1007311",
+    "seedName": "durban",
+    "displayName": "Durban",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "admin1": "KwaZulu-Natal",
+    "latitude": -29.8579,
+    "longitude": 31.0292,
+    "population": 3338026,
+    "geonamesId": 1007311,
+    "acceptedAnswers": [
+      "durban",
+      "Durban"
+    ],
+    "alternateNames": [
+      "Durban"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "xiamen-cn-1790645",
+    "seedName": "xiamen",
+    "displayName": "Xiamen",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Fujian",
+    "latitude": 24.47979,
+    "longitude": 118.08187,
+    "population": 4617251,
+    "geonamesId": 1790645,
+    "acceptedAnswers": [
+      "xiamen",
+      "Xiamen"
+    ],
+    "alternateNames": [
+      "Xiamen"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kanpur-in-1267995",
+    "seedName": "kanpur",
+    "displayName": "Kanpur",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Uttar Pradesh",
+    "latitude": 26.46523,
+    "longitude": 80.34975,
+    "population": 2823249,
+    "geonamesId": 1267995,
+    "acceptedAnswers": [
+      "kanpur",
+      "Kanpur"
+    ],
+    "alternateNames": [
+      "Kanpur"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "xuzhou-cn-10630003",
+    "seedName": "xuzhou",
+    "displayName": "Xuzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 34.20442,
+    "longitude": 117.28386,
+    "population": 1253991,
+    "geonamesId": 10630003,
+    "acceptedAnswers": [
+      "xuzhou",
+      "Xuzhou"
+    ],
+    "alternateNames": [
+      "Xuzhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "quezon-city-ph-1692192",
+    "seedName": "quezon city",
+    "displayName": "Quezon City",
+    "countryCode": "PH",
+    "countryName": "Philippines",
+    "admin1": "National Capital Region",
+    "latitude": 14.6488,
+    "longitude": 121.0509,
+    "population": 3084270,
+    "geonamesId": 1692192,
+    "acceptedAnswers": [
+      "quezon city",
+      "Quezon City",
+      "Quezon"
+    ],
+    "alternateNames": [
+      "Quezon City",
+      "Quezon"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "osaka-jp-1853909",
+    "seedName": "osaka",
+    "displayName": "Osaka",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Osaka",
+    "latitude": 34.69379,
+    "longitude": 135.50107,
+    "population": 2753862,
+    "geonamesId": 1853909,
+    "acceptedAnswers": [
+      "osaka",
+      "Osaka"
+    ],
+    "alternateNames": [
+      "Osaka"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "fortaleza-br-3399415",
+    "seedName": "fortaleza",
+    "displayName": "Fortaleza",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Ceará",
+    "latitude": -3.71722,
+    "longitude": -38.54306,
+    "population": 2400000,
+    "geonamesId": 3399415,
+    "acceptedAnswers": [
+      "fortaleza",
+      "Fortaleza"
+    ],
+    "alternateNames": [
+      "Fortaleza"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "shijiazhuang-cn-1795270",
+    "seedName": "shijiazhuang",
+    "displayName": "Shijiazhuang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hebei",
+    "latitude": 38.04139,
+    "longitude": 114.47861,
+    "population": 3938513,
+    "geonamesId": 1795270,
+    "acceptedAnswers": [
+      "shijiazhuang",
+      "Shijiazhuang"
+    ],
+    "alternateNames": [
+      "Shijiazhuang"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "basrah-iq-99532",
+    "seedName": "basrah",
+    "displayName": "Basrah",
+    "countryCode": "IQ",
+    "countryName": "Iraq",
+    "admin1": "Basra",
+    "latitude": 30.50852,
+    "longitude": 47.7804,
+    "population": 1326564,
+    "geonamesId": 99532,
+    "acceptedAnswers": [
+      "basrah",
+      "Basrah"
+    ],
+    "alternateNames": [
+      "Basrah"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "santo-domingo-do-3492908",
+    "seedName": "santo domingo",
+    "displayName": "Santo Domingo",
+    "countryCode": "DO",
+    "countryName": "Dominican Republic",
+    "admin1": "Nacional",
+    "latitude": 18.47186,
+    "longitude": -69.89232,
+    "population": 2201941,
+    "geonamesId": 3492908,
+    "acceptedAnswers": [
+      "santo domingo",
+      "Santo Domingo"
+    ],
+    "alternateNames": [
+      "Santo Domingo"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nanning-cn-1799869",
+    "seedName": "nanning",
+    "displayName": "Nanning",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangxi",
+    "latitude": 22.81667,
+    "longitude": 108.31667,
+    "population": 3839800,
+    "geonamesId": 1799869,
+    "acceptedAnswers": [
+      "nanning",
+      "Nanning"
+    ],
+    "alternateNames": [
+      "Nanning"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "anshan-cn-2038632",
+    "seedName": "anshan",
+    "displayName": "Anshan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Liaoning",
+    "latitude": 41.12361,
+    "longitude": 122.99,
+    "population": 1450000,
+    "geonamesId": 2038632,
+    "acceptedAnswers": [
+      "anshan",
+      "Anshan"
+    ],
+    "alternateNames": [
+      "Anshan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "huizhou-cn-1806776",
+    "seedName": "huizhou",
+    "displayName": "Huizhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 23.11147,
+    "longitude": 114.41523,
+    "population": 2900113,
+    "geonamesId": 1806776,
+    "acceptedAnswers": [
+      "huizhou",
+      "Huizhou"
+    ],
+    "alternateNames": [
+      "Huizhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "shantou-cn-1795940",
+    "seedName": "shantou",
+    "displayName": "Shantou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 23.35489,
+    "longitude": 116.67876,
+    "population": 3838900,
+    "geonamesId": 1795940,
+    "acceptedAnswers": [
+      "shantou",
+      "Shantou"
+    ],
+    "alternateNames": [
+      "Shantou"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jining-cn-1805518",
+    "seedName": "jining",
+    "displayName": "Jining",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 35.405,
+    "longitude": 116.58139,
+    "population": 1241012,
+    "geonamesId": 1805518,
+    "acceptedAnswers": [
+      "jining",
+      "Jining"
+    ],
+    "alternateNames": [
+      "Jining"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "medellin-co-3674962",
+    "seedName": "medellin",
+    "displayName": "Medellín",
+    "countryCode": "CO",
+    "countryName": "Colombia",
+    "admin1": "Antioquia",
+    "latitude": 6.245,
+    "longitude": -75.57151,
+    "population": 1999979,
+    "geonamesId": 3674962,
+    "acceptedAnswers": [
+      "medellin",
+      "Medellín",
+      "Medellin"
+    ],
+    "alternateNames": [
+      "Medellín",
+      "Medellin"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "shaoxing-cn-1795855",
+    "seedName": "shaoxing",
+    "displayName": "Shaoxing",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Zhejiang",
+    "latitude": 30.00237,
+    "longitude": 120.57864,
+    "population": 2300000,
+    "geonamesId": 1795855,
+    "acceptedAnswers": [
+      "shaoxing",
+      "Shaoxing"
+    ],
+    "alternateNames": [
+      "Shaoxing"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "belo-horizonte-br-3470127",
+    "seedName": "belo horizonte",
+    "displayName": "Belo Horizonte",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Minas Gerais",
+    "latitude": -19.92083,
+    "longitude": -43.93778,
+    "population": 2721564,
+    "geonamesId": 3470127,
+    "acceptedAnswers": [
+      "belo horizonte",
+      "Belo Horizonte"
+    ],
+    "alternateNames": [
+      "Belo Horizonte"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "faisalabad-pk-1179400",
+    "seedName": "faisalabad",
+    "displayName": "Faisalabad",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Punjab",
+    "latitude": 31.41554,
+    "longitude": 73.08969,
+    "population": 3800193,
+    "geonamesId": 1179400,
+    "acceptedAnswers": [
+      "faisalabad",
+      "Faisalabad"
+    ],
+    "alternateNames": [
+      "Faisalabad"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "izmir-tr-311046",
+    "seedName": "izmir",
+    "displayName": "İzmir",
+    "countryCode": "TR",
+    "countryName": "Turkey",
+    "admin1": "İzmir Province",
+    "latitude": 38.41273,
+    "longitude": 27.13838,
+    "population": 2938292,
+    "geonamesId": 311046,
+    "acceptedAnswers": [
+      "izmir",
+      "İzmir",
+      "Izmir"
+    ],
+    "alternateNames": [
+      "İzmir",
+      "Izmir"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "huaian-cn-1797873",
+    "seedName": "huai'an",
+    "displayName": "Huai’an",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 33.58861,
+    "longitude": 119.01917,
+    "population": 2494013,
+    "geonamesId": 1797873,
+    "acceptedAnswers": [
+      "huai'an",
+      "Huai’an",
+      "Huai'an",
+      "Huaian"
+    ],
+    "alternateNames": [
+      "Huai'an",
+      "Huaian"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "daegu-kr-1835329",
+    "seedName": "daegu",
+    "displayName": "Daegu",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Daegu",
+    "latitude": 35.87028,
+    "longitude": 128.59111,
+    "population": 2365523,
+    "geonamesId": 1835329,
+    "acceptedAnswers": [
+      "daegu",
+      "Daegu"
+    ],
+    "alternateNames": [
+      "Daegu"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nagpur-in-1262180",
+    "seedName": "nagpur",
+    "displayName": "Nagpur",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 21.14631,
+    "longitude": 79.08491,
+    "population": 2405665,
+    "geonamesId": 1262180,
+    "acceptedAnswers": [
+      "nagpur",
+      "Nagpur"
+    ],
+    "alternateNames": [
+      "Nagpur"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "surabaya-id-1625822",
+    "seedName": "surabaya",
+    "displayName": "Surabaya",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "East Java",
+    "latitude": -7.24917,
+    "longitude": 112.75083,
+    "population": 3018022,
+    "geonamesId": 1625822,
+    "acceptedAnswers": [
+      "surabaya",
+      "Surabaya"
+    ],
+    "alternateNames": [
+      "Surabaya"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "lanzhou-cn-1804430",
+    "seedName": "lanzhou",
+    "displayName": "Lanzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Gansu",
+    "latitude": 36.05701,
+    "longitude": 103.83987,
+    "population": 3000000,
+    "geonamesId": 1804430,
+    "acceptedAnswers": [
+      "lanzhou",
+      "Lanzhou"
+    ],
+    "alternateNames": [
+      "Lanzhou"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nagoya-jp-1856057",
+    "seedName": "nagoya",
+    "displayName": "Nagoya",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Aichi",
+    "latitude": 35.18147,
+    "longitude": 136.90641,
+    "population": 2332176,
+    "geonamesId": 1856057,
+    "acceptedAnswers": [
+      "nagoya",
+      "Nagoya"
+    ],
+    "alternateNames": [
+      "Nagoya"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "roma-it-3169070",
+    "seedName": "roma",
+    "displayName": "Roma",
+    "countryCode": "IT",
+    "countryName": "Italy",
+    "admin1": "Lazio",
+    "latitude": 41.89193,
+    "longitude": 12.51133,
+    "population": 2318895,
+    "geonamesId": 3169070,
+    "acceptedAnswers": [
+      "roma",
+      "Roma",
+      "Rome"
+    ],
+    "alternateNames": [
+      "Rome"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "mashhad-ir-124665",
+    "seedName": "mashhad",
+    "displayName": "Mashhad",
+    "countryCode": "IR",
+    "countryName": "Iran",
+    "admin1": "Razavi Khorasan",
+    "latitude": 36.29807,
+    "longitude": 59.60567,
+    "population": 2307177,
+    "geonamesId": 124665,
+    "acceptedAnswers": [
+      "mashhad",
+      "Mashhad"
+    ],
+    "alternateNames": [
+      "Mashhad"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "brisbane-au-2174003",
+    "seedName": "brisbane",
+    "displayName": "Brisbane",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "admin1": "Queensland",
+    "latitude": -27.46794,
+    "longitude": 153.02809,
+    "population": 2780063,
+    "geonamesId": 2174003,
+    "acceptedAnswers": [
+      "brisbane",
+      "Brisbane"
+    ],
+    "alternateNames": [
+      "Brisbane"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "guayaquil-ec-3657509",
+    "seedName": "guayaquil",
+    "displayName": "Guayaquil",
+    "countryCode": "EC",
+    "countryName": "Ecuador",
+    "admin1": "Guayas",
+    "latitude": -2.19616,
+    "longitude": -79.88621,
+    "population": 2723665,
+    "geonamesId": 3657509,
+    "acceptedAnswers": [
+      "guayaquil",
+      "Guayaquil"
+    ],
+    "alternateNames": [
+      "Guayaquil"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "maracaibo-ve-3633009",
+    "seedName": "maracaibo",
+    "displayName": "Maracaibo",
+    "countryCode": "VE",
+    "countryName": "Venezuela",
+    "admin1": "Zulia",
+    "latitude": 10.64232,
+    "longitude": -71.61089,
+    "population": 1752602,
+    "geonamesId": 3633009,
+    "acceptedAnswers": [
+      "maracaibo",
+      "Maracaibo"
+    ],
+    "alternateNames": [
+      "Maracaibo"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "guiyang-cn-1809461",
+    "seedName": "guiyang",
+    "displayName": "Guiyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guizhou",
+    "latitude": 26.58333,
+    "longitude": 106.71667,
+    "population": 3037159,
+    "geonamesId": 1809461,
+    "acceptedAnswers": [
+      "guiyang",
+      "Guiyang"
+    ],
+    "alternateNames": [
+      "Guiyang"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "cali-co-3687925",
+    "seedName": "cali",
+    "displayName": "Cali",
+    "countryCode": "CO",
+    "countryName": "Colombia",
+    "admin1": "Valle del Cauca Department",
+    "latitude": 3.43054,
+    "longitude": -76.5199,
+    "population": 2392877,
+    "geonamesId": 3687925,
+    "acceptedAnswers": [
+      "cali",
+      "Cali"
+    ],
+    "alternateNames": [
+      "Cali"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "manaus-br-3663517",
+    "seedName": "manaus",
+    "displayName": "Manaus",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Amazonas",
+    "latitude": -3.10194,
+    "longitude": -60.025,
+    "population": 2219580,
+    "geonamesId": 3663517,
+    "acceptedAnswers": [
+      "manaus",
+      "Manaus"
+    ],
+    "alternateNames": [
+      "Manaus"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "lome-tg-2365267",
+    "seedName": "lome",
+    "displayName": "Lomé",
+    "countryCode": "TG",
+    "countryName": "Togo",
+    "admin1": "Maritime",
+    "latitude": 6.12874,
+    "longitude": 1.22154,
+    "population": 2188376,
+    "geonamesId": 2365267,
+    "acceptedAnswers": [
+      "lome",
+      "Lomé",
+      "Lome"
+    ],
+    "alternateNames": [
+      "Lomé",
+      "Lome"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "yantai-cn-1787093",
+    "seedName": "yantai",
+    "displayName": "Yantai",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 37.47649,
+    "longitude": 121.44081,
+    "population": 2227733,
+    "geonamesId": 1787093,
+    "acceptedAnswers": [
+      "yantai",
+      "Yantai"
+    ],
+    "alternateNames": [
+      "Yantai"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "yancheng-cn-1787746",
+    "seedName": "yancheng",
+    "displayName": "Yancheng",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 33.3575,
+    "longitude": 120.1573,
+    "population": 1615717,
+    "geonamesId": 1787746,
+    "acceptedAnswers": [
+      "yancheng",
+      "Yancheng"
+    ],
+    "alternateNames": [
+      "Yancheng"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "heze-cn-1808198",
+    "seedName": "heze",
+    "displayName": "Heze",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 35.23929,
+    "longitude": 115.47358,
+    "population": 1346717,
+    "geonamesId": 1808198,
+    "acceptedAnswers": [
+      "heze",
+      "Heze"
+    ],
+    "alternateNames": [
+      "Heze"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "caracas-ve-3646738",
+    "seedName": "caracas",
+    "displayName": "Caracas",
+    "countryCode": "VE",
+    "countryName": "Venezuela",
+    "admin1": "Distrito Federal",
+    "latitude": 10.48801,
+    "longitude": -66.87919,
+    "population": 3000000,
+    "geonamesId": 3646738,
+    "acceptedAnswers": [
+      "caracas",
+      "Caracas"
+    ],
+    "alternateNames": [
+      "Caracas"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "accra-gh-2306104",
+    "seedName": "accra",
+    "displayName": "Accra",
+    "countryCode": "GH",
+    "countryName": "Ghana",
+    "admin1": "Greater Accra",
+    "latitude": 5.55602,
+    "longitude": -0.1969,
+    "population": 1963264,
+    "geonamesId": 2306104,
+    "acceptedAnswers": [
+      "accra",
+      "Accra"
+    ],
+    "alternateNames": [
+      "Accra"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "perth-au-2063523",
+    "seedName": "perth",
+    "displayName": "Perth",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "admin1": "Western Australia",
+    "latitude": -31.95224,
+    "longitude": 115.8614,
+    "population": 2384371,
+    "geonamesId": 2063523,
+    "acceptedAnswers": [
+      "perth",
+      "Perth"
+    ],
+    "alternateNames": [
+      "Perth"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kumasi-gh-2298890",
+    "seedName": "kumasi",
+    "displayName": "Kumasi",
+    "countryCode": "GH",
+    "countryName": "Ghana",
+    "admin1": "Ashanti",
+    "latitude": 6.68848,
+    "longitude": -1.62443,
+    "population": 2544530,
+    "geonamesId": 2298890,
+    "acceptedAnswers": [
+      "kumasi",
+      "Kumasi"
+    ],
+    "alternateNames": [
+      "Kumasi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "haiphong-vn-1581298",
+    "seedName": "haiphong",
+    "displayName": "Haiphong",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "admin1": "Hai Phong",
+    "latitude": 20.86481,
+    "longitude": 106.68345,
+    "population": 2625200,
+    "geonamesId": 1581298,
+    "acceptedAnswers": [
+      "haiphong",
+      "Haiphong"
+    ],
+    "alternateNames": [
+      "Haiphong"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zibo-cn-1785286",
+    "seedName": "zibo",
+    "displayName": "Zibo",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 36.79056,
+    "longitude": 118.06333,
+    "population": 3129228,
+    "geonamesId": 1785286,
+    "acceptedAnswers": [
+      "zibo",
+      "Zibo"
+    ],
+    "alternateNames": [
+      "Zibo"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "almaty-kz-1526384",
+    "seedName": "almaty",
+    "displayName": "Almaty",
+    "countryCode": "KZ",
+    "countryName": "Kazakhstan",
+    "admin1": "Almaty",
+    "latitude": 43.25249,
+    "longitude": 76.9115,
+    "population": 1977011,
+    "geonamesId": 1526384,
+    "acceptedAnswers": [
+      "almaty",
+      "Almaty"
+    ],
+    "alternateNames": [
+      "Almaty"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "indore-in-1269743",
+    "seedName": "indore",
+    "displayName": "Indore",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Madhya Pradesh",
+    "latitude": 22.71792,
+    "longitude": 75.8333,
+    "population": 1994397,
+    "geonamesId": 1269743,
+    "acceptedAnswers": [
+      "indore",
+      "Indore"
+    ],
+    "alternateNames": [
+      "Indore"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "sapporo-jp-2128295",
+    "seedName": "sapporo",
+    "displayName": "Sapporo",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Hokkaido",
+    "latitude": 43.06667,
+    "longitude": 141.35,
+    "population": 1973832,
+    "geonamesId": 2128295,
+    "acceptedAnswers": [
+      "sapporo",
+      "Sapporo"
+    ],
+    "alternateNames": [
+      "Sapporo"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "curitiba-br-3464975",
+    "seedName": "curitiba",
+    "displayName": "Curitiba",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Paraná",
+    "latitude": -25.42778,
+    "longitude": -49.27306,
+    "population": 1948626,
+    "geonamesId": 3464975,
+    "acceptedAnswers": [
+      "curitiba",
+      "Curitiba"
+    ],
+    "alternateNames": [
+      "Curitiba"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zhumadian-cn-1783873",
+    "seedName": "zhumadian",
+    "displayName": "Zhumadian",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 32.98385,
+    "longitude": 114.02586,
+    "population": 721670,
+    "geonamesId": 1783873,
+    "acceptedAnswers": [
+      "zhumadian",
+      "Zhumadian"
+    ],
+    "alternateNames": [
+      "Zhumadian"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "beirut-lb-276781",
+    "seedName": "beirut",
+    "displayName": "Beirut",
+    "countryCode": "LB",
+    "countryName": "Lebanon",
+    "admin1": "Beirut",
+    "latitude": 33.89332,
+    "longitude": 35.50157,
+    "population": 1916100,
+    "geonamesId": 276781,
+    "acceptedAnswers": [
+      "beirut",
+      "Beirut"
+    ],
+    "alternateNames": [
+      "Beirut"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nantong-cn-1799722",
+    "seedName": "nantong",
+    "displayName": "Nantong",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 32.03028,
+    "longitude": 120.87472,
+    "population": 2273326,
+    "geonamesId": 1799722,
+    "acceptedAnswers": [
+      "nantong",
+      "Nantong"
+    ],
+    "alternateNames": [
+      "Nantong"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "douala-cm-2232593",
+    "seedName": "douala",
+    "displayName": "Douala",
+    "countryCode": "CM",
+    "countryName": "Cameroon",
+    "admin1": "Littoral",
+    "latitude": 4.04827,
+    "longitude": 9.70428,
+    "population": 1338082,
+    "geonamesId": 2232593,
+    "acceptedAnswers": [
+      "douala",
+      "Douala"
+    ],
+    "alternateNames": [
+      "Douala"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "taizhou-cn-1793505",
+    "seedName": "taizhou",
+    "displayName": "Taizhou, Jiangsu",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 32.49069,
+    "longitude": 119.90812,
+    "population": 1607108,
+    "geonamesId": 1793505,
+    "acceptedAnswers": [
+      "taizhou",
+      "Taizhou, Jiangsu",
+      "Taizhou"
+    ],
+    "alternateNames": [
+      "Taizhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "omdurman-sd-365137",
+    "seedName": "omdurman",
+    "displayName": "Omdurman",
+    "countryCode": "SD",
+    "countryName": "Sudan",
+    "admin1": "Khartoum",
+    "latitude": 15.64453,
+    "longitude": 32.47773,
+    "population": 1849659,
+    "geonamesId": 365137,
+    "acceptedAnswers": [
+      "omdurman",
+      "Omdurman"
+    ],
+    "alternateNames": [
+      "Omdurman"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "thane-in-1254661",
+    "seedName": "thane",
+    "displayName": "Thāne",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 19.19704,
+    "longitude": 72.96355,
+    "population": 1841488,
+    "geonamesId": 1254661,
+    "acceptedAnswers": [
+      "thane",
+      "Thāne",
+      "Thane"
+    ],
+    "alternateNames": [
+      "Thāne",
+      "Thane"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nanchang-cn-1800163",
+    "seedName": "nanchang",
+    "displayName": "Nanchang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangxi",
+    "latitude": 28.68396,
+    "longitude": 115.85306,
+    "population": 2357839,
+    "geonamesId": 1800163,
+    "acceptedAnswers": [
+      "nanchang",
+      "Nanchang"
+    ],
+    "alternateNames": [
+      "Nanchang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "fuzhou-cn-1810821",
+    "seedName": "fuzhou",
+    "displayName": "Fuzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Fujian",
+    "latitude": 26.06139,
+    "longitude": 119.30611,
+    "population": 3740000,
+    "geonamesId": 1810821,
+    "acceptedAnswers": [
+      "fuzhou",
+      "Fuzhou",
+      "Foochow"
+    ],
+    "alternateNames": [
+      "Fuzhou",
+      "Foochow"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "changzhou-cn-1815456",
+    "seedName": "changzhou",
+    "displayName": "Changzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 31.77359,
+    "longitude": 119.95401,
+    "population": 3290918,
+    "geonamesId": 1815456,
+    "acceptedAnswers": [
+      "changzhou",
+      "Changzhou"
+    ],
+    "alternateNames": [
+      "Changzhou"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "luoyang-cn-1801792",
+    "seedName": "luoyang",
+    "displayName": "Luoyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 34.67345,
+    "longitude": 112.43684,
+    "population": 1390581,
+    "geonamesId": 1801792,
+    "acceptedAnswers": [
+      "luoyang",
+      "Luoyang"
+    ],
+    "alternateNames": [
+      "Luoyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "amman-jo-250441",
+    "seedName": "amman",
+    "displayName": "Amman",
+    "countryCode": "JO",
+    "countryName": "Jordan",
+    "admin1": "Amman",
+    "latitude": 31.95522,
+    "longitude": 35.94503,
+    "population": 1275857,
+    "geonamesId": 250441,
+    "acceptedAnswers": [
+      "amman",
+      "Amman"
+    ],
+    "alternateNames": [
+      "Amman"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "bhopal-in-1275841",
+    "seedName": "bhopal",
+    "displayName": "Bhopal",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Madhya Pradesh",
+    "latitude": 23.25469,
+    "longitude": 77.40289,
+    "population": 1798218,
+    "geonamesId": 1275841,
+    "acceptedAnswers": [
+      "bhopal",
+      "Bhopal"
+    ],
+    "alternateNames": [
+      "Bhopal"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "vadodara-in-1253573",
+    "seedName": "vadodara",
+    "displayName": "Vadodara",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Gujarat",
+    "latitude": 22.29941,
+    "longitude": 73.20812,
+    "population": 1822221,
+    "geonamesId": 1253573,
+    "acceptedAnswers": [
+      "vadodara",
+      "Vadodara"
+    ],
+    "alternateNames": [
+      "Vadodara"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "medan-id-1214520",
+    "seedName": "medan",
+    "displayName": "Medan",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "North Sumatra",
+    "latitude": 3.58333,
+    "longitude": 98.66667,
+    "population": 2486283,
+    "geonamesId": 1214520,
+    "acceptedAnswers": [
+      "medan",
+      "Medan"
+    ],
+    "alternateNames": [
+      "Medan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "rawalpindi-pk-1166993",
+    "seedName": "rawalpindi",
+    "displayName": "Rawalpindi",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Punjab",
+    "latitude": 33.59733,
+    "longitude": 73.0479,
+    "population": 3357612,
+    "geonamesId": 1166993,
+    "acceptedAnswers": [
+      "rawalpindi",
+      "Rawalpindi"
+    ],
+    "alternateNames": [
+      "Rawalpindi"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "mosul-iq-99072",
+    "seedName": "mosul",
+    "displayName": "Mosul",
+    "countryCode": "IQ",
+    "countryName": "Iraq",
+    "admin1": "Nineveh",
+    "latitude": 36.335,
+    "longitude": 43.11889,
+    "population": 1683000,
+    "geonamesId": 99072,
+    "acceptedAnswers": [
+      "mosul",
+      "Mosul"
+    ],
+    "alternateNames": [
+      "Mosul"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "tangshan-cn-1793346",
+    "seedName": "tangshan",
+    "displayName": "Tangshan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hebei",
+    "latitude": 39.64381,
+    "longitude": 118.18319,
+    "population": 3372102,
+    "geonamesId": 1793346,
+    "acceptedAnswers": [
+      "tangshan",
+      "Tangshan"
+    ],
+    "alternateNames": [
+      "Tangshan"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "visakhapatnam-in-1253102",
+    "seedName": "visakhapatnam",
+    "displayName": "Visakhapatnam",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Andhra Pradesh",
+    "latitude": 17.68009,
+    "longitude": 83.20161,
+    "population": 1063178,
+    "geonamesId": 1253102,
+    "acceptedAnswers": [
+      "visakhapatnam",
+      "Visakhapatnam",
+      "Vizag"
+    ],
+    "alternateNames": [
+      "Visakhapatnam",
+      "Vizag"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "pimpri-chinchwad-in-7626690",
+    "seedName": "pimpri-chinchwad",
+    "displayName": "Pimpri-Chinchwad",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 18.61867,
+    "longitude": 73.80375,
+    "population": 1727692,
+    "geonamesId": 7626690,
+    "acceptedAnswers": [
+      "pimpri-chinchwad",
+      "Pimpri-Chinchwad"
+    ],
+    "alternateNames": [
+      "Pimpri-Chinchwad"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "santa-cruz-de-la-sierra-bo-3904906",
+    "seedName": "santa cruz de la sierra",
+    "displayName": "Santa Cruz de la Sierra",
+    "countryCode": "BO",
+    "countryName": "Bolivia",
+    "admin1": "Santa Cruz Department",
+    "latitude": -17.78629,
+    "longitude": -63.18117,
+    "population": 1831434,
+    "geonamesId": 3904906,
+    "acceptedAnswers": [
+      "santa cruz de la sierra",
+      "Santa Cruz de la Sierra"
+    ],
+    "alternateNames": [
+      "Santa Cruz de la Sierra"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hohhot-cn-2036892",
+    "seedName": "hohhot",
+    "displayName": "Hohhot",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Inner Mongolia",
+    "latitude": 40.81056,
+    "longitude": 111.65222,
+    "population": 2350000,
+    "geonamesId": 2036892,
+    "acceptedAnswers": [
+      "hohhot",
+      "Hohhot",
+      "Huhehaote"
+    ],
+    "alternateNames": [
+      "Hohhot",
+      "Huhehaote"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "montreal-ca-6077243",
+    "seedName": "montreal",
+    "displayName": "Montréal",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "admin1": "Quebec",
+    "latitude": 45.50884,
+    "longitude": -73.58781,
+    "population": 1762949,
+    "geonamesId": 6077243,
+    "acceptedAnswers": [
+      "montreal",
+      "Montréal",
+      "Montreal"
+    ],
+    "alternateNames": [
+      "Montréal",
+      "Montreal"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "warszawa-pl-756135",
+    "seedName": "warszawa",
+    "displayName": "Warszawa",
+    "countryCode": "PL",
+    "countryName": "Poland",
+    "admin1": "Mazovia",
+    "latitude": 52.22977,
+    "longitude": 21.01178,
+    "population": 1702139,
+    "geonamesId": 756135,
+    "acceptedAnswers": [
+      "warszawa",
+      "Warszawa",
+      "Warsaw"
+    ],
+    "alternateNames": [
+      "Warsaw"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "bandung-id-1650357",
+    "seedName": "bandung",
+    "displayName": "Bandung",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "West Java",
+    "latitude": -6.92222,
+    "longitude": 107.60694,
+    "population": 2528163,
+    "geonamesId": 1650357,
+    "acceptedAnswers": [
+      "bandung",
+      "Bandung"
+    ],
+    "alternateNames": [
+      "Bandung"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "patna-in-1260086",
+    "seedName": "patna",
+    "displayName": "Patna",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Bihar",
+    "latitude": 25.59408,
+    "longitude": 85.13563,
+    "population": 1684297,
+    "geonamesId": 1260086,
+    "acceptedAnswers": [
+      "patna",
+      "Patna"
+    ],
+    "alternateNames": [
+      "Patna"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "conakry-gn-2422465",
+    "seedName": "conakry",
+    "displayName": "Conakry",
+    "countryCode": "GN",
+    "countryName": "Guinea",
+    "admin1": "Conakry",
+    "latitude": 9.53795,
+    "longitude": -13.67729,
+    "population": 1928389,
+    "geonamesId": 2422465,
+    "acceptedAnswers": [
+      "conakry",
+      "Conakry"
+    ],
+    "alternateNames": [
+      "Conakry"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "liaocheng-cn-1803834",
+    "seedName": "liaocheng",
+    "displayName": "Liaocheng",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 36.45064,
+    "longitude": 116.00247,
+    "population": 1229768,
+    "geonamesId": 1803834,
+    "acceptedAnswers": [
+      "liaocheng",
+      "Liaocheng"
+    ],
+    "alternateNames": [
+      "Liaocheng"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ecatepec-de-morelos-mx-3529612",
+    "seedName": "ecatepec de morelos",
+    "displayName": "Ecatepec de Morelos",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "México",
+    "latitude": 19.60492,
+    "longitude": -99.06064,
+    "population": 1645352,
+    "geonamesId": 3529612,
+    "acceptedAnswers": [
+      "ecatepec de morelos",
+      "Ecatepec de Morelos"
+    ],
+    "alternateNames": [
+      "Ecatepec de Morelos"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "recife-br-3390760",
+    "seedName": "recife",
+    "displayName": "Recife",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Pernambuco",
+    "latitude": -8.05389,
+    "longitude": -34.88111,
+    "population": 1653461,
+    "geonamesId": 3390760,
+    "acceptedAnswers": [
+      "recife",
+      "Recife"
+    ],
+    "alternateNames": [
+      "Recife"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ghaziabad-in-1271308",
+    "seedName": "ghaziabad",
+    "displayName": "Ghāziābād",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Uttar Pradesh",
+    "latitude": 28.66535,
+    "longitude": 77.43915,
+    "population": 1199191,
+    "geonamesId": 1271308,
+    "acceptedAnswers": [
+      "ghaziabad",
+      "Ghāziābād",
+      "Ghaziabad"
+    ],
+    "alternateNames": [
+      "Ghāziābād",
+      "Ghaziabad"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ludhiana-in-1264728",
+    "seedName": "ludhiana",
+    "displayName": "Ludhiana",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Punjab",
+    "latitude": 30.91204,
+    "longitude": 75.85379,
+    "population": 1618879,
+    "geonamesId": 1264728,
+    "acceptedAnswers": [
+      "ludhiana",
+      "Ludhiana"
+    ],
+    "alternateNames": [
+      "Ludhiana"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "fukuoka-jp-1863967",
+    "seedName": "fukuoka",
+    "displayName": "Fukuoka",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Fukuoka",
+    "latitude": 33.6,
+    "longitude": 130.41667,
+    "population": 1612392,
+    "geonamesId": 1863967,
+    "acceptedAnswers": [
+      "fukuoka",
+      "Fukuoka"
+    ],
+    "alternateNames": [
+      "Fukuoka"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nanyang-cn-1799629",
+    "seedName": "nanyang",
+    "displayName": "Nanyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 33.00524,
+    "longitude": 112.54659,
+    "population": 1811812,
+    "geonamesId": 1799629,
+    "acceptedAnswers": [
+      "nanyang",
+      "Nanyang"
+    ],
+    "alternateNames": [
+      "Nanyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "phoenix-us-5308655",
+    "seedName": "phoenix",
+    "displayName": "Phoenix",
+    "countryCode": "US",
+    "countryName": "United States",
+    "admin1": "Arizona",
+    "latitude": 33.44838,
+    "longitude": -112.07404,
+    "population": 1650070,
+    "geonamesId": 5308655,
+    "acceptedAnswers": [
+      "phoenix",
+      "Phoenix"
+    ],
+    "alternateNames": [
+      "Phoenix"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "quito-ec-3652462",
+    "seedName": "quito",
+    "displayName": "Quito",
+    "countryCode": "EC",
+    "countryName": "Ecuador",
+    "admin1": "Pichincha",
+    "latitude": -0.22985,
+    "longitude": -78.52495,
+    "population": 2781641,
+    "geonamesId": 3652462,
+    "acceptedAnswers": [
+      "quito",
+      "Quito"
+    ],
+    "alternateNames": [
+      "Quito"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "philadelphia-us-4560349",
+    "seedName": "philadelphia",
+    "displayName": "Philadelphia",
+    "countryCode": "US",
+    "countryName": "United States",
+    "admin1": "Pennsylvania",
+    "latitude": 39.95238,
+    "longitude": -75.16362,
+    "population": 1573916,
+    "geonamesId": 4560349,
+    "acceptedAnswers": [
+      "philadelphia",
+      "Philadelphia"
+    ],
+    "alternateNames": [
+      "Philadelphia"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "agra-in-1279259",
+    "seedName": "agra",
+    "displayName": "Agra",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Uttar Pradesh",
+    "latitude": 27.18333,
+    "longitude": 78.01667,
+    "population": 1430055,
+    "geonamesId": 1279259,
+    "acceptedAnswers": [
+      "agra",
+      "Agra"
+    ],
+    "alternateNames": [
+      "Agra"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "valencia-ve-3625549",
+    "seedName": "valencia",
+    "displayName": "Valencia, Venezuela",
+    "countryCode": "VE",
+    "countryName": "Venezuela",
+    "admin1": "Carabobo",
+    "latitude": 10.16153,
+    "longitude": -68.00044,
+    "population": 1619470,
+    "geonamesId": 3625549,
+    "acceptedAnswers": [
+      "valencia",
+      "Valencia, Venezuela",
+      "Valencia"
+    ],
+    "alternateNames": [
+      "Valencia"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "baotou-cn-2038432",
+    "seedName": "baotou",
+    "displayName": "Baotou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Inner Mongolia",
+    "latitude": 40.6516,
+    "longitude": 109.84389,
+    "population": 2150000,
+    "geonamesId": 2038432,
+    "acceptedAnswers": [
+      "baotou",
+      "Baotou"
+    ],
+    "alternateNames": [
+      "Baotou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "dezhou-cn-1812955",
+    "seedName": "dezhou",
+    "displayName": "Dezhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 37.44661,
+    "longitude": 116.36706,
+    "population": 679535,
+    "geonamesId": 1812955,
+    "acceptedAnswers": [
+      "dezhou",
+      "Dezhou"
+    ],
+    "alternateNames": [
+      "Dezhou"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "isfahan-ir-418863",
+    "seedName": "isfahan",
+    "displayName": "Isfahan",
+    "countryCode": "IR",
+    "countryName": "Iran",
+    "admin1": "Isfahan",
+    "latitude": 32.65246,
+    "longitude": 51.67462,
+    "population": 1547164,
+    "geonamesId": 418863,
+    "acceptedAnswers": [
+      "isfahan",
+      "Isfahan"
+    ],
+    "alternateNames": [
+      "Isfahan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kawasaki-jp-1859642",
+    "seedName": "kawasaki",
+    "displayName": "Kawasaki",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Kanagawa",
+    "latitude": 35.52056,
+    "longitude": 139.71722,
+    "population": 1538262,
+    "geonamesId": 1859642,
+    "acceptedAnswers": [
+      "kawasaki",
+      "Kawasaki"
+    ],
+    "alternateNames": [
+      "Kawasaki"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "goiania-br-3462377",
+    "seedName": "goiania",
+    "displayName": "Goiânia",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Goiás",
+    "latitude": -16.67861,
+    "longitude": -49.25389,
+    "population": 1536097,
+    "geonamesId": 3462377,
+    "acceptedAnswers": [
+      "goiania",
+      "Goiânia",
+      "Goiania"
+    ],
+    "alternateNames": [
+      "Goiânia",
+      "Goiania"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "nanchong-cn-1800146",
+    "seedName": "nanchong",
+    "displayName": "Nanchong",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Sichuan",
+    "latitude": 30.79508,
+    "longitude": 106.08473,
+    "population": 1858875,
+    "geonamesId": 1800146,
+    "acceptedAnswers": [
+      "nanchong",
+      "Nanchong"
+    ],
+    "alternateNames": [
+      "Nanchong"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kobe-jp-1859171",
+    "seedName": "kobe",
+    "displayName": "Kobe",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Hyōgo",
+    "latitude": 34.6913,
+    "longitude": 135.183,
+    "population": 1525152,
+    "geonamesId": 1859171,
+    "acceptedAnswers": [
+      "kobe",
+      "Kobe"
+    ],
+    "alternateNames": [
+      "Kobe"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "bekasi-id-1649378",
+    "seedName": "bekasi",
+    "displayName": "Bekasi",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "West Java",
+    "latitude": -6.2349,
+    "longitude": 106.9896,
+    "population": 2648272,
+    "geonamesId": 1649378,
+    "acceptedAnswers": [
+      "bekasi",
+      "Bekasi"
+    ],
+    "alternateNames": [
+      "Bekasi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kaohsiung-tw-1673820",
+    "seedName": "kaohsiung",
+    "displayName": "Kaohsiung",
+    "countryCode": "TW",
+    "countryName": "Taiwan",
+    "admin1": "Takao",
+    "latitude": 22.61626,
+    "longitude": 120.31333,
+    "population": 2737660,
+    "geonamesId": 1673820,
+    "acceptedAnswers": [
+      "kaohsiung",
+      "Kaohsiung"
+    ],
+    "alternateNames": [
+      "Kaohsiung"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "xinyang-cn-1788534",
+    "seedName": "xinyang",
+    "displayName": "Xinyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 32.12278,
+    "longitude": 114.06556,
+    "population": 1230042,
+    "geonamesId": 1788534,
+    "acceptedAnswers": [
+      "xinyang",
+      "Xinyang"
+    ],
+    "alternateNames": [
+      "Xinyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "caloocan-city-ph-1720151",
+    "seedName": "caloocan city",
+    "displayName": "Caloocan",
+    "countryCode": "PH",
+    "countryName": "Philippines",
+    "admin1": "National Capital Region",
+    "latitude": 14.64953,
+    "longitude": 120.96788,
+    "population": 1712945,
+    "geonamesId": 1720151,
+    "acceptedAnswers": [
+      "caloocan city",
+      "Caloocan"
+    ],
+    "alternateNames": [
+      "Caloocan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "belem-br-3405870",
+    "seedName": "belem",
+    "displayName": "Belém",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Pará",
+    "latitude": -1.45583,
+    "longitude": -48.50444,
+    "population": 1499641,
+    "geonamesId": 3405870,
+    "acceptedAnswers": [
+      "belem",
+      "Belém",
+      "Belem"
+    ],
+    "alternateNames": [
+      "Belém",
+      "Belem"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "guadalajara-mx-4005539",
+    "seedName": "guadalajara",
+    "displayName": "Guadalajara",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "Jalisco",
+    "latitude": 20.67738,
+    "longitude": -103.34749,
+    "population": 1385629,
+    "geonamesId": 4005539,
+    "acceptedAnswers": [
+      "guadalajara",
+      "Guadalajara"
+    ],
+    "alternateNames": [
+      "Guadalajara"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "porto-alegre-br-3452925",
+    "seedName": "porto alegre",
+    "displayName": "Porto Alegre",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Rio Grande do Sul",
+    "latitude": -30.03283,
+    "longitude": -51.23019,
+    "population": 1488252,
+    "geonamesId": 3452925,
+    "acceptedAnswers": [
+      "porto alegre",
+      "Porto Alegre"
+    ],
+    "alternateNames": [
+      "Porto Alegre"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nashik-in-1261731",
+    "seedName": "nashik",
+    "displayName": "Nashik",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 19.99727,
+    "longitude": 73.79096,
+    "population": 1486053,
+    "geonamesId": 1261731,
+    "acceptedAnswers": [
+      "nashik",
+      "Nashik"
+    ],
+    "alternateNames": [
+      "Nashik"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "harare-zw-890299",
+    "seedName": "harare",
+    "displayName": "Harare",
+    "countryCode": "ZW",
+    "countryName": "Zimbabwe",
+    "admin1": "Harare",
+    "latitude": -17.82772,
+    "longitude": 31.05337,
+    "population": 1542813,
+    "geonamesId": 890299,
+    "acceptedAnswers": [
+      "harare",
+      "Harare"
+    ],
+    "alternateNames": [
+      "Harare"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ouagadougou-bf-2357048",
+    "seedName": "ouagadougou",
+    "displayName": "Ouagadougou",
+    "countryCode": "BF",
+    "countryName": "Burkina Faso",
+    "admin1": "Centre",
+    "latitude": 12.36566,
+    "longitude": -1.53388,
+    "population": 2415266,
+    "geonamesId": 2357048,
+    "acceptedAnswers": [
+      "ouagadougou",
+      "Ouagadougou"
+    ],
+    "alternateNames": [
+      "Ouagadougou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "novosibirsk-ru-1496747",
+    "seedName": "novosibirsk",
+    "displayName": "Novosibirsk",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Novosibirsk Oblast",
+    "latitude": 55.02259,
+    "longitude": 82.93175,
+    "population": 1612833,
+    "geonamesId": 1496747,
+    "acceptedAnswers": [
+      "novosibirsk",
+      "Novosibirsk"
+    ],
+    "alternateNames": [
+      "Novosibirsk"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "munich-de-2867714",
+    "seedName": "munich",
+    "displayName": "München",
+    "countryCode": "DE",
+    "countryName": "Germany",
+    "admin1": "Bavaria",
+    "latitude": 48.13743,
+    "longitude": 11.57549,
+    "population": 1505005,
+    "geonamesId": 2867714,
+    "acceptedAnswers": [
+      "munich",
+      "München",
+      "Munich"
+    ],
+    "alternateNames": [
+      "Munich"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "auckland-nz-2193733",
+    "seedName": "auckland",
+    "displayName": "Auckland",
+    "countryCode": "NZ",
+    "countryName": "New Zealand",
+    "admin1": "Auckland",
+    "latitude": -36.84853,
+    "longitude": 174.76349,
+    "population": 1547200,
+    "geonamesId": 2193733,
+    "acceptedAnswers": [
+      "auckland",
+      "Auckland"
+    ],
+    "alternateNames": [
+      "Auckland"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "daejeon-kr-1835235",
+    "seedName": "daejeon",
+    "displayName": "Daejeon",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Daejeon",
+    "latitude": 36.34913,
+    "longitude": 127.38493,
+    "population": 1441203,
+    "geonamesId": 1835235,
+    "acceptedAnswers": [
+      "daejeon",
+      "Daejeon"
+    ],
+    "alternateNames": [
+      "Daejeon"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kyoto-jp-1857910",
+    "seedName": "kyoto",
+    "displayName": "Kyoto",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Kyoto",
+    "latitude": 35.02107,
+    "longitude": 135.75385,
+    "population": 1463723,
+    "geonamesId": 1857910,
+    "acceptedAnswers": [
+      "kyoto",
+      "Kyoto"
+    ],
+    "alternateNames": [
+      "Kyoto"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jilin-cn-2036502",
+    "seedName": "jilin",
+    "displayName": "Jilin",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jilin",
+    "latitude": 43.84652,
+    "longitude": 126.5608,
+    "population": 1895865,
+    "geonamesId": 2036502,
+    "acceptedAnswers": [
+      "jilin",
+      "Jilin"
+    ],
+    "alternateNames": [
+      "Jilin"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kuala-lumpur-my-1735161",
+    "seedName": "kuala lumpur",
+    "displayName": "Kuala Lumpur",
+    "countryCode": "MY",
+    "countryName": "Malaysia",
+    "admin1": "Kuala Lumpur",
+    "latitude": 3.1412,
+    "longitude": 101.68653,
+    "population": 1453975,
+    "geonamesId": 1735161,
+    "acceptedAnswers": [
+      "kuala lumpur",
+      "Kuala Lumpur",
+      "KL"
+    ],
+    "alternateNames": [
+      "Kuala Lumpur",
+      "KL"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "san-jose-us-5392171",
+    "seedName": "san jose",
+    "displayName": "San Jose, California",
+    "countryCode": "US",
+    "countryName": "United States",
+    "admin1": "California",
+    "latitude": 37.33939,
+    "longitude": -121.89496,
+    "population": 997368,
+    "geonamesId": 5392171,
+    "acceptedAnswers": [
+      "san jose",
+      "San Jose, California",
+      "San Jose"
+    ],
+    "alternateNames": [
+      "San Jose"
+    ],
+    "importance": 1,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "kharkiv-ua-706483",
+    "seedName": "kharkiv",
+    "displayName": "Kharkiv",
+    "countryCode": "UA",
+    "countryName": "Ukraine",
+    "admin1": "Kharkiv",
+    "latitude": 49.98177,
+    "longitude": 36.25475,
+    "population": 1421125,
+    "geonamesId": 706483,
+    "acceptedAnswers": [
+      "kharkiv",
+      "Kharkiv"
+    ],
+    "alternateNames": [
+      "Kharkiv"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "gwangju-kr-1841811",
+    "seedName": "gwangju",
+    "displayName": "Gwangju",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Gwangju",
+    "latitude": 35.15472,
+    "longitude": 126.91556,
+    "population": 1401235,
+    "geonamesId": 1841811,
+    "acceptedAnswers": [
+      "gwangju",
+      "Gwangju"
+    ],
+    "alternateNames": [
+      "Gwangju"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "karaj-ir-128747",
+    "seedName": "karaj",
+    "displayName": "Karaj",
+    "countryCode": "IR",
+    "countryName": "Iran",
+    "admin1": "Alborz Province",
+    "latitude": 35.83266,
+    "longitude": 50.99155,
+    "population": 1448075,
+    "geonamesId": 128747,
+    "acceptedAnswers": [
+      "karaj",
+      "Karaj"
+    ],
+    "alternateNames": [
+      "Karaj"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kathmandu-np-1283240",
+    "seedName": "kathmandu",
+    "displayName": "Kathmandu",
+    "countryCode": "NP",
+    "countryName": "Nepal",
+    "admin1": "Bagmati Province",
+    "latitude": 27.70169,
+    "longitude": 85.3206,
+    "population": 1442271,
+    "geonamesId": 1283240,
+    "acceptedAnswers": [
+      "kathmandu",
+      "Kathmandu"
+    ],
+    "alternateNames": [
+      "Kathmandu"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "palembang-id-1633070",
+    "seedName": "palembang",
+    "displayName": "Palembang",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "South Sumatra",
+    "latitude": -2.91673,
+    "longitude": 104.7458,
+    "population": 1801367,
+    "geonamesId": 1633070,
+    "acceptedAnswers": [
+      "palembang",
+      "Palembang"
+    ],
+    "alternateNames": [
+      "Palembang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "multan-pk-1169825",
+    "seedName": "multan",
+    "displayName": "Multan",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Punjab",
+    "latitude": 30.19679,
+    "longitude": 71.47824,
+    "population": 2169915,
+    "geonamesId": 1169825,
+    "acceptedAnswers": [
+      "multan",
+      "Multan"
+    ],
+    "alternateNames": [
+      "Multan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "san-antonio-us-4726206",
+    "seedName": "san antonio",
+    "displayName": "San Antonio",
+    "countryCode": "US",
+    "countryName": "United States",
+    "admin1": "Texas",
+    "latitude": 29.42412,
+    "longitude": -98.49363,
+    "population": 1526656,
+    "geonamesId": 4726206,
+    "acceptedAnswers": [
+      "san antonio",
+      "San Antonio"
+    ],
+    "alternateNames": [
+      "San Antonio"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "suqian-cn-1793771",
+    "seedName": "suqian",
+    "displayName": "Suqian",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 33.94917,
+    "longitude": 118.29583,
+    "population": 1437685,
+    "geonamesId": 1793771,
+    "acceptedAnswers": [
+      "suqian",
+      "Suqian"
+    ],
+    "alternateNames": [
+      "Suqian"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "puebla-mx-3521081",
+    "seedName": "puebla",
+    "displayName": "Puebla",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "Puebla",
+    "latitude": 19.04778,
+    "longitude": -98.20723,
+    "population": 1692181,
+    "geonamesId": 3521081,
+    "acceptedAnswers": [
+      "puebla",
+      "Puebla"
+    ],
+    "alternateNames": [
+      "Puebla"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "tabriz-ir-113646",
+    "seedName": "tabriz",
+    "displayName": "Tabriz",
+    "countryCode": "IR",
+    "countryName": "Iran",
+    "admin1": "East Azerbaijan",
+    "latitude": 38.08,
+    "longitude": 46.2919,
+    "population": 1424641,
+    "geonamesId": 113646,
+    "acceptedAnswers": [
+      "tabriz",
+      "Tabriz"
+    ],
+    "alternateNames": [
+      "Tabriz"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "faridabad-in-1271951",
+    "seedName": "faridabad",
+    "displayName": "Faridabad",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Haryana",
+    "latitude": 28.41124,
+    "longitude": 77.31316,
+    "population": 1414050,
+    "geonamesId": 1271951,
+    "acceptedAnswers": [
+      "faridabad",
+      "Faridabad"
+    ],
+    "alternateNames": [
+      "Faridabad"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "bursa-tr-750269",
+    "seedName": "bursa",
+    "displayName": "Bursa",
+    "countryCode": "TR",
+    "countryName": "Turkey",
+    "admin1": "Bursa Province",
+    "latitude": 40.19559,
+    "longitude": 29.06013,
+    "population": 3101833,
+    "geonamesId": 750269,
+    "acceptedAnswers": [
+      "bursa",
+      "Bursa"
+    ],
+    "alternateNames": [
+      "Bursa"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "belgrade-rs-792680",
+    "seedName": "belgrade",
+    "displayName": "Belgrade",
+    "countryCode": "RS",
+    "countryName": "Serbia",
+    "admin1": "Central Serbia",
+    "latitude": 44.80401,
+    "longitude": 20.46513,
+    "population": 1273651,
+    "geonamesId": 792680,
+    "acceptedAnswers": [
+      "belgrade",
+      "Belgrade"
+    ],
+    "alternateNames": [
+      "Belgrade"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "guarulhos-br-3461786",
+    "seedName": "guarulhos",
+    "displayName": "Guarulhos",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "São Paulo",
+    "latitude": -23.46278,
+    "longitude": -46.53333,
+    "population": 1345364,
+    "geonamesId": 3461786,
+    "acceptedAnswers": [
+      "guarulhos",
+      "Guarulhos"
+    ],
+    "alternateNames": [
+      "Guarulhos"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "xianyang-cn-1790353",
+    "seedName": "xianyang",
+    "displayName": "Xianyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shaanxi",
+    "latitude": 34.33778,
+    "longitude": 108.70261,
+    "population": 1034081,
+    "geonamesId": 1790353,
+    "acceptedAnswers": [
+      "xianyang",
+      "Xianyang"
+    ],
+    "alternateNames": [
+      "Xianyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "qiqihar-cn-2035265",
+    "seedName": "qiqihar",
+    "displayName": "Qiqihar",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Heilongjiang",
+    "latitude": 47.33922,
+    "longitude": 123.96154,
+    "population": 882364,
+    "geonamesId": 2035265,
+    "acceptedAnswers": [
+      "qiqihar",
+      "Qiqihar"
+    ],
+    "alternateNames": [
+      "Qiqihar"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "san-diego-us-5391811",
+    "seedName": "san diego",
+    "displayName": "San Diego",
+    "countryCode": "US",
+    "countryName": "United States",
+    "admin1": "California",
+    "latitude": 32.71571,
+    "longitude": -117.16472,
+    "population": 1404452,
+    "geonamesId": 5391811,
+    "acceptedAnswers": [
+      "san diego",
+      "San Diego"
+    ],
+    "alternateNames": [
+      "San Diego"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hyderabad-pk-1176734",
+    "seedName": "hyderabad",
+    "displayName": "Hyderabad, Pakistan",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Sindh",
+    "latitude": 25.39689,
+    "longitude": 68.37718,
+    "population": 1921275,
+    "geonamesId": 1176734,
+    "acceptedAnswers": [
+      "hyderabad",
+      "Hyderabad, Pakistan",
+      "Hyderabad"
+    ],
+    "alternateNames": [
+      "Hyderabad"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "gujranwala-pk-1177662",
+    "seedName": "gujranwala",
+    "displayName": "Gujranwala",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Punjab",
+    "latitude": 32.15567,
+    "longitude": 74.18705,
+    "population": 2511118,
+    "geonamesId": 1177662,
+    "acceptedAnswers": [
+      "gujranwala",
+      "Gujranwala"
+    ],
+    "alternateNames": [
+      "Gujranwala"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "tangerang-id-1625084",
+    "seedName": "tangerang",
+    "displayName": "Tangerang",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "Banten",
+    "latitude": -6.17806,
+    "longitude": 106.63,
+    "population": 1927815,
+    "geonamesId": 1625084,
+    "acceptedAnswers": [
+      "tangerang",
+      "Tangerang"
+    ],
+    "alternateNames": [
+      "Tangerang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ekaterinburg-ru-1486209",
+    "seedName": "ekaterinburg",
+    "displayName": "Yekaterinburg",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Sverdlovsk Oblast",
+    "latitude": 56.85733,
+    "longitude": 60.61529,
+    "population": 1495066,
+    "geonamesId": 1486209,
+    "acceptedAnswers": [
+      "ekaterinburg",
+      "Yekaterinburg",
+      "Ekaterinburg"
+    ],
+    "alternateNames": [
+      "Yekaterinburg",
+      "Ekaterinburg"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "jinzhou-cn-2036427",
+    "seedName": "jinzhou",
+    "displayName": "Jinzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Liaoning",
+    "latitude": 41.10778,
+    "longitude": 121.14167,
+    "population": 604269,
+    "geonamesId": 2036427,
+    "acceptedAnswers": [
+      "jinzhou",
+      "Jinzhou"
+    ],
+    "alternateNames": [
+      "Jinzhou"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "khulna-bd-1336135",
+    "seedName": "khulna",
+    "displayName": "Khulna",
+    "countryCode": "BD",
+    "countryName": "Bangladesh",
+    "admin1": "Khulna Division",
+    "latitude": 22.80979,
+    "longitude": 89.56439,
+    "population": 1500689,
+    "geonamesId": 1336135,
+    "acceptedAnswers": [
+      "khulna",
+      "Khulna"
+    ],
+    "alternateNames": [
+      "Khulna"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "haikou-cn-1809078",
+    "seedName": "haikou",
+    "displayName": "Haikou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hainan",
+    "latitude": 20.03421,
+    "longitude": 110.34651,
+    "population": 2873358,
+    "geonamesId": 1809078,
+    "acceptedAnswers": [
+      "haikou",
+      "Haikou"
+    ],
+    "alternateNames": [
+      "Haikou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zunyi-cn-1783621",
+    "seedName": "zunyi",
+    "displayName": "Zunyi",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guizhou",
+    "latitude": 27.68667,
+    "longitude": 106.90722,
+    "population": 2037775,
+    "geonamesId": 1783621,
+    "acceptedAnswers": [
+      "zunyi",
+      "Zunyi"
+    ],
+    "alternateNames": [
+      "Zunyi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "daqing-cn-2037860",
+    "seedName": "daqing",
+    "displayName": "Daqing",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Heilongjiang",
+    "latitude": 46.58333,
+    "longitude": 125,
+    "population": 1604027,
+    "geonamesId": 2037860,
+    "acceptedAnswers": [
+      "daqing",
+      "Daqing"
+    ],
+    "alternateNames": [
+      "Daqing"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "liuzhou-cn-1803300",
+    "seedName": "liuzhou",
+    "displayName": "Liuzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangxi",
+    "latitude": 24.32405,
+    "longitude": 109.40698,
+    "population": 1436599,
+    "geonamesId": 1803300,
+    "acceptedAnswers": [
+      "liuzhou",
+      "Liuzhou"
+    ],
+    "alternateNames": [
+      "Liuzhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "fushun-cn-2037355",
+    "seedName": "fushun",
+    "displayName": "Fushun",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Liaoning",
+    "latitude": 41.88669,
+    "longitude": 123.94363,
+    "population": 1400646,
+    "geonamesId": 2037355,
+    "acceptedAnswers": [
+      "fushun",
+      "Fushun"
+    ],
+    "alternateNames": [
+      "Fushun"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "sharjah-ae-292672",
+    "seedName": "sharjah",
+    "displayName": "Sharjah",
+    "countryCode": "AE",
+    "countryName": "United Arab Emirates",
+    "admin1": "Sharjah",
+    "latitude": 25.3342,
+    "longitude": 55.41221,
+    "population": 1800000,
+    "geonamesId": 292672,
+    "acceptedAnswers": [
+      "sharjah",
+      "Sharjah"
+    ],
+    "alternateNames": [
+      "Sharjah"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "saitama-jp-6940394",
+    "seedName": "saitama",
+    "displayName": "Saitama",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Saitama",
+    "latitude": 35.90807,
+    "longitude": 139.65657,
+    "population": 1324854,
+    "geonamesId": 6940394,
+    "acceptedAnswers": [
+      "saitama",
+      "Saitama"
+    ],
+    "alternateNames": [
+      "Saitama"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "mecca-sa-104515",
+    "seedName": "mecca",
+    "displayName": "Mecca",
+    "countryCode": "SA",
+    "countryName": "Saudi Arabia",
+    "admin1": "Mecca Region",
+    "latitude": 21.42664,
+    "longitude": 39.82563,
+    "population": 1578722,
+    "geonamesId": 104515,
+    "acceptedAnswers": [
+      "mecca",
+      "Mecca",
+      "Makkah"
+    ],
+    "alternateNames": [
+      "Makkah"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "rajkot-in-1258847",
+    "seedName": "rajkot",
+    "displayName": "Rājkot",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Gujarat",
+    "latitude": 22.29161,
+    "longitude": 70.79322,
+    "population": 1390640,
+    "geonamesId": 1258847,
+    "acceptedAnswers": [
+      "rajkot",
+      "Rājkot",
+      "Rajkot"
+    ],
+    "alternateNames": [
+      "Rājkot",
+      "Rajkot"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "makassar-id-1622786",
+    "seedName": "makassar",
+    "displayName": "Makassar",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "South Sulawesi",
+    "latitude": -5.14861,
+    "longitude": 119.43194,
+    "population": 1474393,
+    "geonamesId": 1622786,
+    "acceptedAnswers": [
+      "makassar",
+      "Makassar"
+    ],
+    "alternateNames": [
+      "Makassar"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ciudad-juarez-mx-4013708",
+    "seedName": "ciudad juarez",
+    "displayName": "Ciudad Juárez",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "Chihuahua",
+    "latitude": 31.72024,
+    "longitude": -106.46084,
+    "population": 1512450,
+    "geonamesId": 4013708,
+    "acceptedAnswers": [
+      "ciudad juarez",
+      "Ciudad Juárez",
+      "Ciudad Juarez"
+    ],
+    "alternateNames": [
+      "Ciudad Juárez",
+      "Ciudad Juarez"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "cordoba-ar-3860259",
+    "seedName": "cordoba",
+    "displayName": "Córdoba",
+    "countryCode": "AR",
+    "countryName": "Argentina",
+    "admin1": "Cordoba",
+    "latitude": -31.40648,
+    "longitude": -64.18853,
+    "population": 2106734,
+    "geonamesId": 3860259,
+    "acceptedAnswers": [
+      "cordoba",
+      "Córdoba",
+      "Cordoba"
+    ],
+    "alternateNames": [
+      "Córdoba",
+      "Cordoba"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "meerut-in-1263214",
+    "seedName": "meerut",
+    "displayName": "Meerut",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Uttar Pradesh",
+    "latitude": 28.98002,
+    "longitude": 77.70636,
+    "population": 1223184,
+    "geonamesId": 1263214,
+    "acceptedAnswers": [
+      "meerut",
+      "Meerut"
+    ],
+    "alternateNames": [
+      "Meerut"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "south-tangerang-id-8581443",
+    "seedName": "south tangerang",
+    "displayName": "South Tangerang",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "Banten",
+    "latitude": -6.28862,
+    "longitude": 106.71789,
+    "population": 1429529,
+    "geonamesId": 8581443,
+    "acceptedAnswers": [
+      "south tangerang",
+      "South Tangerang"
+    ],
+    "alternateNames": [
+      "South Tangerang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "tijuana-mx-3981609",
+    "seedName": "tijuana",
+    "displayName": "Tijuana",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "Baja California",
+    "latitude": 32.5027,
+    "longitude": -117.00371,
+    "population": 1922523,
+    "geonamesId": 3981609,
+    "acceptedAnswers": [
+      "tijuana",
+      "Tijuana"
+    ],
+    "alternateNames": [
+      "Tijuana"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "datong-cn-2037799",
+    "seedName": "datong",
+    "displayName": "Datong",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shanxi",
+    "latitude": 40.09361,
+    "longitude": 113.29139,
+    "population": 1850000,
+    "geonamesId": 2037799,
+    "acceptedAnswers": [
+      "datong",
+      "Datong"
+    ],
+    "alternateNames": [
+      "Datong"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "semarang-id-1627896",
+    "seedName": "semarang",
+    "displayName": "Semarang",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "Central Java",
+    "latitude": -6.99306,
+    "longitude": 110.42083,
+    "population": 1694740,
+    "geonamesId": 1627896,
+    "acceptedAnswers": [
+      "semarang",
+      "Semarang"
+    ],
+    "alternateNames": [
+      "Semarang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "lubumbashi-cd-922704",
+    "seedName": "lubumbashi",
+    "displayName": "Lubumbashi",
+    "countryCode": "CD",
+    "countryName": "Democratic Republic of the Congo",
+    "admin1": "Haut-Katanga",
+    "latitude": -11.66089,
+    "longitude": 27.47938,
+    "population": 2221925,
+    "geonamesId": 922704,
+    "acceptedAnswers": [
+      "lubumbashi",
+      "Lubumbashi"
+    ],
+    "alternateNames": [
+      "Lubumbashi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "pingdingshan-cn-1798827",
+    "seedName": "pingdingshan",
+    "displayName": "Pingdingshan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 33.73091,
+    "longitude": 113.31554,
+    "population": 979130,
+    "geonamesId": 1798827,
+    "acceptedAnswers": [
+      "pingdingshan",
+      "Pingdingshan"
+    ],
+    "alternateNames": [
+      "Pingdingshan"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zhuzhou-cn-1783763",
+    "seedName": "zhuzhou",
+    "displayName": "Zhuzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hunan",
+    "latitude": 27.83333,
+    "longitude": 113.15,
+    "population": 1129687,
+    "geonamesId": 1783763,
+    "acceptedAnswers": [
+      "zhuzhou",
+      "Zhuzhou"
+    ],
+    "alternateNames": [
+      "Zhuzhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "tegucigalpa-hn-3600949",
+    "seedName": "tegucigalpa",
+    "displayName": "Tegucigalpa",
+    "countryCode": "HN",
+    "countryName": "Honduras",
+    "admin1": "Francisco Morazán Department",
+    "latitude": 14.0818,
+    "longitude": -87.20681,
+    "population": 850848,
+    "geonamesId": 3600949,
+    "acceptedAnswers": [
+      "tegucigalpa",
+      "Tegucigalpa"
+    ],
+    "alternateNames": [
+      "Tegucigalpa"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "antananarivo-mg-1070940",
+    "seedName": "antananarivo",
+    "displayName": "Antananarivo",
+    "countryCode": "MG",
+    "countryName": "Madagascar",
+    "admin1": "Analamanga",
+    "latitude": -18.91368,
+    "longitude": 47.53613,
+    "population": 1349501,
+    "geonamesId": 1070940,
+    "acceptedAnswers": [
+      "antananarivo",
+      "Antananarivo"
+    ],
+    "alternateNames": [
+      "Antananarivo"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "barranquilla-co-3689147",
+    "seedName": "barranquilla",
+    "displayName": "Barranquilla",
+    "countryCode": "CO",
+    "countryName": "Colombia",
+    "admin1": "Atlántico",
+    "latitude": 10.96854,
+    "longitude": -74.78132,
+    "population": 1206319,
+    "geonamesId": 3689147,
+    "acceptedAnswers": [
+      "barranquilla",
+      "Barranquilla"
+    ],
+    "alternateNames": [
+      "Barranquilla"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "wuhu-cn-1791236",
+    "seedName": "wuhu",
+    "displayName": "Wuhu",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Anhui",
+    "latitude": 31.35259,
+    "longitude": 118.42947,
+    "population": 1598165,
+    "geonamesId": 1791236,
+    "acceptedAnswers": [
+      "wuhu",
+      "Wuhu"
+    ],
+    "alternateNames": [
+      "Wuhu"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "benxi-cn-2038300",
+    "seedName": "benxi",
+    "displayName": "Benxi",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Liaoning",
+    "latitude": 41.28861,
+    "longitude": 123.765,
+    "population": 987717,
+    "geonamesId": 2038300,
+    "acceptedAnswers": [
+      "benxi",
+      "Benxi"
+    ],
+    "alternateNames": [
+      "Benxi"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "nizhniy-novgorod-ru-520555",
+    "seedName": "nizhniy novgorod",
+    "displayName": "Nizhny Novgorod",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Nizhny Novgorod Oblast",
+    "latitude": 56.32867,
+    "longitude": 44.00205,
+    "population": 1259013,
+    "geonamesId": 520555,
+    "acceptedAnswers": [
+      "nizhniy novgorod",
+      "Nizhny Novgorod",
+      "Nizhniy Novgorod"
+    ],
+    "alternateNames": [
+      "Nizhniy Novgorod"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "shiraz-ir-115019",
+    "seedName": "shiraz",
+    "displayName": "Shiraz",
+    "countryCode": "IR",
+    "countryName": "Iran",
+    "admin1": "Fars",
+    "latitude": 29.61031,
+    "longitude": 52.53113,
+    "population": 1249942,
+    "geonamesId": 115019,
+    "acceptedAnswers": [
+      "shiraz",
+      "Shiraz"
+    ],
+    "alternateNames": [
+      "Shiraz"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "adana-tr-325363",
+    "seedName": "adana",
+    "displayName": "Adana",
+    "countryCode": "TR",
+    "countryName": "Turkey",
+    "admin1": "Adana",
+    "latitude": 36.98615,
+    "longitude": 35.32531,
+    "population": 1816750,
+    "geonamesId": 325363,
+    "acceptedAnswers": [
+      "adana",
+      "Adana"
+    ],
+    "alternateNames": [
+      "Adana"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kalyan-dombivli-in-1272423",
+    "seedName": "kalyan-dombivli",
+    "displayName": "Kalyan–Dombivli",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 19.21667,
+    "longitude": 73.08333,
+    "population": 1247327,
+    "geonamesId": 1272423,
+    "acceptedAnswers": [
+      "kalyan-dombivli",
+      "Kalyan–Dombivli",
+      "Dombivali",
+      "Kalyan Dombivli"
+    ],
+    "alternateNames": [
+      "Dombivali",
+      "Kalyan Dombivli"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "adelaide-au-2078025",
+    "seedName": "adelaide",
+    "displayName": "Adelaide",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "admin1": "South Australia",
+    "latitude": -34.92866,
+    "longitude": 138.59863,
+    "population": 1469163,
+    "geonamesId": 2078025,
+    "acceptedAnswers": [
+      "adelaide",
+      "Adelaide"
+    ],
+    "alternateNames": [
+      "Adelaide"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "calgary-ca-5913490",
+    "seedName": "calgary",
+    "displayName": "Calgary",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "admin1": "Alberta",
+    "latitude": 51.05011,
+    "longitude": -114.08529,
+    "population": 1306784,
+    "geonamesId": 5913490,
+    "acceptedAnswers": [
+      "calgary",
+      "Calgary"
+    ],
+    "alternateNames": [
+      "Calgary"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "leon-de-los-aldama-mx-3998655",
+    "seedName": "leon de los aldama",
+    "displayName": "León de los Aldama",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "Guanajuato",
+    "latitude": 21.12183,
+    "longitude": -101.68253,
+    "population": 1579803,
+    "geonamesId": 3998655,
+    "acceptedAnswers": [
+      "leon de los aldama",
+      "León de los Aldama",
+      "Leon de los Aldama",
+      "Leon"
+    ],
+    "alternateNames": [
+      "León de los Aldama",
+      "Leon de los Aldama",
+      "Leon"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "sofia-bg-727011",
+    "seedName": "sofia",
+    "displayName": "Sofia",
+    "countryCode": "BG",
+    "countryName": "Bulgaria",
+    "admin1": "Sofia-Capital",
+    "latitude": 42.69751,
+    "longitude": 23.32415,
+    "population": 1152556,
+    "geonamesId": 727011,
+    "acceptedAnswers": [
+      "sofia",
+      "Sofia"
+    ],
+    "alternateNames": [
+      "Sofia"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "taian-cn-1793724",
+    "seedName": "tai'an",
+    "displayName": "Tai’an",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 36.18528,
+    "longitude": 117.12,
+    "population": 1735425,
+    "geonamesId": 1793724,
+    "acceptedAnswers": [
+      "tai'an",
+      "Tai’an",
+      "Tai'an",
+      "Taian"
+    ],
+    "alternateNames": [
+      "Tai’an",
+      "Tai'an",
+      "Taian"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "milano-it-3173435",
+    "seedName": "milano",
+    "displayName": "Milano",
+    "countryCode": "IT",
+    "countryName": "Italy",
+    "admin1": "Lombardy",
+    "latitude": 45.46427,
+    "longitude": 9.18951,
+    "population": 1371498,
+    "geonamesId": 3173435,
+    "acceptedAnswers": [
+      "milano",
+      "Milano",
+      "Milan"
+    ],
+    "alternateNames": [
+      "Milan"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "can-tho-vn-1586203",
+    "seedName": "can tho",
+    "displayName": "Cần Thơ",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "admin1": "Can Tho City",
+    "latitude": 10.03711,
+    "longitude": 105.78825,
+    "population": 1507187,
+    "geonamesId": 1586203,
+    "acceptedAnswers": [
+      "can tho",
+      "Cần Thơ",
+      "Can Tho"
+    ],
+    "alternateNames": [
+      "Cần Thơ",
+      "Can Tho"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jiaozuo-cn-1805987",
+    "seedName": "jiaozuo",
+    "displayName": "Jiaozuo",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 35.23925,
+    "longitude": 113.23914,
+    "population": 865413,
+    "geonamesId": 1805987,
+    "acceptedAnswers": [
+      "jiaozuo",
+      "Jiaozuo"
+    ],
+    "alternateNames": [
+      "Jiaozuo"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "dongguan-cn-1812545",
+    "seedName": "dongguan",
+    "displayName": "Dongguan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 23.01797,
+    "longitude": 113.74866,
+    "population": 9644871,
+    "geonamesId": 1812545,
+    "acceptedAnswers": [
+      "dongguan",
+      "Dongguan"
+    ],
+    "alternateNames": [
+      "Dongguan"
+    ],
+    "importance": 4,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "bien-hoa-vn-1587923",
+    "seedName": "bien hoa",
+    "displayName": "Biên Hòa",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "admin1": "Dong Nai",
+    "latitude": 10.94469,
+    "longitude": 106.82432,
+    "population": 1272235,
+    "geonamesId": 1587923,
+    "acceptedAnswers": [
+      "bien hoa",
+      "Biên Hòa",
+      "Bien Hoa"
+    ],
+    "alternateNames": [
+      "Biên Hòa",
+      "Bien Hoa"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "vasai-virar-in-1253133",
+    "seedName": "vasai-virar",
+    "displayName": "Vasai–Virar",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 19.45591,
+    "longitude": 72.81136,
+    "population": 1222390,
+    "geonamesId": 1253133,
+    "acceptedAnswers": [
+      "vasai-virar",
+      "Vasai–Virar",
+      "Virār",
+      "Virar",
+      "Vasai Virar"
+    ],
+    "alternateNames": [
+      "Virār",
+      "Virar",
+      "Vasai Virar"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "peshawar-pk-1168197",
+    "seedName": "peshawar",
+    "displayName": "Peshawar",
+    "countryCode": "PK",
+    "countryName": "Pakistan",
+    "admin1": "Khyber Pakhtunkhwa",
+    "latitude": 34.008,
+    "longitude": 71.57849,
+    "population": 4758762,
+    "geonamesId": 1168197,
+    "acceptedAnswers": [
+      "peshawar",
+      "Peshawar"
+    ],
+    "alternateNames": [
+      "Peshawar"
+    ],
+    "importance": 3,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "lianyungang-cn-10859300",
+    "seedName": "lianyungang",
+    "displayName": "Lianyungang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangsu",
+    "latitude": 34.59845,
+    "longitude": 119.21556,
+    "population": 2001009,
+    "geonamesId": 10859300,
+    "acceptedAnswers": [
+      "lianyungang",
+      "Lianyungang"
+    ],
+    "alternateNames": [
+      "Lianyungang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "campinas-br-3467865",
+    "seedName": "campinas",
+    "displayName": "Campinas",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "São Paulo",
+    "latitude": -22.90556,
+    "longitude": -47.06083,
+    "population": 1031554,
+    "geonamesId": 3467865,
+    "acceptedAnswers": [
+      "campinas",
+      "Campinas"
+    ],
+    "alternateNames": [
+      "Campinas"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "mbuji-mayi-cd-209228",
+    "seedName": "mbuji-mayi",
+    "displayName": "Mbuji-Mayi",
+    "countryCode": "CD",
+    "countryName": "Democratic Republic of the Congo",
+    "admin1": "East Kasai",
+    "latitude": -6.13603,
+    "longitude": 23.58979,
+    "population": 2101332,
+    "geonamesId": 209228,
+    "acceptedAnswers": [
+      "mbuji-mayi",
+      "Mbuji-Mayi"
+    ],
+    "alternateNames": [
+      "Mbuji-Mayi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "davao-ph-1715348",
+    "seedName": "davao",
+    "displayName": "Davao",
+    "countryCode": "PH",
+    "countryName": "Philippines",
+    "admin1": "Davao Region",
+    "latitude": 7.07306,
+    "longitude": 125.61278,
+    "population": 1848947,
+    "geonamesId": 1715348,
+    "acceptedAnswers": [
+      "davao",
+      "Davao"
+    ],
+    "alternateNames": [
+      "Davao"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "mombasa-ke-186301",
+    "seedName": "mombasa",
+    "displayName": "Mombasa",
+    "countryCode": "KE",
+    "countryName": "Kenya",
+    "admin1": "Mombasa County",
+    "latitude": -4.05466,
+    "longitude": 39.66359,
+    "population": 1208333,
+    "geonamesId": 186301,
+    "acceptedAnswers": [
+      "mombasa",
+      "Mombasa"
+    ],
+    "alternateNames": [
+      "Mombasa"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "mandalay-mm-1311874",
+    "seedName": "mandalay",
+    "displayName": "Mandalay",
+    "countryCode": "MM",
+    "countryName": "Myanmar",
+    "admin1": "Mandalay Region",
+    "latitude": 21.97473,
+    "longitude": 96.08359,
+    "population": 1208099,
+    "geonamesId": 1311874,
+    "acceptedAnswers": [
+      "mandalay",
+      "Mandalay"
+    ],
+    "alternateNames": [
+      "Mandalay"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "srinagar-in-1255634",
+    "seedName": "srinagar",
+    "displayName": "Srinagar",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Jammu and Kashmir",
+    "latitude": 34.08565,
+    "longitude": 74.80555,
+    "population": 1206419,
+    "geonamesId": 1255634,
+    "acceptedAnswers": [
+      "srinagar",
+      "Srinagar"
+    ],
+    "alternateNames": [
+      "Srinagar"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hiroshima-jp-1862415",
+    "seedName": "hiroshima",
+    "displayName": "Hiroshima",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Hiroshima",
+    "latitude": 34.4,
+    "longitude": 132.45,
+    "population": 1200754,
+    "geonamesId": 1862415,
+    "acceptedAnswers": [
+      "hiroshima",
+      "Hiroshima"
+    ],
+    "alternateNames": [
+      "Hiroshima"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hargeysa-so-57289",
+    "seedName": "hargeysa",
+    "displayName": "Hargeisa",
+    "countryCode": "SO",
+    "countryName": "Somalia",
+    "admin1": "Woqooyi Galbeed",
+    "latitude": 9.56,
+    "longitude": 44.065,
+    "population": 477876,
+    "geonamesId": 57289,
+    "acceptedAnswers": [
+      "hargeysa",
+      "Hargeisa",
+      "Hargeysa"
+    ],
+    "alternateNames": [
+      "Hargeysa"
+    ],
+    "importance": 1,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "varanasi-in-1253405",
+    "seedName": "varanasi",
+    "displayName": "Varanasi",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Uttar Pradesh",
+    "latitude": 25.31668,
+    "longitude": 83.01041,
+    "population": 1164404,
+    "geonamesId": 1253405,
+    "acceptedAnswers": [
+      "varanasi",
+      "Varanasi"
+    ],
+    "alternateNames": [
+      "Varanasi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "depok-id-1645524",
+    "seedName": "depok",
+    "displayName": "Depok",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "West Java",
+    "latitude": -6.4,
+    "longitude": 106.81861,
+    "population": 2163635,
+    "geonamesId": 1645524,
+    "acceptedAnswers": [
+      "depok",
+      "Depok"
+    ],
+    "alternateNames": [
+      "Depok"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "guatemala-city-gt-3598132",
+    "seedName": "guatemala city",
+    "displayName": "Guatemala City",
+    "countryCode": "GT",
+    "countryName": "Guatemala",
+    "admin1": "Guatemala",
+    "latitude": 14.64072,
+    "longitude": -90.51327,
+    "population": 994938,
+    "geonamesId": 3598132,
+    "acceptedAnswers": [
+      "guatemala city",
+      "Guatemala City"
+    ],
+    "alternateNames": [
+      "Guatemala City"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "yueyang-cn-1927639",
+    "seedName": "yueyang",
+    "displayName": "Yueyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hunan",
+    "latitude": 29.37455,
+    "longitude": 113.09481,
+    "population": 991465,
+    "geonamesId": 1927639,
+    "acceptedAnswers": [
+      "yueyang",
+      "Yueyang"
+    ],
+    "alternateNames": [
+      "Yueyang"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "shubra-al-khaymah-eg-349076",
+    "seedName": "shubra al-khaymah",
+    "displayName": "Shubra al-Khaymah",
+    "countryCode": "EG",
+    "countryName": "Egypt",
+    "admin1": "Qalyubia",
+    "latitude": 30.12511,
+    "longitude": 31.25053,
+    "population": 1240289,
+    "geonamesId": 349076,
+    "acceptedAnswers": [
+      "shubra al-khaymah",
+      "Shubra al-Khaymah",
+      "Shubrā al Khaymah",
+      "Shubra al Khaymah",
+      "Shubra El Kheima"
+    ],
+    "alternateNames": [
+      "Shubrā al Khaymah",
+      "Shubra al Khaymah",
+      "Shubra El Kheima"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "suwon-kr-1835553",
+    "seedName": "suwon",
+    "displayName": "Suwon",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Gyeonggi-do",
+    "latitude": 37.29111,
+    "longitude": 127.00889,
+    "population": 1234582,
+    "geonamesId": 1835553,
+    "acceptedAnswers": [
+      "suwon",
+      "Suwon"
+    ],
+    "alternateNames": [
+      "Suwon"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zhanjiang-cn-1784990",
+    "seedName": "zhanjiang",
+    "displayName": "Zhanjiang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 21.23391,
+    "longitude": 110.38749,
+    "population": 1400709,
+    "geonamesId": 1784990,
+    "acceptedAnswers": [
+      "zhanjiang",
+      "Zhanjiang"
+    ],
+    "alternateNames": [
+      "Zhanjiang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "rizhao-cn-9072919",
+    "seedName": "rizhao",
+    "displayName": "Rizhao",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 35.41414,
+    "longitude": 119.52908,
+    "population": 661943,
+    "geonamesId": 9072919,
+    "acceptedAnswers": [
+      "rizhao",
+      "Rizhao"
+    ],
+    "alternateNames": [
+      "Rizhao"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "binzhou-cn-1816336",
+    "seedName": "binzhou",
+    "displayName": "Binzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 37.36667,
+    "longitude": 118.01667,
+    "population": 682717,
+    "geonamesId": 1816336,
+    "acceptedAnswers": [
+      "binzhou",
+      "Binzhou"
+    ],
+    "alternateNames": [
+      "Binzhou"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "aurangabad-in-1278149",
+    "seedName": "aurangabad",
+    "displayName": "Aurangabad",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 19.87757,
+    "longitude": 75.34226,
+    "population": 1175116,
+    "geonamesId": 1278149,
+    "acceptedAnswers": [
+      "aurangabad",
+      "Aurangabad",
+      "Chhatrapati Sambhajinagar"
+    ],
+    "alternateNames": [
+      "Aurangabad",
+      "Chhatrapati Sambhajinagar"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "prayagraj-in-1278994",
+    "seedName": "prayagraj",
+    "displayName": "Prayagraj",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Uttar Pradesh",
+    "latitude": 25.44478,
+    "longitude": 81.84322,
+    "population": 1073438,
+    "geonamesId": 1278994,
+    "acceptedAnswers": [
+      "prayagraj",
+      "Prayagraj",
+      "Allahabad"
+    ],
+    "alternateNames": [
+      "Prayagraj",
+      "Allahabad"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "samara-ru-499099",
+    "seedName": "samara",
+    "displayName": "Samara",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Samara Oblast",
+    "latitude": 53.20767,
+    "longitude": 50.13553,
+    "population": 1163399,
+    "geonamesId": 499099,
+    "acceptedAnswers": [
+      "samara",
+      "Samara"
+    ],
+    "alternateNames": [
+      "Samara"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "batam-id-6295587",
+    "seedName": "batam",
+    "displayName": "Batam",
+    "countryCode": "ID",
+    "countryName": "Indonesia",
+    "admin1": "Riau",
+    "latitude": 1.14937,
+    "longitude": 104.02491,
+    "population": 1296960,
+    "geonamesId": 6295587,
+    "acceptedAnswers": [
+      "batam",
+      "Batam"
+    ],
+    "alternateNames": [
+      "Batam"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "dhanbad-in-1272979",
+    "seedName": "dhanbad",
+    "displayName": "Dhanbad",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Jharkhand",
+    "latitude": 23.79759,
+    "longitude": 86.42992,
+    "population": 1196214,
+    "geonamesId": 1272979,
+    "acceptedAnswers": [
+      "dhanbad",
+      "Dhanbad"
+    ],
+    "alternateNames": [
+      "Dhanbad"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jiaxing-cn-1805953",
+    "seedName": "jiaxing",
+    "displayName": "Jiaxing",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Zhejiang",
+    "latitude": 30.7522,
+    "longitude": 120.75,
+    "population": 1180000,
+    "geonamesId": 1805953,
+    "acceptedAnswers": [
+      "jiaxing",
+      "Jiaxing"
+    ],
+    "alternateNames": [
+      "Jiaxing"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "amritsar-in-1278710",
+    "seedName": "amritsar",
+    "displayName": "Amritsar",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Punjab",
+    "latitude": 31.62234,
+    "longitude": 74.87534,
+    "population": 1159227,
+    "geonamesId": 1278710,
+    "acceptedAnswers": [
+      "amritsar",
+      "Amritsar"
+    ],
+    "alternateNames": [
+      "Amritsar"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "omsk-ru-1496153",
+    "seedName": "omsk",
+    "displayName": "Omsk",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Omsk Oblast",
+    "latitude": 54.99244,
+    "longitude": 73.36859,
+    "population": 1172070,
+    "geonamesId": 1496153,
+    "acceptedAnswers": [
+      "omsk",
+      "Omsk"
+    ],
+    "alternateNames": [
+      "Omsk"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kazan-ru-551487",
+    "seedName": "kazan",
+    "displayName": "Kazan",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Tatarstan Republic",
+    "latitude": 55.78874,
+    "longitude": 49.12214,
+    "population": 1243500,
+    "geonamesId": 551487,
+    "acceptedAnswers": [
+      "kazan",
+      "Kazan"
+    ],
+    "alternateNames": [
+      "Kazan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "vijayawada-in-1253184",
+    "seedName": "vijayawada",
+    "displayName": "Vijayawada",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Andhra Pradesh",
+    "latitude": 16.50745,
+    "longitude": 80.6466,
+    "population": 1143232,
+    "geonamesId": 1253184,
+    "acceptedAnswers": [
+      "vijayawada",
+      "Vijayawada"
+    ],
+    "alternateNames": [
+      "Vijayawada"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "dongying-cn-1812101",
+    "seedName": "dongying",
+    "displayName": "Dongying",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shandong",
+    "latitude": 37.46271,
+    "longitude": 118.49165,
+    "population": 998968,
+    "geonamesId": 1812101,
+    "acceptedAnswers": [
+      "dongying",
+      "Dongying"
+    ],
+    "alternateNames": [
+      "Dongying"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zapopan-mx-3979770",
+    "seedName": "zapopan",
+    "displayName": "Zapopan",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "Jalisco",
+    "latitude": 20.72111,
+    "longitude": -103.38742,
+    "population": 1476491,
+    "geonamesId": 3979770,
+    "acceptedAnswers": [
+      "zapopan",
+      "Zapopan"
+    ],
+    "alternateNames": [
+      "Zapopan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ulsan-kr-1833747",
+    "seedName": "ulsan",
+    "displayName": "Ulsan",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Ulsan",
+    "latitude": 35.53722,
+    "longitude": 129.31667,
+    "population": 1098421,
+    "geonamesId": 1833747,
+    "acceptedAnswers": [
+      "ulsan",
+      "Ulsan"
+    ],
+    "alternateNames": [
+      "Ulsan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "monterrey-mx-3995465",
+    "seedName": "monterrey",
+    "displayName": "Monterrey",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "Nuevo León",
+    "latitude": 25.68435,
+    "longitude": -100.31721,
+    "population": 1135512,
+    "geonamesId": 3995465,
+    "acceptedAnswers": [
+      "monterrey",
+      "Monterrey"
+    ],
+    "alternateNames": [
+      "Monterrey"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "da-nang-vn-1583992",
+    "seedName": "da nang",
+    "displayName": "Da Nang",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "admin1": "Da Nang City",
+    "latitude": 16.06778,
+    "longitude": 108.22083,
+    "population": 1276000,
+    "geonamesId": 1583992,
+    "acceptedAnswers": [
+      "da nang",
+      "Da Nang",
+      "Danang"
+    ],
+    "alternateNames": [
+      "Da Nang",
+      "Danang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "chelyabinsk-ru-1508291",
+    "seedName": "chelyabinsk",
+    "displayName": "Chelyabinsk",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Chelyabinsk",
+    "latitude": 55.1611,
+    "longitude": 61.42877,
+    "population": 1202371,
+    "geonamesId": 1508291,
+    "acceptedAnswers": [
+      "chelyabinsk",
+      "Chelyabinsk"
+    ],
+    "alternateNames": [
+      "Chelyabinsk"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "navi-mumbai-in-6619347",
+    "seedName": "navi mumbai",
+    "displayName": "Navi Mumbai",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Maharashtra",
+    "latitude": 19.03681,
+    "longitude": 73.01582,
+    "population": 2600000,
+    "geonamesId": 6619347,
+    "acceptedAnswers": [
+      "navi mumbai",
+      "Navi Mumbai",
+      "New Bombay"
+    ],
+    "alternateNames": [
+      "Navi Mumbai",
+      "New Bombay"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "huzhou-cn-1806535",
+    "seedName": "huzhou",
+    "displayName": "Huzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Zhejiang",
+    "latitude": 30.8703,
+    "longitude": 120.0933,
+    "population": 1015937,
+    "geonamesId": 1806535,
+    "acceptedAnswers": [
+      "huzhou",
+      "Huzhou"
+    ],
+    "alternateNames": [
+      "Huzhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "fes-ma-2548885",
+    "seedName": "fes",
+    "displayName": "Fes",
+    "countryCode": "MA",
+    "countryName": "Morocco",
+    "admin1": "Fes-Meknes",
+    "latitude": 34.03313,
+    "longitude": -5.00028,
+    "population": 1191905,
+    "geonamesId": 2548885,
+    "acceptedAnswers": [
+      "fes",
+      "Fes"
+    ],
+    "alternateNames": [
+      "Fes"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "fuyang-cn-1810845",
+    "seedName": "fuyang",
+    "displayName": "Fuyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Anhui",
+    "latitude": 32.9,
+    "longitude": 115.81667,
+    "population": 1768947,
+    "geonamesId": 1810845,
+    "acceptedAnswers": [
+      "fuyang",
+      "Fuyang"
+    ],
+    "alternateNames": [
+      "Fuyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "hengyang-cn-1808370",
+    "seedName": "hengyang",
+    "displayName": "Hengyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hunan",
+    "latitude": 26.88946,
+    "longitude": 112.61888,
+    "population": 1075516,
+    "geonamesId": 1808370,
+    "acceptedAnswers": [
+      "hengyang",
+      "Hengyang"
+    ],
+    "alternateNames": [
+      "Hengyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "sao-luis-br-3388368",
+    "seedName": "sao luis",
+    "displayName": "São Luís",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Maranhão",
+    "latitude": -2.52972,
+    "longitude": -44.30278,
+    "population": 917237,
+    "geonamesId": 3388368,
+    "acceptedAnswers": [
+      "sao luis",
+      "São Luís",
+      "Sao Luis"
+    ],
+    "alternateNames": [
+      "São Luís",
+      "Sao Luis"
+    ],
+    "importance": 1,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "ciudad-nezahualcoyotl-mx-3530589",
+    "seedName": "ciudad nezahualcoyotl",
+    "displayName": "Ciudad Nezahualcóyotl",
+    "countryCode": "MX",
+    "countryName": "Mexico",
+    "admin1": "México",
+    "latitude": 19.40061,
+    "longitude": -99.01483,
+    "population": 1077208,
+    "geonamesId": 3530589,
+    "acceptedAnswers": [
+      "ciudad nezahualcoyotl",
+      "Ciudad Nezahualcóyotl",
+      "Ciudad Nezahualcoyotl",
+      "Nezahualcóyotl",
+      "Ciudad Neza"
+    ],
+    "alternateNames": [
+      "Ciudad Nezahualcoyotl",
+      "Nezahualcóyotl",
+      "Ciudad Neza"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "yinchuan-cn-1786657",
+    "seedName": "yinchuan",
+    "displayName": "Yinchuan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Ningxia",
+    "latitude": 38.46806,
+    "longitude": 106.27306,
+    "population": 1487579,
+    "geonamesId": 1786657,
+    "acceptedAnswers": [
+      "yinchuan",
+      "Yinchuan"
+    ],
+    "alternateNames": [
+      "Yinchuan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "sendai-jp-2111149",
+    "seedName": "sendai",
+    "displayName": "Sendai",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "admin1": "Miyagi",
+    "latitude": 38.26667,
+    "longitude": 140.86667,
+    "population": 1096704,
+    "geonamesId": 2111149,
+    "acceptedAnswers": [
+      "sendai",
+      "Sendai"
+    ],
+    "alternateNames": [
+      "Sendai"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "yerevan-am-616052",
+    "seedName": "yerevan",
+    "displayName": "Yerevan",
+    "countryCode": "AM",
+    "countryName": "Armenia",
+    "admin1": "Yerevan",
+    "latitude": 40.17765,
+    "longitude": 44.5126,
+    "population": 1144700,
+    "geonamesId": 616052,
+    "acceptedAnswers": [
+      "yerevan",
+      "Yerevan"
+    ],
+    "alternateNames": [
+      "Yerevan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jiangmen-cn-1806299",
+    "seedName": "jiangmen",
+    "displayName": "Jiangmen",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 22.58333,
+    "longitude": 113.08333,
+    "population": 1795459,
+    "geonamesId": 1806299,
+    "acceptedAnswers": [
+      "jiangmen",
+      "Jiangmen"
+    ],
+    "alternateNames": [
+      "Jiangmen"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "sao-goncalo-br-3388713",
+    "seedName": "sao goncalo",
+    "displayName": "São Gonçalo",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Rio Grande do Norte",
+    "latitude": -5.79333,
+    "longitude": -35.32944,
+    "population": 115838,
+    "geonamesId": 3388713,
+    "acceptedAnswers": [
+      "sao goncalo",
+      "São Gonçalo",
+      "São Gonçalo do Amarante",
+      "Sao Goncalo do Amarante"
+    ],
+    "alternateNames": [
+      "São Gonçalo do Amarante",
+      "Sao Goncalo do Amarante"
+    ],
+    "importance": 1,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "xiangyang-cn-1790587",
+    "seedName": "xiangyang",
+    "displayName": "Xiangyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Hubei",
+    "latitude": 32.0422,
+    "longitude": 112.14479,
+    "population": 1294733,
+    "geonamesId": 1790587,
+    "acceptedAnswers": [
+      "xiangyang",
+      "Xiangyang"
+    ],
+    "alternateNames": [
+      "Xiangyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "rostov-na-donu-ru-501175",
+    "seedName": "rostov-na-donu",
+    "displayName": "Rostov-on-Don",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Rostov",
+    "latitude": 47.21997,
+    "longitude": 39.70769,
+    "population": 1130305,
+    "geonamesId": 501175,
+    "acceptedAnswers": [
+      "rostov-na-donu",
+      "Rostov-on-Don",
+      "Rostov na Donu"
+    ],
+    "alternateNames": [
+      "Rostov-on-Don",
+      "Rostov na Donu"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "barquisimeto-ve-3648522",
+    "seedName": "barquisimeto",
+    "displayName": "Barquisimeto",
+    "countryCode": "VE",
+    "countryName": "Venezuela",
+    "admin1": "Lara",
+    "latitude": 10.0647,
+    "longitude": -69.35703,
+    "population": 1240714,
+    "geonamesId": 3648522,
+    "acceptedAnswers": [
+      "barquisimeto",
+      "Barquisimeto"
+    ],
+    "alternateNames": [
+      "Barquisimeto"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "koln-de-2886242",
+    "seedName": "koln",
+    "displayName": "Köln",
+    "countryCode": "DE",
+    "countryName": "Germany",
+    "admin1": "North Rhine-Westphalia",
+    "latitude": 50.93333,
+    "longitude": 6.95,
+    "population": 1024621,
+    "geonamesId": 2886242,
+    "acceptedAnswers": [
+      "koln",
+      "Köln",
+      "Koeln",
+      "Cologne"
+    ],
+    "alternateNames": [
+      "Köln",
+      "Koeln",
+      "Cologne"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "quanzhou-cn-1797353",
+    "seedName": "quanzhou",
+    "displayName": "Quanzhou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Fujian",
+    "latitude": 24.91389,
+    "longitude": 118.58583,
+    "population": 1469157,
+    "geonamesId": 1797353,
+    "acceptedAnswers": [
+      "quanzhou",
+      "Quanzhou"
+    ],
+    "alternateNames": [
+      "Quanzhou"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "arequipa-pe-3947322",
+    "seedName": "arequipa",
+    "displayName": "Arequipa",
+    "countryCode": "PE",
+    "countryName": "Peru",
+    "admin1": "Arequipa",
+    "latitude": -16.39899,
+    "longitude": -71.53747,
+    "population": 1195700,
+    "geonamesId": 3947322,
+    "acceptedAnswers": [
+      "arequipa",
+      "Arequipa"
+    ],
+    "alternateNames": [
+      "Arequipa"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jabalpur-in-1269633",
+    "seedName": "jabalpur",
+    "displayName": "Jabalpur",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Madhya Pradesh",
+    "latitude": 23.16697,
+    "longitude": 79.95006,
+    "population": 1081677,
+    "geonamesId": 1269633,
+    "acceptedAnswers": [
+      "jabalpur",
+      "Jabalpur"
+    ],
+    "alternateNames": [
+      "Jabalpur"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "goyang-kr-1842485",
+    "seedName": "goyang",
+    "displayName": "Goyang",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Gyeonggi-do",
+    "latitude": 37.65639,
+    "longitude": 126.835,
+    "population": 1061752,
+    "geonamesId": 1842485,
+    "acceptedAnswers": [
+      "goyang",
+      "Goyang",
+      "Goyang-si"
+    ],
+    "alternateNames": [
+      "Goyang-si"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "haora-in-1270396",
+    "seedName": "haora",
+    "displayName": "Howrah",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "West Bengal",
+    "latitude": 22.57688,
+    "longitude": 88.31857,
+    "population": 1027672,
+    "geonamesId": 1270396,
+    "acceptedAnswers": [
+      "haora",
+      "Howrah",
+      "Haora"
+    ],
+    "alternateNames": [
+      "Howrah",
+      "Haora"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "weinan-cn-1791636",
+    "seedName": "weinan",
+    "displayName": "Weinan",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shaanxi",
+    "latitude": 34.50355,
+    "longitude": 109.50891,
+    "population": 1199290,
+    "geonamesId": 1791636,
+    "acceptedAnswers": [
+      "weinan",
+      "Weinan"
+    ],
+    "alternateNames": [
+      "Weinan"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "yongin-kr-1832426",
+    "seedName": "yongin",
+    "displayName": "Yongin",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Gyeonggi-do",
+    "latitude": 37.23825,
+    "longitude": 127.17795,
+    "population": 1073000,
+    "geonamesId": 1832426,
+    "acceptedAnswers": [
+      "yongin",
+      "Yongin",
+      "Yongin-si"
+    ],
+    "alternateNames": [
+      "Yongin",
+      "yongin",
+      "Yongin-si"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "ranchi-in-1258526",
+    "seedName": "ranchi",
+    "displayName": "Ranchi",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Jharkhand",
+    "latitude": 23.34316,
+    "longitude": 85.3094,
+    "population": 1120374,
+    "geonamesId": 1258526,
+    "acceptedAnswers": [
+      "ranchi",
+      "Ranchi"
+    ],
+    "alternateNames": [
+      "Ranchi"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zhoukou-cn-1784130",
+    "seedName": "zhoukou",
+    "displayName": "Zhoukou",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 33.63333,
+    "longitude": 114.63333,
+    "population": 505171,
+    "geonamesId": 1784130,
+    "acceptedAnswers": [
+      "zhoukou",
+      "Zhoukou"
+    ],
+    "alternateNames": [
+      "Zhoukou"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "gaziantep-tr-314830",
+    "seedName": "gaziantep",
+    "displayName": "Gaziantep",
+    "countryCode": "TR",
+    "countryName": "Turkey",
+    "admin1": "Gaziantep",
+    "latitude": 37.05944,
+    "longitude": 37.3825,
+    "population": 2222415,
+    "geonamesId": 314830,
+    "acceptedAnswers": [
+      "gaziantep",
+      "Gaziantep"
+    ],
+    "alternateNames": [
+      "Gaziantep"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "shangrao-cn-1787858",
+    "seedName": "shangrao",
+    "displayName": "Shangrao",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Jiangxi",
+    "latitude": 28.45179,
+    "longitude": 117.94287,
+    "population": 1116486,
+    "geonamesId": 1787858,
+    "acceptedAnswers": [
+      "shangrao",
+      "Shangrao"
+    ],
+    "alternateNames": [
+      "Shangrao"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "ufa-ru-479561",
+    "seedName": "ufa",
+    "displayName": "Ufa",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Bashkortostan Republic",
+    "latitude": 54.74306,
+    "longitude": 55.96779,
+    "population": 1120547,
+    "geonamesId": 479561,
+    "acceptedAnswers": [
+      "ufa",
+      "Ufa"
+    ],
+    "alternateNames": [
+      "Ufa"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "jodhpur-in-1268865",
+    "seedName": "jodhpur",
+    "displayName": "Jodhpur",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Rajasthan",
+    "latitude": 26.26841,
+    "longitude": 73.00594,
+    "population": 1056191,
+    "geonamesId": 1268865,
+    "acceptedAnswers": [
+      "jodhpur",
+      "Jodhpur"
+    ],
+    "alternateNames": [
+      "Jodhpur"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "gwalior-in-1270583",
+    "seedName": "gwalior",
+    "displayName": "Gwalior",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Madhya Pradesh",
+    "latitude": 26.22983,
+    "longitude": 78.17337,
+    "population": 1054420,
+    "geonamesId": 1270583,
+    "acceptedAnswers": [
+      "gwalior",
+      "Gwalior"
+    ],
+    "alternateNames": [
+      "Gwalior"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "managua-ni-3617763",
+    "seedName": "managua",
+    "displayName": "Managua",
+    "countryCode": "NI",
+    "countryName": "Nicaragua",
+    "admin1": "Managua Department",
+    "latitude": 12.13282,
+    "longitude": -86.2504,
+    "population": 973087,
+    "geonamesId": 3617763,
+    "acceptedAnswers": [
+      "managua",
+      "Managua"
+    ],
+    "alternateNames": [
+      "Managua"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "anyang-cn-1785294",
+    "seedName": "anyang",
+    "displayName": "Anyang",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 36.096,
+    "longitude": 114.38278,
+    "population": 1146839,
+    "geonamesId": 1785294,
+    "acceptedAnswers": [
+      "anyang",
+      "Anyang"
+    ],
+    "alternateNames": [
+      "Anyang"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "coimbatore-in-1273865",
+    "seedName": "coimbatore",
+    "displayName": "Coimbatore",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Tamil Nadu",
+    "latitude": 11.00555,
+    "longitude": 76.96612,
+    "population": 2136916,
+    "geonamesId": 1273865,
+    "acceptedAnswers": [
+      "coimbatore",
+      "Coimbatore"
+    ],
+    "alternateNames": [
+      "Coimbatore"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "tbilisi-ge-611717",
+    "seedName": "tbilisi",
+    "displayName": "Tbilisi",
+    "countryCode": "GE",
+    "countryName": "Georgia",
+    "admin1": "Tbilisi",
+    "latitude": 41.69143,
+    "longitude": 44.83412,
+    "population": 1049498,
+    "geonamesId": 611717,
+    "acceptedAnswers": [
+      "tbilisi",
+      "Tbilisi",
+      "Tiflis"
+    ],
+    "alternateNames": [
+      "Tbilisi",
+      "Tiflis"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "hanzhong-cn-1808857",
+    "seedName": "hanzhong",
+    "displayName": "Hanzhong",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Shaanxi",
+    "latitude": 33.07507,
+    "longitude": 107.02214,
+    "population": 1006557,
+    "geonamesId": 1808857,
+    "acceptedAnswers": [
+      "hanzhong",
+      "Hanzhong"
+    ],
+    "alternateNames": [
+      "Hanzhong"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "zhaoqing-cn-1784853",
+    "seedName": "zhaoqing",
+    "displayName": "Zhaoqing",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Guangdong",
+    "latitude": 23.04893,
+    "longitude": 112.46091,
+    "population": 1553109,
+    "geonamesId": 1784853,
+    "acceptedAnswers": [
+      "zhaoqing",
+      "Zhaoqing"
+    ],
+    "alternateNames": [
+      "Zhaoqing"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "taichung-tw-1668399",
+    "seedName": "taichung",
+    "displayName": "Taichung",
+    "countryCode": "TW",
+    "countryName": "Taiwan",
+    "admin1": "Taiwan",
+    "latitude": 24.1469,
+    "longitude": 120.6839,
+    "population": 2850285,
+    "geonamesId": 1668399,
+    "acceptedAnswers": [
+      "taichung",
+      "Taichung"
+    ],
+    "alternateNames": [
+      "Taichung"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "changwon-kr-1846326",
+    "seedName": "changwon",
+    "displayName": "Changwon",
+    "countryCode": "KR",
+    "countryName": "South Korea",
+    "admin1": "Gyeongsangnam-do",
+    "latitude": 35.22806,
+    "longitude": 128.68111,
+    "population": 1025702,
+    "geonamesId": 1846326,
+    "acceptedAnswers": [
+      "changwon",
+      "Changwon"
+    ],
+    "alternateNames": [
+      "Changwon"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "matola-mz-1039854",
+    "seedName": "matola",
+    "displayName": "Matola",
+    "countryCode": "MZ",
+    "countryName": "Mozambique",
+    "admin1": "Maputo Province",
+    "latitude": -25.96222,
+    "longitude": 32.45889,
+    "population": 1198988,
+    "geonamesId": 1039854,
+    "acceptedAnswers": [
+      "matola",
+      "Matola"
+    ],
+    "alternateNames": [
+      "Matola"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "cartagena-de-indias-co-3687238",
+    "seedName": "cartagena de indias",
+    "displayName": "Cartagena de Indias",
+    "countryCode": "CO",
+    "countryName": "Colombia",
+    "admin1": "Bolívar",
+    "latitude": 10.39817,
+    "longitude": -75.49328,
+    "population": 914552,
+    "geonamesId": 3687238,
+    "acceptedAnswers": [
+      "cartagena de indias",
+      "Cartagena de Indias",
+      "Cartagena"
+    ],
+    "alternateNames": [
+      "Cartagena"
+    ],
+    "importance": 1,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "raipur-in-1258980",
+    "seedName": "raipur",
+    "displayName": "Raipur",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Chhattisgarh",
+    "latitude": 21.23333,
+    "longitude": 81.63333,
+    "population": 1027264,
+    "geonamesId": 1258980,
+    "acceptedAnswers": [
+      "raipur",
+      "Raipur"
+    ],
+    "alternateNames": [
+      "Raipur"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "maceio-br-3395981",
+    "seedName": "maceio",
+    "displayName": "Maceió",
+    "countryCode": "BR",
+    "countryName": "Brazil",
+    "admin1": "Alagoas",
+    "latitude": -9.66583,
+    "longitude": -35.73528,
+    "population": 1031597,
+    "geonamesId": 3395981,
+    "acceptedAnswers": [
+      "maceio",
+      "Maceió",
+      "Maceio"
+    ],
+    "alternateNames": [
+      "Maceió",
+      "Maceio"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "yuxi-cn-1784185",
+    "seedName": "yuxi",
+    "displayName": "Yuxi",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Yunnan",
+    "latitude": 24.355,
+    "longitude": 102.54222,
+    "population": 103829,
+    "geonamesId": 1784185,
+    "acceptedAnswers": [
+      "yuxi",
+      "Yuxi"
+    ],
+    "alternateNames": [
+      "Yuxi"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "monrovia-lr-2274895",
+    "seedName": "monrovia",
+    "displayName": "Monrovia",
+    "countryCode": "LR",
+    "countryName": "Liberia",
+    "admin1": "Montserrado County",
+    "latitude": 6.30054,
+    "longitude": -10.7969,
+    "population": 1542549,
+    "geonamesId": 2274895,
+    "acceptedAnswers": [
+      "monrovia",
+      "Monrovia"
+    ],
+    "alternateNames": [
+      "Monrovia"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "volgograd-ru-472757",
+    "seedName": "volgograd",
+    "displayName": "Volgograd",
+    "countryCode": "RU",
+    "countryName": "Russia",
+    "admin1": "Volgograd Oblast",
+    "latitude": 48.71378,
+    "longitude": 44.4976,
+    "population": 1013533,
+    "geonamesId": 472757,
+    "acceptedAnswers": [
+      "volgograd",
+      "Volgograd"
+    ],
+    "alternateNames": [
+      "Volgograd"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "madurai-in-1264521",
+    "seedName": "madurai",
+    "displayName": "Madurai",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Tamil Nadu",
+    "latitude": 9.919,
+    "longitude": 78.11953,
+    "population": 1465625,
+    "geonamesId": 1264521,
+    "acceptedAnswers": [
+      "madurai",
+      "Madurai"
+    ],
+    "alternateNames": [
+      "Madurai"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "thu-duc-vn-1565019",
+    "seedName": "thu duc",
+    "displayName": "Thủ Đức",
+    "countryCode": "VN",
+    "countryName": "Vietnam",
+    "admin1": "Ho Chi Minh City (HCMC)",
+    "latitude": 10.84863,
+    "longitude": 106.77209,
+    "population": 524670,
+    "geonamesId": 1565019,
+    "acceptedAnswers": [
+      "thu duc",
+      "Thủ Đức",
+      "Thu GJuc",
+      "Thu Duc City"
+    ],
+    "alternateNames": [
+      "Thủ Đức",
+      "Thu GJuc",
+      "Thu Duc City"
+    ],
+    "importance": 1,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "kaifeng-cn-1804879",
+    "seedName": "kaifeng",
+    "displayName": "Kaifeng",
+    "countryCode": "CN",
+    "countryName": "China",
+    "admin1": "Henan",
+    "latitude": 34.7986,
+    "longitude": 114.30742,
+    "population": 1451741,
+    "geonamesId": 1804879,
+    "acceptedAnswers": [
+      "kaifeng",
+      "Kaifeng"
+    ],
+    "alternateNames": [
+      "Kaifeng"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  },
+  {
+    "id": "san-jose-cr-3621849",
+    "seedName": "san jose",
+    "displayName": "San José, Costa Rica",
+    "countryCode": "CR",
+    "countryName": "Costa Rica",
+    "admin1": "San José",
+    "latitude": 9.93388,
+    "longitude": -84.08489,
+    "population": 335007,
+    "geonamesId": 3621849,
+    "acceptedAnswers": [
+      "san jose",
+      "San José, Costa Rica",
+      "San José",
+      "San Jose"
+    ],
+    "alternateNames": [
+      "San José",
+      "San Jose"
+    ],
+    "importance": 1,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "khartoum-north-sd-379251",
+    "seedName": "khartoum north",
+    "displayName": "Khartoum North",
+    "countryCode": "SD",
+    "countryName": "Sudan",
+    "admin1": "Khartoum",
+    "latitude": 15.64925,
+    "longitude": 32.53458,
+    "population": 1012211,
+    "geonamesId": 379251,
+    "acceptedAnswers": [
+      "khartoum north",
+      "Khartoum North",
+      "Bahri"
+    ],
+    "alternateNames": [
+      "Khartoum North",
+      "Bahri"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "odessa-ua-698740",
+    "seedName": "odessa",
+    "displayName": "Odesa",
+    "countryCode": "UA",
+    "countryName": "Ukraine",
+    "admin1": "Odesa",
+    "latitude": 46.48572,
+    "longitude": 30.74383,
+    "population": 1010537,
+    "geonamesId": 698740,
+    "acceptedAnswers": [
+      "odessa",
+      "Odesa",
+      "Odessa"
+    ],
+    "alternateNames": [
+      "Odesa",
+      "Odessa"
+    ],
+    "importance": 2,
+    "dataConfidence": "verified"
+  },
+  {
+    "id": "kota-in-1266049",
+    "seedName": "kota",
+    "displayName": "Kota",
+    "countryCode": "IN",
+    "countryName": "India",
+    "admin1": "Rajasthan",
+    "latitude": 25.18254,
+    "longitude": 75.83907,
+    "population": 1001694,
+    "geonamesId": 1266049,
+    "acceptedAnswers": [
+      "kota",
+      "Kota"
+    ],
+    "alternateNames": [
+      "Kota"
+    ],
+    "importance": 2,
+    "dataConfidence": "probable"
+  }
+]
