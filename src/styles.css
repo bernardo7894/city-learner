@@ -105,7 +105,7 @@ em { color: var(--gold); font-weight: 400; }
 .city-marker.reference text { fill: #b9cbc6; font-style: italic; }
 .city-marker.target .marker-dot, .city-marker.contrast .marker-dot { fill: var(--gold); stroke: white; opacity: 1; }
 .city-marker .marker-halo { fill: rgba(244,201,107,.14); stroke: var(--gold); stroke-width: 1.5; opacity: .85; }
-.city-marker text { fill: #c8d8d4; font-size: 6px; paint-order: stroke; stroke: #0a2028; stroke-width: 2px; stroke-linejoin: round; pointer-events: none; }
+.city-marker text { fill: #c8d8d4; font-size: 10px; paint-order: stroke; stroke: #0a2028; stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
 .heat-ring { fill: rgba(245,132,114,.08)!important; stroke: rgba(245,132,114,.4)!important; }
 .selected-point { fill: var(--coral); stroke: white; stroke-width: 1.5; }
 .error-line { stroke: var(--coral); stroke-width: 1.4; stroke-dasharray: 4 3; }

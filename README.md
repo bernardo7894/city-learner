@@ -34,7 +34,7 @@ The production build is written to `dist/`. There is no backend, map tile server
 - Due-review, weak-city, placement, and configurable new-city queues
 - Explicit confusion edges when another curriculum city is entered or clicked
 - Contrast drills that gradually weaken—not instantly delete—confusion edges
-- Fog-of-war city markers, mastered landmarks, a Europe-dense global reference-anchor layer, weak-city heat, country/anchor/label toggles, pan, and zoom
+- Fog-of-war city markers, mastered landmarks, a Europe-dense global reference-anchor layer, weak-city heat, country/anchor toggles, opt-in fixed-size Mental Atlas labels, pan, and page-contained zoom
 - Free-recall exam where omitted cities are classified by the player after the exam
 - Full progress explorer with source identity, aliases, directional state, response metrics, and review dates
 - Pin as anchor, suspend, mark already known, reset city, reset direction, and confirmed full reset

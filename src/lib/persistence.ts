@@ -14,6 +14,7 @@ export function createEmptyProgress(cities: City[], now = new Date()): ProgressD
       sessionLength: 15,
       newCitiesPerSession: QUEUE_CONFIG.defaultNewPerSession,
       showMasteredLabels: true,
+      showExploreCityLabels: false,
       showCountryNames: false,
       showCountryBoundaries: true,
       showAnchors: true,

@@ -50,6 +50,7 @@ export interface Settings {
   sessionLength: number
   newCitiesPerSession: number
   showMasteredLabels: boolean
+  showExploreCityLabels: boolean
   showCountryNames: boolean
   showCountryBoundaries: boolean
   showAnchors: boolean

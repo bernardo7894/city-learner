@@ -153,6 +153,7 @@ export function ProgressExplorer({ cities, progress, setProgress, onExit }: Expl
       </header>
       {notice && <div className="notice">{notice}</div>}
       <section className="map-settings">
+        <label><input type="checkbox" checked={progress.settings.showExploreCityLabels} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, showExploreCityLabels: event.target.checked } }))} /> City names</label>
         <label><input type="checkbox" checked={progress.settings.showMasteredLabels} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, showMasteredLabels: event.target.checked } }))} /> Mastered labels</label>
         <label><input type="checkbox" checked={progress.settings.showCountryNames} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, showCountryNames: event.target.checked } }))} /> Country names</label>
         <label><input type="checkbox" checked={progress.settings.showCountryBoundaries} onChange={(event) => setProgress((current) => ({ ...current, settings: { ...current.settings, showCountryBoundaries: event.target.checked } }))} /> Boundaries</label>

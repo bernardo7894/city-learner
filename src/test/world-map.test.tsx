@@ -70,8 +70,27 @@ describe('WorldMap question safety and interaction', () => {
     const map = getByRole('img')
     const content = map.querySelector('g')
     expect(content).toHaveAttribute('transform', 'translate(0 0) scale(1)')
-    fireEvent.wheel(map, { deltaY: -300, clientX: 480, clientY: 250 })
+    const wheel = new WheelEvent('wheel', { deltaY: -300, clientX: 480, clientY: 250, bubbles: true, cancelable: true })
+    fireEvent(map, wheel)
+    expect(wheel.defaultPrevented).toBe(true)
     expect(content?.getAttribute('transform')).not.toContain('scale(1)')
+  })
+
+  it('hides Mental Atlas city names by default and keeps them a fixed screen size when enabled', () => {
+    const progress = createEmptyProgress([chengdu])
+    const { container, getByRole, rerender } = render(<WorldMap cities={[chengdu]} progress={progress} explore />)
+    expect(container.querySelector(`[data-city-id="${chengdu.id}"] .city-label-glyph`)).not.toBeInTheDocument()
+
+    const labeledProgress = {
+      ...progress,
+      settings: { ...progress.settings, showExploreCityLabels: true },
+    }
+    rerender(<WorldMap cities={[chengdu]} progress={labeledProgress} explore />)
+    const label = container.querySelector(`[data-city-id="${chengdu.id}"] .city-label-glyph`)
+    expect(label).toHaveAttribute('transform', 'scale(1)')
+
+    fireEvent.wheel(getByRole('img'), { deltaY: -300, clientX: 480, clientY: 250 })
+    expect(label?.getAttribute('transform')).not.toBe('scale(1)')
   })
 
   it('automatically centers a location-to-name question on its target', () => {

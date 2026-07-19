@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { geoCentroid, geoNaturalEarth1, geoPath } from 'd3-geo'
 import { feature } from 'topojson-client'
 import countriesTopology from 'world-atlas/countries-110m.json'
@@ -143,12 +143,26 @@ export function WorldMap({
     ))
   }, [autoFocusTarget, feedback, projection, questionDirection, targetCity?.id, targetCity?.latitude, targetCity?.longitude])
 
-  const zoomAt = (factor: number, anchorX = WIDTH / 2, anchorY = HEIGHT / 2) => setView((current) => {
+  const zoomAt = useCallback((factor: number, anchorX = WIDTH / 2, anchorY = HEIGHT / 2) => setView((current) => {
     const scale = Math.max(1, Math.min(4, current.scale * factor))
     const worldX = (anchorX - current.x) / current.scale
     const worldY = (anchorY - current.y) / current.scale
     return constrainView(scale, anchorX - worldX * scale, anchorY - worldY * scale)
-  })
+  }), [])
+
+  useEffect(() => {
+    const map = svgRef.current
+    if (!map) return
+    const handleWheel = (event: WheelEvent) => {
+      event.preventDefault()
+      const rect = map.getBoundingClientRect()
+      const anchorX = rect.width ? (event.clientX - rect.left) / rect.width * WIDTH : WIDTH / 2
+      const anchorY = rect.height ? (event.clientY - rect.top) / rect.height * HEIGHT : HEIGHT / 2
+      zoomAt(Math.exp(-event.deltaY * 0.0015), anchorX, anchorY)
+    }
+    map.addEventListener('wheel', handleWheel, { passive: false })
+    return () => map.removeEventListener('wheel', handleWheel)
+  }, [zoomAt])
 
   return (
     <div className="map-shell">
@@ -158,13 +172,6 @@ export function WorldMap({
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         role={onMapClick ? 'button' : 'img'}
         aria-label={onMapClick ? 'World map. Click to choose a location.' : 'World progress map'}
-        onWheel={(event) => {
-          event.preventDefault()
-          const rect = svgRef.current?.getBoundingClientRect()
-          const anchorX = rect?.width ? (event.clientX - rect.left) / rect.width * WIDTH : WIDTH / 2
-          const anchorY = rect?.height ? (event.clientY - rect.top) / rect.height * HEIGHT : HEIGHT / 2
-          zoomAt(Math.exp(-event.deltaY * 0.0015), anchorX, anchorY)
-        }}
         onPointerDown={(event) => {
           if (view.scale <= 1) return
           event.preventDefault()
@@ -211,10 +218,14 @@ export function WorldMap({
             const status = isReference ? 'reference' : recalledCityIds?.includes(city.id) ? 'recalled' : memoryStatus(city)
             const isTarget = city.id === targetCity?.id
             const isContrast = contrastCityIds.includes(city.id)
-            const exploreLabelAllowed = explore && (view.scale >= 1.8 || city.importance >= 4 || status !== 'unknown')
+            const exploreLabelAllowed = explore
+              && progress.settings.showExploreCityLabels
+              && (view.scale >= 1.8 || city.importance >= 4 || status !== 'unknown' || isReference)
+            const studyLabelAllowed = !explore
+              && (isReference || progress.anchors.includes(city.id) || (status === 'mastered' && progress.settings.showMasteredLabels))
             const labelAllowed = !isTarget
               && !isContrast
-              && (isReference || exploreLabelAllowed || progress.anchors.includes(city.id) || (status === 'mastered' && progress.settings.showMasteredLabels))
+              && (exploreLabelAllowed || studyLabelAllowed)
             return (
               <g
                 key={city.id}
@@ -227,7 +238,11 @@ export function WorldMap({
                   {(isTarget || isContrast || status === 'recalled') && <circle cx="0" cy="0" r={isTarget || isContrast ? 8.5 : 6.2} className="marker-halo" vectorEffect="non-scaling-stroke" />}
                   <circle cx="0" cy="0" r={isTarget || isContrast ? 5.5 : 3.2} className="marker-dot" vectorEffect="non-scaling-stroke" />
                 </g>
-                {labelAllowed && <text x="6" y="-6">{city.displayName.replace(/, .+$/, '')}</text>}
+                {labelAllowed && (
+                  <g className="city-label-glyph" transform={`scale(${1 / view.scale})`}>
+                    <text x="7" y="-7">{city.displayName.replace(/, .+$/, '')}</text>
+                  </g>
+                )}
               </g>
             )
           })}

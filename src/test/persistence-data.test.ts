@@ -18,8 +18,11 @@ describe('persistence and curriculum integrity', () => {
   it('adds the new-city preference when importing older version-one progress', () => {
     const legacy = JSON.parse(exportProgress(createEmptyProgress(cities)))
     delete legacy.settings.newCitiesPerSession
+    delete legacy.settings.showExploreCityLabels
 
-    expect(importProgress(JSON.stringify(legacy), cities).settings.newCitiesPerSession).toBe(5)
+    const restored = importProgress(JSON.stringify(legacy), cities)
+    expect(restored.settings.newCitiesPerSession).toBe(5)
+    expect(restored.settings.showExploreCityLabels).toBe(false)
   })
 
   it('round-trips progress as a Base64 transfer code', () => {
