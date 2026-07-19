@@ -178,12 +178,16 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
   const next = () => setIndex((current) => current + 1)
 
   if (!items.length) {
+    const emptyTitle = mode === 'confusion' ? 'No strong confusions yet' : mode === 'learn' ? 'Every available city has been introduced' : 'Nothing needs attention right now'
+    const emptyMessage = mode === 'learn'
+      ? 'There is no daily limit. Continue with Review or Weak cities, or unsuspend cities from Progress.'
+      : 'Try Learn for new cities, or return when the next review is due.'
     return (
       <main className="study-page centered-card">
         <div className="empty-orbit">◎</div>
         <p className="eyebrow">Queue clear</p>
-        <h1>{mode === 'confusion' ? 'No strong confusions yet' : 'Nothing needs attention right now'}</h1>
-        <p className="muted">Try Learn for new cities, or return when the next review is due.</p>
+        <h1>{emptyTitle}</h1>
+        <p className="muted">{emptyMessage}</p>
         <button className="primary-button" onClick={onExit}>Back to overview</button>
       </main>
     )

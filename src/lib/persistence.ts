@@ -1,4 +1,4 @@
-import { SCHEMA_VERSION, STORAGE_KEY } from '../config'
+import { QUEUE_CONFIG, SCHEMA_VERSION, STORAGE_KEY } from '../config'
 import type { City, ProgressData } from '../types'
 
 export function createEmptyProgress(cities: City[], now = new Date()): ProgressData {
@@ -12,7 +12,7 @@ export function createEmptyProgress(cities: City[], now = new Date()): ProgressD
     suspendedCityIds: [],
     settings: {
       sessionLength: 15,
-      newCitiesPerSession: 5,
+      newCitiesPerSession: QUEUE_CONFIG.defaultNewPerSession,
       showMasteredLabels: true,
       showCountryNames: false,
       showCountryBoundaries: true,
@@ -37,7 +37,7 @@ export function migrateProgress(value: unknown, cities: City[]): ProgressData {
     settings: {
       ...base.settings,
       ...(candidate.settings ?? {}),
-      newCitiesPerSession: Math.max(1, Math.min(10, Number(candidate.settings?.newCitiesPerSession) || base.settings.newCitiesPerSession)),
+      newCitiesPerSession: Math.max(1, Math.min(QUEUE_CONFIG.maxNewPerSession, Number(candidate.settings?.newCitiesPerSession) || base.settings.newCitiesPerSession)),
     },
   }
 }

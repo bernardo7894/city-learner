@@ -18,8 +18,8 @@ export function priorityScore(memory: MemoryState, city: City, progress: Progres
     + city.importance * QUEUE_CONFIG.importanceWeight
 }
 
-function isCityNew(cityId: string, progress: ProgressData): boolean {
-  return directions.every((direction) => !progress.memories[memoryKey(cityId, direction)])
+function needsIntroduction(cityId: string, progress: ProgressData): boolean {
+  return directions.some((direction) => !progress.memories[memoryKey(cityId, direction)])
 }
 
 function dueMemories(cities: City[], progress: ProgressData, now: Date) {
@@ -86,7 +86,7 @@ function chooseDiverseCities(cities: City[], limit: number, random: () => number
 
 function newCityItems(cities: City[], progress: ProgressData, limit: number, random: () => number): SessionItem[] {
   const eligible = cities
-    .filter((city) => isCityNew(city.id, progress) && !progress.suspendedCityIds.includes(city.id) && !progress.anchors.includes(city.id))
+    .filter((city) => needsIntroduction(city.id, progress) && !progress.suspendedCityIds.includes(city.id) && !progress.anchors.includes(city.id))
   const chosen = chooseDiverseCities(eligible, limit, random)
   return [
     ...chosen.map((city) => ({ id: `teach-${city.id}`, kind: 'teach' as const, cityId: city.id })),
@@ -103,7 +103,8 @@ export function selectSessionQueue(
   random = Math.random,
 ): SessionItem[] {
   const limit = progress.settings.sessionLength
-  const newCityLimit = Math.min(QUEUE_CONFIG.maxNewPerSession, Math.max(1, progress.settings.newCitiesPerSession))
+  const requestedNewCities = Number(progress.settings.newCitiesPerSession) || QUEUE_CONFIG.defaultNewPerSession
+  const newCityLimit = Math.min(QUEUE_CONFIG.maxNewPerSession, Math.max(1, requestedNewCities))
   if (mode === 'learn') return interleave(newCityItems(cities, progress, newCityLimit, random))
 
   if (mode === 'confusion') {

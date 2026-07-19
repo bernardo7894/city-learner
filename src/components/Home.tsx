@@ -1,4 +1,5 @@
 import type { City, ProgressData, SessionMode } from '../types'
+import { QUEUE_CONFIG } from '../config'
 import { strongestConfusions } from '../lib/confusions'
 import { countDue } from '../lib/queue'
 import { memoryKey } from '../lib/scheduler'
@@ -7,16 +8,19 @@ import { referenceAnchors } from '../data/anchors'
 interface HomeProps {
   cities: City[]
   progress: ProgressData
+  setProgress: (update: ProgressData | ((current: ProgressData) => ProgressData)) => void
   onStart: (mode: SessionMode) => void
   onNavigate: (page: 'progress' | 'recall' | 'about') => void
 }
 
-export function Home({ cities, progress, onStart, onNavigate }: HomeProps) {
+export function Home({ cities, progress, setProgress, onStart, onNavigate }: HomeProps) {
   const cityById = new Map(cities.map((city) => [city.id, city]))
   const due = countDue(progress)
   const mastered = cities.filter((city) => ['location-to-name', 'name-to-location'].every((direction) => progress.memories[memoryKey(city.id, direction as 'location-to-name' | 'name-to-location')]?.status === 'mastered')).length
   const learning = new Set(Object.values(progress.memories).filter((memory) => memory.status === 'learning' || memory.status === 'review').map((memory) => memory.cityId)).size
-  const newCount = cities.filter((city) => !progress.memories[memoryKey(city.id, 'location-to-name')] && !progress.memories[memoryKey(city.id, 'name-to-location')] && !progress.anchors.includes(city.id)).length
+  const newCount = cities.filter((city) => !progress.memories[memoryKey(city.id, 'location-to-name')] && !progress.memories[memoryKey(city.id, 'name-to-location')] && !progress.anchors.includes(city.id) && !progress.suspendedCityIds.includes(city.id)).length
+  const requestedNewCities = Number(progress.settings.newCitiesPerSession) || QUEUE_CONFIG.defaultNewPerSession
+  const newCitiesPerSession = Math.min(QUEUE_CONFIG.maxNewPerSession, Math.max(1, requestedNewCities))
   const strongest = strongestConfusions(progress.confusions)[0]
   const confusionLabel = strongest ? `${cityById.get(strongest.sourceCityId)?.displayName} ↔ ${cityById.get(strongest.confusedWithCityId)?.displayName}` : 'None yet'
   const hasProgress = Object.values(progress.memories).some((memory) => memory.attempts > 0)
@@ -61,8 +65,15 @@ export function Home({ cities, progress, onStart, onNavigate }: HomeProps) {
       <section className="home-content">
         <div>
           <div className="section-heading"><div><p className="eyebrow">Choose your route</p><h2>Play modes</h2></div></div>
+          <div className="learn-preference">
+            <div><strong>Learn session size</strong><small>No daily limit—start another session whenever you like.</small></div>
+            <label>New cities <input type="number" min="1" max={QUEUE_CONFIG.maxNewPerSession} value={newCitiesPerSession} onChange={(event) => {
+              const value = Math.min(QUEUE_CONFIG.maxNewPerSession, Math.max(1, Number(event.target.value) || 1))
+              setProgress((current) => ({ ...current, settings: { ...current.settings, newCitiesPerSession: value } }))
+            }} /> per session</label>
+          </div>
           <div className="mode-grid">
-            <ModeCard accent="gold" icon="✦" title="Learn" body={`Meet up to ${progress.settings.newCitiesPerSession} new cities through map-first teaching.`} onClick={() => onStart('learn')} />
+            <ModeCard accent="gold" icon="✦" title="Learn" body={`Meet up to ${newCitiesPerSession} new cities through map-first teaching.`} onClick={() => onStart('learn')} />
             <ModeCard accent="mint" icon="↻" title="Review" body="Clear due memories and protect knowledge that is fading." onClick={() => onStart('review')} badge={due ? `${due} due` : undefined} />
             <ModeCard accent="coral" icon="⌁" title="Weak cities" body="Focus on lapses, slow names, and wide map misses." onClick={() => onStart('weak')} />
             <ModeCard accent="violet" icon="⇄" title="Confusion drill" body="Separate city pairs your memory keeps crossing." onClick={() => onStart('confusion')} badge={progress.confusions.filter((edge) => edge.strength >= 2).length ? 'Ready' : undefined} />

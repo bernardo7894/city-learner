@@ -112,6 +112,22 @@ describe('adaptive queue and confusions', () => {
     }
   })
 
+  it('falls back safely when an already-open save lacks the new-city setting', () => {
+    const cities = Array.from({ length: 8 }, (_, index) => makeCity(`legacy-${index}`, 3))
+    const progress = createEmptyProgress(cities, now)
+    delete (progress.settings as Partial<typeof progress.settings>).newCitiesPerSession
+
+    expect(selectSessionQueue('learn', cities, progress, now).filter((item) => item.kind === 'teach')).toHaveLength(5)
+  })
+
+  it('resumes cities that only have one learning direction initialized', () => {
+    const city = makeCity('partial', 3)
+    const progress = createEmptyProgress([city], now)
+    progress.memories[memoryKey(city.id, 'location-to-name')] = createMemory(city.id, 'location-to-name', now)
+
+    expect(selectSessionQueue('learn', [city], progress, now).some((item) => item.cityId === city.id)).toBe(true)
+  })
+
   it('randomizes equal-priority cities and avoids repeated name prefixes when alternatives exist', () => {
     const cities = ['chongqing', 'chattogram', 'chennai', 'delhi', 'tokyo'].map((id) => makeCity(id, 3))
     const progress = createEmptyProgress(cities, now)

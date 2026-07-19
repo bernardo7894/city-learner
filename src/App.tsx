@@ -38,7 +38,7 @@ export default function App() {
           <button onClick={() => setPage('about')}>Data</button>
         </div>
       </nav>
-      <Home cities={cities} progress={progress} onStart={start} onNavigate={setPage} />
+      <Home cities={cities} progress={progress} setProgress={setProgress} onStart={start} onNavigate={setPage} />
       <footer><span>Atlas Recall</span><button onClick={() => setPage('about')}>Data attribution & learning model</button><small>Progress stays on this device.</small></footer>
     </>
   )

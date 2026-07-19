@@ -20,7 +20,8 @@ export const GRADING_CONFIG = {
 } as const
 
 export const QUEUE_CONFIG = {
-  maxNewPerSession: 10,
+  defaultNewPerSession: 5,
+  maxNewPerSession: 30,
   backlogBeforeNewIsReduced: 12,
   overdueWeight: 4,
   forgettingRiskWeight: 3,
