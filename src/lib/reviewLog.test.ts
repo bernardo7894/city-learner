@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
-import type { AnswerResult, MemoryState, SessionItem } from '../types'
-import { appendReviewLog, createQuestionReviewLogEntry, MAX_REVIEW_LOG_ENTRIES } from './reviewLog'
+import type { AnswerResult, City, MemoryState, ReviewLogEntry, SessionItem } from '../types'
+import { appendReviewLog, createQuestionReviewLogEntry, exportReviewLogCsv, MAX_REVIEW_LOG_ENTRIES } from './reviewLog'
 
 function memory(overrides: Partial<MemoryState> = {}): MemoryState {
   return {
@@ -87,5 +87,41 @@ describe('review history', () => {
     expect(result).toHaveLength(MAX_REVIEW_LOG_ENTRIES)
     expect(result[0].id).toBe('1')
     expect(result.at(-1)?.id).toBe('latest')
+  })
+
+  it('exports analysis-ready CSV with city names and escaped answers', () => {
+    const cities: City[] = [{
+      id: 'kano',
+      seedName: 'Kano',
+      displayName: 'Kano',
+      countryCode: 'NG',
+      countryName: 'Nigeria',
+      latitude: 12,
+      longitude: 8.5,
+      acceptedAnswers: ['Kano'],
+      alternateNames: [],
+      importance: 4,
+      dataConfidence: 'verified',
+    }]
+    const entry: ReviewLogEntry = {
+      id: 'entry',
+      answeredAt: '2026-07-28T12:00:00.000Z',
+      sessionMode: 'review',
+      itemKind: 'question',
+      cityId: 'kano',
+      direction: 'location-to-name',
+      rating: 'again',
+      correct: false,
+      responseMs: 8100,
+      typedAnswer: 'Kaduna, Nigeria',
+      daysSincePreviousReview: 11,
+    }
+
+    const csv = exportReviewLogCsv([entry], cities)
+
+    expect(csv).toContain('daysSincePreviousReview')
+    expect(csv).toContain('Kano,Nigeria')
+    expect(csv).toContain('"Kaduna, Nigeria"')
+    expect(csv).toContain(',11,')
   })
 })
