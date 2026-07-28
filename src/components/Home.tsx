@@ -38,10 +38,10 @@ export function Home({ cities, progress, setProgress, onStart, onNavigate }: Hom
 
   return (
     <main className="home-page">
-      <section className="hero personal-home-hero">
+      <section className="hero" style={{ minHeight: 0, display: 'block', maxWidth: 760, padding: '4rem 0 3rem' }}>
         <div>
           <p className="eyebrow">Personal study page</p>
-          <h1>Atlas Recall</h1>
+          <h1 style={{ marginBottom: '1rem', fontSize: 'clamp(3rem, 6vw, 4.75rem)' }}>Atlas Recall</h1>
           <p className="hero-copy">A private map-based tool for learning and reviewing the names and locations of major cities.</p>
           <div className="hero-actions">
             <button className="primary-button large" onClick={() => onStart(due ? 'review' : 'learn')}>{due ? `Start review (${due} due)` : 'Start learning'} <span>→</span></button>
@@ -57,7 +57,7 @@ export function Home({ cities, progress, setProgress, onStart, onNavigate }: Hom
         <div><span className="stat-icon mastered">◆</span><strong>{mastered}</strong><small>Mastered</small></div>
       </section>
 
-      <section className="home-content">
+      <section className="home-content" style={{ marginTop: '3rem' }}>
         <div>
           <div className="section-heading"><div><p className="eyebrow">Study options</p><h2>What to practise</h2></div></div>
           <div className="learn-preference">
@@ -76,7 +76,7 @@ export function Home({ cities, progress, setProgress, onStart, onNavigate }: Hom
             <ModeCard accent="sand" icon="◫" title="Explore progress" body="View per-city progress and scheduled reviews." onClick={() => onNavigate('progress')} />
           </div>
         </div>
-        <aside className="insight-panel">
+        <aside className="insight-panel" style={{ background: 'rgba(12, 37, 44, .72)' }}>
           <p className="eyebrow">Current study notes</p>
           <h2>Review priorities</h2>
           <div className="insight-row"><span>Weakest area</span><strong>{weakest}</strong></div>
