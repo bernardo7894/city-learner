@@ -1,5 +1,6 @@
 import type {
   AnswerResult,
+  City,
   MemoryState,
   ReviewLogEntry,
   ReviewMemorySnapshot,
@@ -109,4 +110,74 @@ export function createContrastReviewLogEntry({
 export function appendReviewLog(log: ReviewLogEntry[], entry: ReviewLogEntry): ReviewLogEntry[] {
   const next = [...log, entry]
   return next.length > MAX_REVIEW_LOG_ENTRIES ? next.slice(-MAX_REVIEW_LOG_ENTRIES) : next
+}
+
+function csvCell(value: unknown): string {
+  if (value == null) return ''
+  const text = String(value)
+  return /[",\n\r]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text
+}
+
+export function exportReviewLogCsv(log: ReviewLogEntry[], cities: City[]): string {
+  const cityById = new Map(cities.map((city) => [city.id, city]))
+  const headers = [
+    'answeredAt', 'cityId', 'city', 'country', 'direction', 'sessionMode', 'itemKind', 'rating', 'correct',
+    'responseMs', 'distanceKm', 'typedAnswer', 'typo', 'hintUsed', 'confusedWithCityId', 'confusedWithCity',
+    'daysSincePreviousReview', 'previousScheduledIntervalDays', 'daysOverdue',
+    'previousStatus', 'previousStabilityDays', 'previousDifficulty', 'previousAttempts',
+    'previousCorrectAttempts', 'previousConsecutiveCorrect', 'previousLapses', 'previousLastRating',
+    'previousLastReviewedAt', 'previousDueAt', 'nextStatus', 'nextStabilityDays', 'nextDifficulty',
+    'nextAttempts', 'nextCorrectAttempts', 'nextConsecutiveCorrect', 'nextLapses', 'nextLastRating',
+    'nextLastReviewedAt', 'nextDueAt',
+  ]
+
+  const rows = log.map((entry) => {
+    const city = cityById.get(entry.cityId)
+    const confusedWith = entry.confusedWithCityId ? cityById.get(entry.confusedWithCityId) : undefined
+    const previous = entry.previousMemory
+    const next = entry.nextMemory
+    return [
+      entry.answeredAt,
+      entry.cityId,
+      city?.displayName,
+      city?.countryName,
+      entry.direction,
+      entry.sessionMode,
+      entry.itemKind,
+      entry.rating,
+      entry.correct,
+      entry.responseMs,
+      entry.distanceKm,
+      entry.typedAnswer,
+      entry.typo,
+      entry.hintUsed,
+      entry.confusedWithCityId,
+      confusedWith?.displayName,
+      entry.daysSincePreviousReview,
+      entry.previousScheduledIntervalDays,
+      entry.daysOverdue,
+      previous?.status,
+      previous?.stabilityDays,
+      previous?.difficulty,
+      previous?.attempts,
+      previous?.correctAttempts,
+      previous?.consecutiveCorrect,
+      previous?.lapses,
+      previous?.lastRating,
+      previous?.lastReviewedAt,
+      previous?.dueAt,
+      next?.status,
+      next?.stabilityDays,
+      next?.difficulty,
+      next?.attempts,
+      next?.correctAttempts,
+      next?.consecutiveCorrect,
+      next?.lapses,
+      next?.lastRating,
+      next?.lastReviewedAt,
+      next?.dueAt,
+    ].map(csvCell).join(',')
+  })
+
+  return [headers.join(','), ...rows].join('\n')
 }
