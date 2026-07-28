@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import type { AnswerResult, City, ProgressData, Rating, SessionItem, SessionMode, SessionStats } from '../types'
 import { recordConfusion, recordDiscrimination } from '../lib/confusions'
 import { gradeClick, haversineDistanceKm, nearestCities, nearestCity } from '../lib/geography'
@@ -60,7 +60,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
   const item = items[index]
   const city = item ? cityById.get(item.cityId) : undefined
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setStartedAt(Date.now())
     setAnswer('')
     setHintUsed(false)
