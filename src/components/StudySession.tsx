@@ -4,6 +4,7 @@ import { recordConfusion, recordDiscrimination } from '../lib/confusions'
 import { gradeClick, haversineDistanceKm, nearestCities, nearestCity } from '../lib/geography'
 import { matchTypedAnswer } from '../lib/normalization'
 import { getOrCreateMemory, selectSessionQueue } from '../lib/queue'
+import { appendReviewLog, createContrastReviewLogEntry, createQuestionReviewLogEntry } from '../lib/reviewLog'
 import { inferTypedRating, memoryKey, reconcileCityMastery, reviewMemory } from '../lib/scheduler'
 import { WorldMap } from './WorldMap'
 import { referenceAnchors } from '../data/anchors'
@@ -131,26 +132,45 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
   ): AnswerResult => {
     if (!item || item.kind !== 'question' || !city) throw new Error('No active question')
     const now = new Date()
+    const key = memoryKey(city.id, item.direction)
+    const previousMemory = progress.memories[key]
     const memory = getOrCreateMemory(progress, city.id, item.direction, now)
     const reviewed = reviewMemory(memory, rating, now, {
       responseMs: result.responseMs,
       clickErrorKm: result.distanceKm,
       placement: item.placement,
     })
+    const answerResult: AnswerResult = {
+      ...result,
+      rating,
+      correct: rating !== 'again',
+      confusedWithCityId,
+      nextDueAt: reviewed.dueAt,
+    }
+    const logEntry = createQuestionReviewLogEntry({
+      answeredAt: now.toISOString(),
+      mode,
+      item,
+      result: answerResult,
+      previousMemory,
+      nextMemory: reviewed,
+    })
+
     setProgress((current) => {
       let next: ProgressData = {
         ...current,
-        memories: { ...current.memories, [memoryKey(city.id, item.direction)]: reviewed },
+        memories: { ...current.memories, [key]: reviewed },
       }
       if (confusedWithCityId) next = { ...next, confusions: recordConfusion(next.confusions, city.id, confusedWithCityId, now) }
-      return reconcileCityMastery(next, city.id)
+      next = reconcileCityMastery(next, city.id)
+      return { ...next, reviewLog: appendReviewLog(current.reviewLog, logEntry) }
     })
     if (confusedWithCityId) {
       const existed = progress.confusions.some((edge) => [edge.sourceCityId, edge.confusedWithCityId].includes(city.id) && [edge.sourceCityId, edge.confusedWithCityId].includes(confusedWithCityId))
       setStats((current) => ({ ...current, confusionCreated: current.confusionCreated + (existed ? 0 : 1) }))
       appendContrastIfReady(city.id, confusedWithCityId)
     }
-    return { ...result, rating, correct: rating !== 'again', confusedWithCityId, nextDueAt: reviewed.dueAt }
+    return answerResult
   }
 
   const submitTyped = (reveal = false) => {
@@ -170,12 +190,15 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
       const other = cityById.get(item.otherCityId)
       if (!other) return
       saveUndoSnapshot()
+      const answeredAt = new Date().toISOString()
       const targetDistance = haversineDistanceKm(point.latitude, point.longitude, city.latitude, city.longitude)
       const otherDistance = haversineDistanceKm(point.latitude, point.longitude, other.latitude, other.longitude)
       const correct = targetDistance <= otherDistance
       const result: AnswerResult = { rating: correct ? 'good' : 'again', correct, responseMs: Date.now() - startedAt, distanceKm: targetDistance }
+      const logEntry = createContrastReviewLogEntry({ answeredAt, mode, item, result })
       setProgress((current) => ({
         ...current,
+        reviewLog: appendReviewLog(current.reviewLog, logEntry),
         confusions: correct
           ? recordDiscrimination(current.confusions, city.id, other.id)
           : recordConfusion(current.confusions, city.id, other.id),

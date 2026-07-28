@@ -7,6 +7,7 @@ export function createEmptyProgress(cities: City[], now = new Date()): ProgressD
     createdAt: now.toISOString(),
     updatedAt: now.toISOString(),
     memories: {},
+    reviewLog: [],
     confusions: [],
     anchors: [],
     suspendedCityIds: [],
@@ -32,6 +33,7 @@ export function migrateProgress(value: unknown, cities: City[]): ProgressData {
     ...base,
     ...candidate,
     memories: candidate.memories ?? {},
+    reviewLog: candidate.reviewLog ?? [],
     confusions: candidate.confusions ?? [],
     anchors: candidate.anchors ?? base.anchors,
     suspendedCityIds: candidate.suspendedCityIds ?? [],
@@ -70,6 +72,7 @@ export function importProgress(serialized: string, cities: City[]): ProgressData
     !isRecord(parsed)
     || parsed.schemaVersion !== SCHEMA_VERSION
     || !isRecord(parsed.memories)
+    || (parsed.reviewLog != null && !Array.isArray(parsed.reviewLog))
     || !Array.isArray(parsed.confusions)
     || !Array.isArray(parsed.anchors)
     || !Array.isArray(parsed.suspendedCityIds)

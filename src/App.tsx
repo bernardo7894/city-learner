@@ -2,6 +2,7 @@ import { lazy, Suspense, useState } from 'react'
 import cityData from './data/cities.json'
 import type { City, SessionMode } from './types'
 import { useProgress } from './hooks/useProgress'
+import { exportReviewLogCsv } from './lib/reviewLog'
 import { Home } from './components/Home'
 
 const About = lazy(() => import('./components/About').then((module) => ({ default: module.About })))
@@ -22,6 +23,16 @@ export default function App() {
     setPage('study')
   }
 
+  const downloadReviewHistory = () => {
+    const blob = new Blob([`\uFEFF${exportReviewLogCsv(progress.reviewLog, cities)}`], { type: 'text/csv;charset=utf-8' })
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `atlas-recall-review-history-${new Date().toISOString().slice(0, 10)}.csv`
+    link.click()
+    URL.revokeObjectURL(url)
+  }
+
   if (page === 'study') return <Suspense fallback={<Loading />}><StudySession mode={mode} cities={cities} progress={progress} setProgress={setProgress} onExit={() => setPage('home')} /></Suspense>
   if (page === 'progress') return <Suspense fallback={<Loading />}><ProgressExplorer cities={cities} progress={progress} setProgress={setProgress} onExit={() => setPage('home')} /></Suspense>
   if (page === 'recall') return <Suspense fallback={<Loading />}><FreeRecall cities={cities} progress={progress} setProgress={setProgress} onExit={() => setPage('home')} /></Suspense>
@@ -39,7 +50,12 @@ export default function App() {
         </div>
       </nav>
       <Home cities={cities} progress={progress} setProgress={setProgress} onStart={start} onNavigate={setPage} />
-      <footer><span>Atlas Recall</span><button onClick={() => setPage('about')}>Data attribution & learning model</button><small>Progress stays on this device.</small></footer>
+      <footer>
+        <span>Atlas Recall</span>
+        <button onClick={downloadReviewHistory}>Export review history ({progress.reviewLog.length})</button>
+        <button onClick={() => setPage('about')}>Data attribution & learning model</button>
+        <small>Progress stays on this device.</small>
+      </footer>
     </>
   )
 }
