@@ -38,6 +38,45 @@ export interface MemoryState {
   averageClickErrorKm?: number
 }
 
+export interface ReviewMemorySnapshot {
+  status: MemoryStatus
+  dueAt: string
+  stabilityDays: number
+  difficulty: number
+  attempts: number
+  correctAttempts: number
+  consecutiveCorrect: number
+  lapses: number
+  lastReviewedAt?: string
+  lastRating?: Rating
+  averageResponseMs?: number
+  averageClickErrorKm?: number
+}
+
+export interface ReviewLogEntry {
+  id: string
+  answeredAt: string
+  sessionMode: SessionMode
+  itemKind: 'question' | 'contrast'
+  cityId: string
+  otherCityId?: string
+  direction?: Direction
+  placement?: boolean
+  rating: Rating
+  correct: boolean
+  responseMs: number
+  distanceKm?: number
+  typedAnswer?: string
+  typo?: boolean
+  hintUsed?: boolean
+  confusedWithCityId?: string
+  daysSincePreviousReview?: number
+  previousScheduledIntervalDays?: number
+  daysOverdue?: number
+  previousMemory?: ReviewMemorySnapshot
+  nextMemory?: ReviewMemorySnapshot
+}
+
 export interface ConfusionEdge {
   sourceCityId: string
   confusedWithCityId: string
@@ -62,6 +101,7 @@ export interface ProgressData {
   createdAt: string
   updatedAt: string
   memories: Record<string, MemoryState>
+  reviewLog: ReviewLogEntry[]
   confusions: ConfusionEdge[]
   anchors: string[]
   suspendedCityIds: string[]
