@@ -59,3 +59,33 @@ describe('review queue length', () => {
     expect(selectSessionQueue('weak', cities, progress, now, () => 0.5)).toHaveLength(5)
   })
 })
+
+describe('review card ordering', () => {
+  it('deals one card per city before presenting the reverse direction', () => {
+    const now = new Date('2026-07-28T12:00:00Z')
+    const cities = Array.from({ length: 8 }, (_, index) => city(index))
+    const progress = createEmptyProgress(cities, now)
+
+    for (const currentCity of cities) {
+      for (const direction of ['location-to-name', 'name-to-location'] as const) {
+        const memory = createMemory(currentCity.id, direction, now)
+        progress.memories[memoryKey(currentCity.id, direction)] = {
+          ...memory,
+          status: 'review',
+          dueAt: new Date(now.getTime() - 86_400_000).toISOString(),
+        }
+      }
+    }
+
+    const queue = selectSessionQueue('review', cities, progress, now, () => 0.5)
+
+    expect(queue).toHaveLength(cities.length * 2)
+    expect(new Set(queue.slice(0, cities.length).map((item) => item.cityId)).size).toBe(cities.length)
+
+    for (const currentCity of cities) {
+      const positions = queue.flatMap((item, index) => item.cityId === currentCity.id ? [index] : [])
+      expect(positions).toHaveLength(2)
+      expect(positions[1] - positions[0]).toBeGreaterThanOrEqual(cities.length)
+    }
+  })
+})

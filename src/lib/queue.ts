@@ -45,6 +45,41 @@ function interleave(items: SessionItem[]): SessionItem[] {
   return result
 }
 
+function interleaveByCityRounds(items: SessionItem[]): SessionItem[] {
+  const cityOrder: string[] = []
+  const buckets = new Map<string, SessionItem[]>()
+
+  for (const item of items) {
+    let bucket = buckets.get(item.cityId)
+    if (!bucket) {
+      bucket = []
+      buckets.set(item.cityId, bucket)
+      cityOrder.push(item.cityId)
+    }
+    bucket.push(item)
+  }
+
+  // Alternate which direction leads for paired review cards without ever moving
+  // a teaching card behind a question for the same newly introduced city.
+  cityOrder.forEach((cityId, index) => {
+    const bucket = buckets.get(cityId)!
+    if (index % 2 === 1 && bucket.length > 1 && bucket.every((item) => item.kind === 'question')) bucket.reverse()
+  })
+
+  const result: SessionItem[] = []
+  for (let round = 0; ; round += 1) {
+    let added = false
+    for (const cityId of cityOrder) {
+      const item = buckets.get(cityId)?.[round]
+      if (!item) continue
+      result.push(item)
+      added = true
+    }
+    if (!added) break
+  }
+  return result
+}
+
 function shuffled<T>(items: T[], random: () => number): T[] {
   const result = [...items]
   for (let index = result.length - 1; index > 0; index -= 1) {
@@ -161,7 +196,7 @@ export function selectSessionQueue(
     reviewItems.push(...newCityItems(cities, progress, newLimit, random))
   }
 
-  const interleaved = interleave(reviewItems)
+  const interleaved = interleaveByCityRounds(reviewItems)
   return mode === 'review' ? interleaved : interleaved.slice(0, limit)
 }
 
