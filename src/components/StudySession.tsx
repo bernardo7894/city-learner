@@ -168,7 +168,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
     if (item.kind !== 'question' || item.direction !== 'name-to-location') return
     const responseMs = Date.now() - startedAt
     const distanceKm = haversineDistanceKm(point.latitude, point.longitude, city.latitude, city.longitude)
-    const rating = gradeClick(distanceKm)
+    const rating = gradeClick(distanceKm, city, cities)
     const nearest = nearestCity(point.latitude, point.longitude, cities)
     const confusedWithCityId = rating === 'again' && nearest && nearest.city.id !== city.id && nearest.distanceKm < 200 ? nearest.city.id : undefined
     const result = applyQuestionResult(rating, { responseMs, distanceKm }, confusedWithCityId)
