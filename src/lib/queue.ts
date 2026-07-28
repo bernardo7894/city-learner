@@ -160,7 +160,9 @@ export function selectSessionQueue(
     const newLimit = due.length === 0 ? newCityLimit : 1
     reviewItems.push(...newCityItems(cities, progress, newLimit, random))
   }
-  return interleave(reviewItems).slice(0, limit)
+
+  const interleaved = interleave(reviewItems)
+  return mode === 'review' ? interleaved : interleaved.slice(0, limit)
 }
 
 export function countDue(progress: ProgressData, now = new Date()): number {
