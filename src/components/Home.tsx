@@ -38,20 +38,15 @@ export function Home({ cities, progress, setProgress, onStart, onNavigate }: Hom
 
   return (
     <main className="home-page">
-      <section className="hero">
+      <section className="hero" style={{ minHeight: 0, display: 'block', maxWidth: 760, padding: '4rem 0 3rem' }}>
         <div>
-          <p className="eyebrow">Your world, remembered</p>
-          <h1>Build a map that<br /><em>stays with you.</em></h1>
-          <p className="hero-copy">Learn the world’s largest cities by placing them, naming them, and untangling the pairs your memory mixes up.</p>
+          <p className="eyebrow">Personal study page</p>
+          <h1 style={{ marginBottom: '1rem', fontSize: 'clamp(3rem, 6vw, 4.75rem)' }}>Atlas Recall</h1>
+          <p className="hero-copy">A private map-based tool for learning and reviewing the names and locations of major cities.</p>
           <div className="hero-actions">
-            <button className="primary-button large" onClick={() => onStart(due ? 'review' : 'learn')}>{due ? `Review ${due} due` : 'Learn new cities'} <span>→</span></button>
-            {!hasProgress && <button className="secondary-button large" onClick={() => onStart('placement')}>Take placement test</button>}
+            <button className="primary-button large" onClick={() => onStart(due ? 'review' : 'learn')}>{due ? `Start review (${due} due)` : 'Start learning'} <span>→</span></button>
+            {!hasProgress && <button className="secondary-button large" onClick={() => onStart('placement')}>Run placement test</button>}
           </div>
-        </div>
-        <div className="globe-orbit" aria-hidden="true">
-          <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-          <div className="globe-disc"><span>324</span><small>cities to discover</small></div>
-          <i className="pin pin-a" /><i className="pin pin-b" /><i className="pin pin-c" />
         </div>
       </section>
 
@@ -62,33 +57,33 @@ export function Home({ cities, progress, setProgress, onStart, onNavigate }: Hom
         <div><span className="stat-icon mastered">◆</span><strong>{mastered}</strong><small>Mastered</small></div>
       </section>
 
-      <section className="home-content">
+      <section className="home-content" style={{ marginTop: '3rem' }}>
         <div>
-          <div className="section-heading"><div><p className="eyebrow">Choose your route</p><h2>Play modes</h2></div></div>
+          <div className="section-heading"><div><p className="eyebrow">Study options</p><h2>What to practise</h2></div></div>
           <div className="learn-preference">
-            <div><strong>Learn session size</strong><small>No daily limit—start another session whenever you like.</small></div>
+            <div><strong>Learn session size</strong><small>Start another session whenever you want; there is no daily cap.</small></div>
             <label>New cities <input type="number" min="1" max={QUEUE_CONFIG.maxNewPerSession} value={newCitiesPerSession} onChange={(event) => {
               const value = Math.min(QUEUE_CONFIG.maxNewPerSession, Math.max(1, Number(event.target.value) || 1))
               setProgress((current) => ({ ...current, settings: { ...current.settings, newCitiesPerSession: value } }))
             }} /> per session</label>
           </div>
           <div className="mode-grid">
-            <ModeCard accent="gold" icon="✦" title="Learn" body={`Meet up to ${newCitiesPerSession} new cities through map-first teaching.`} onClick={() => onStart('learn')} />
-            <ModeCard accent="mint" icon="↻" title="Review" body="Clear due memories and protect knowledge that is fading." onClick={() => onStart('review')} badge={due ? `${due} due` : undefined} />
-            <ModeCard accent="coral" icon="⌁" title="Weak cities" body="Focus on lapses, slow names, and wide map misses." onClick={() => onStart('weak')} />
-            <ModeCard accent="violet" icon="⇄" title="Confusion drill" body="Separate city pairs your memory keeps crossing." onClick={() => onStart('confusion')} badge={progress.confusions.filter((edge) => edge.strength >= 2).length ? 'Ready' : undefined} />
-            <ModeCard accent="blue" icon="◎" title="Free recall" body="Light up a blank world map with everything you can summon." onClick={() => onNavigate('recall')} />
-            <ModeCard accent="sand" icon="◫" title="Explore progress" body="Inspect every city, memory direction, and next review." onClick={() => onNavigate('progress')} />
+            <ModeCard accent="gold" icon="✦" title="Learn" body={`Introduce up to ${newCitiesPerSession} new cities.`} onClick={() => onStart('learn')} />
+            <ModeCard accent="mint" icon="↻" title="Review" body="Review every card that is currently due." onClick={() => onStart('review')} badge={due ? `${due} due` : undefined} />
+            <ModeCard accent="coral" icon="⌁" title="Weak cities" body="Practise cities with lapses, slow answers, or large map errors." onClick={() => onStart('weak')} />
+            <ModeCard accent="violet" icon="⇄" title="Confusion drill" body="Practise city pairs that you have mixed up." onClick={() => onStart('confusion')} badge={progress.confusions.filter((edge) => edge.strength >= 2).length ? 'Ready' : undefined} />
+            <ModeCard accent="blue" icon="◎" title="Free recall" body="Try to name every city you remember on a blank map." onClick={() => onNavigate('recall')} />
+            <ModeCard accent="sand" icon="◫" title="Explore progress" body="View per-city progress and scheduled reviews." onClick={() => onNavigate('progress')} />
           </div>
         </div>
-        <aside className="insight-panel">
-          <p className="eyebrow">Memory signals</p>
-          <h2>Where to look next</h2>
+        <aside className="insight-panel" style={{ background: 'rgba(12, 37, 44, .72)' }}>
+          <p className="eyebrow">Current study notes</p>
+          <h2>Review priorities</h2>
           <div className="insight-row"><span>Weakest area</span><strong>{weakest}</strong></div>
           <div className="insight-row"><span>Strongest confusion</span><strong>{confusionLabel}</strong></div>
           <div className="insight-row"><span>Anchors visible</span><strong>{referenceAnchors.length + progress.anchors.length}</strong></div>
-          <p className="insight-note">Mastered cities leave ordinary sessions and return only when their maintenance review is due.</p>
-          <button className="text-button" onClick={() => onNavigate('progress')}>Open the full map →</button>
+          <p className="insight-note">Mastered cities are omitted from ordinary sessions until their next maintenance review is due.</p>
+          <button className="text-button" onClick={() => onNavigate('progress')}>View all city progress →</button>
         </aside>
       </section>
     </main>
