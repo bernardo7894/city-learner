@@ -2,9 +2,11 @@ import { describe, expect, it } from 'vitest'
 import type { ProgressData } from '../types'
 import { createEmptyProgress, importProgress, migrateProgress } from './persistence'
 
+type LegacyProgress = Omit<ProgressData, 'reviewLog'> & { reviewLog?: ProgressData['reviewLog'] }
+
 describe('review history migration', () => {
   it('adds an empty history to existing progress without resetting memories', () => {
-    const oldProgress = createEmptyProgress([], new Date('2026-07-01T00:00:00Z')) as ProgressData & { reviewLog?: ProgressData['reviewLog'] }
+    const oldProgress = createEmptyProgress([], new Date('2026-07-01T00:00:00Z')) as LegacyProgress
     delete oldProgress.reviewLog
     oldProgress.memories['kano:location-to-name'] = {
       cityId: 'kano',
@@ -27,7 +29,7 @@ describe('review history migration', () => {
   })
 
   it('accepts old exported files that do not yet contain review history', () => {
-    const oldProgress = createEmptyProgress([], new Date('2026-07-01T00:00:00Z')) as ProgressData & { reviewLog?: ProgressData['reviewLog'] }
+    const oldProgress = createEmptyProgress([], new Date('2026-07-01T00:00:00Z')) as LegacyProgress
     delete oldProgress.reviewLog
 
     expect(importProgress(JSON.stringify(oldProgress), []).reviewLog).toEqual([])
