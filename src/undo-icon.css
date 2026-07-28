@@ -1,3 +1,13 @@
+.feedback-card > div:first-child {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.feedback-card > .quiet-button,
+.feedback-card > .primary-button {
+  flex: 0 0 auto;
+}
+
 .feedback-card > .quiet-button {
   display: inline-flex;
   align-items: center;
