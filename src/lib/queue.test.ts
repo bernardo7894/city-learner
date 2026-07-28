@@ -39,7 +39,7 @@ describe('review queue length', () => {
     const queue = selectSessionQueue('review', cities, progress, now, () => 0.5)
 
     expect(queue).toHaveLength(25)
-    expect(new Set(queue.map((item) => item.cityId))).toHaveLength(25)
+    expect(new Set(queue.map((item) => item.cityId)).size).toBe(25)
   })
 
   it('still applies the configured limit to weak-city sessions', () => {
