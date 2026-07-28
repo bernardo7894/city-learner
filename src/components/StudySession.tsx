@@ -22,6 +22,12 @@ interface Feedback {
   headline: string
 }
 
+interface UndoSnapshot {
+  progress: ProgressData
+  stats: SessionStats
+  items: SessionItem[]
+}
+
 const emptyStats = (): SessionStats => ({
   answers: [],
   introducedCityIds: [],
@@ -49,6 +55,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
   const [items, setItems] = useState(() => selectSessionQueue(mode, cities, progress))
   const [index, setIndex] = useState(0)
   const [feedback, setFeedback] = useState<Feedback>()
+  const [undoSnapshot, setUndoSnapshot] = useState<UndoSnapshot>()
   const [answer, setAnswer] = useState('')
   const [hintUsed, setHintUsed] = useState(false)
   const [paused, setPaused] = useState(false)
@@ -65,6 +72,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
     setAnswer('')
     setHintUsed(false)
     setFeedback(undefined)
+    setUndoSnapshot(undefined)
     requestAnimationFrame(() => {
       inputRef.current?.focus()
       teachButtonRef.current?.focus()
@@ -92,6 +100,19 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
       if (alreadyQueued) return current
       return [...current, { id: `contrast-live-${sourceCityId}-${otherCityId}`, kind: 'contrast', cityId: sourceCityId, otherCityId }]
     })
+  }
+
+  const saveUndoSnapshot = () => setUndoSnapshot({ progress, stats, items })
+
+  const undoLastAnswer = () => {
+    if (!undoSnapshot) return
+    setProgress(undoSnapshot.progress)
+    setStats(undoSnapshot.stats)
+    setItems(undoSnapshot.items)
+    setFeedback(undefined)
+    setUndoSnapshot(undefined)
+    setStartedAt(Date.now())
+    requestAnimationFrame(() => inputRef.current?.focus())
   }
 
   const recordAnswer = (
@@ -134,6 +155,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
 
   const submitTyped = (reveal = false) => {
     if (feedback || !city || !item || item.kind !== 'question' || item.direction !== 'location-to-name') return
+    saveUndoSnapshot()
     const responseMs = Date.now() - startedAt
     const match = reveal ? { correct: false, typo: false, ambiguous: false, confusedWithCityId: undefined } : matchTypedAnswer(answer, city, cities)
     const rating = inferTypedRating(match.correct, responseMs, match.typo, hintUsed)
@@ -147,6 +169,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
     if (item.kind === 'contrast') {
       const other = cityById.get(item.otherCityId)
       if (!other) return
+      saveUndoSnapshot()
       const targetDistance = haversineDistanceKm(point.latitude, point.longitude, city.latitude, city.longitude)
       const otherDistance = haversineDistanceKm(point.latitude, point.longitude, other.latitude, other.longitude)
       const correct = targetDistance <= otherDistance
@@ -166,6 +189,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
       return
     }
     if (item.kind !== 'question' || item.direction !== 'name-to-location') return
+    saveUndoSnapshot()
     const responseMs = Date.now() - startedAt
     const distanceKm = haversineDistanceKm(point.latitude, point.longitude, city.latitude, city.longitude)
     const rating = gradeClick(distanceKm, city, cities)
@@ -175,7 +199,10 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
     recordAnswer(result, rating === 'again' ? 'Outside the target region' : rating === 'hard' ? 'Right area' : rating === 'good' ? 'Good placement' : 'Excellent placement', point)
   }
 
-  const next = () => setIndex((current) => current + 1)
+  const next = () => {
+    setUndoSnapshot(undefined)
+    setIndex((current) => current + 1)
+  }
 
   if (!items.length) {
     const emptyTitle = mode === 'confusion' ? 'No strong confusions yet' : mode === 'learn' ? 'Every available city has been introduced' : 'Nothing needs attention right now'
@@ -297,6 +324,7 @@ export function StudySession({ mode, cities, progress, setProgress, onExit }: St
             {item.kind === 'question' && typed && <p className="muted small">Accepted: {city.acceptedAnswers.join(' · ')}</p>}
             {item.kind === 'question' && <p className="muted small">Next review {relativeDue(feedback.result.nextDueAt)}</p>}
           </div>
+          <button className="quiet-button" type="button" onClick={undoLastAnswer}>Undo</button>
           <button className="primary-button" onClick={next} autoFocus>{index + 1 >= items.length ? 'See summary' : 'Next →'}</button>
         </section>
       )}
